@@ -158,7 +158,8 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname === "/") return new Response("paper-trail connector is running", { status: 200 });
-    if (!env.MCP_SECRET || url.pathname !== `/mcp/${env.MCP_SECRET}`) return new Response("Not found", { status: 404 });
+    const secret = (env.MCP_SECRET || "").trim(); // 貼り付け時の空白や改行を無視
+    if (!secret || url.pathname.replace(/\/$/, "") !== `/mcp/${secret}`) return new Response("Not found", { status: 404 });
     if (request.method !== "POST") return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
 
     let msg;
