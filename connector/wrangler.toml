@@ -3,4 +3,4 @@ main = "worker.js"
 compatibility_date = "2025-09-01"
 
 [vars]
-PAPER_REPO = "on6848/paper_trail" # 自分のリポジトリに書き換える
+PAPER_REPO = "on6848/paper_trail" # Actions からの配置ではリポジトリ名で自動上書きされる

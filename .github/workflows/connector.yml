@@ -1,0 +1,49 @@
+name: connector
+
+# チャット用コネクタを Cloudflare Workers に配置する（PC 不要）
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["connector/**"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: connector
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: 必要なシークレットがそろっているか確認
+        env:
+          A: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          B: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          C: ${{ secrets.CONNECTOR_GITHUB_TOKEN }}
+          D: ${{ secrets.MCP_SECRET }}
+        run: |
+          missing=""
+          [ -n "$A" ] || missing="$missing CLOUDFLARE_API_TOKEN"
+          [ -n "$B" ] || missing="$missing CLOUDFLARE_ACCOUNT_ID"
+          [ -n "$C" ] || missing="$missing CONNECTOR_GITHUB_TOKEN"
+          [ -n "$D" ] || missing="$missing MCP_SECRET"
+          if [ -n "$missing" ]; then echo "::error::未登録のシークレット:$missing"; exit 1; fi
+      - name: Worker を配置（初回は本体を先に置かないとシークレットを登録できない）
+        run: |
+          npx -y wrangler@4 deploy --var "PAPER_REPO:${{ github.repository }}" | tee deploy.log
+          url=$(grep -oE 'https://[a-zA-Z0-9.-]+\.workers\.dev' deploy.log | head -1)
+          echo "### コネクタを配置しました" >> "$GITHUB_STEP_SUMMARY"
+          echo "claude.ai に登録する URL は \`${url}/mcp/\` の後ろに MCP_SECRET を付けたものです。" >> "$GITHUB_STEP_SUMMARY"
+      - name: Worker にシークレットを登録
+        env:
+          GH_FOR_WORKER: ${{ secrets.CONNECTOR_GITHUB_TOKEN }}
+          MCP: ${{ secrets.MCP_SECRET }}
+        run: |
+          printf '%s' "$GH_FOR_WORKER" | npx -y wrangler@4 secret put GITHUB_TOKEN
+          printf '%s' "$MCP" | npx -y wrangler@4 secret put MCP_SECRET
