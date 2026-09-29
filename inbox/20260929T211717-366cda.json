@@ -1,0 +1,130 @@
+[
+ {
+  "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e",
+  "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
+  "context": "要約:多人数が同時に関わる関係の時間変化を線で展開。新規性:動的ハイパーグラフにstorylineを適用しPAOHVisより良好",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/f7d3b47f21b19faa1da7aad282a7c326a91f1520",
+  "title": "Visualizing the Evolution of Community Structures in Dynamic Social Networks",
+  "context": "要約:SNSのコミュニティ変化を人物の線と集団の帯で表示。新規性:コミュニティ検出結果をstoryline型で描き米下院に適用",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/b16147d467777cb59732932a168e6d63ef2ec7e0",
+  "title": "Storytelling by the StoryCake visualization",
+  "context": "要約:物語の階層構造を極座標の扇形で表示。新規性:storylineを極座標化し階層的な筋の関係を追いやすくした",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/4c719be1b4e45d2d9a8b49faebc73a696daade33",
+  "title": "An effective demonstration for group collaboration based on storyline visualization technology",
+  "context": "要約:グループ共同作業の推移をstorylineで表示。新規性:協働分析へのstoryline適用（題名ベースの要約）",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/0b0549975c366abac203294099da2e3ac9e87172",
+  "title": "iStoryline: Effective Convergence to Hand-drawn Storylines",
+  "context": "要約:ユーザー操作を制約として最適化に取り込む。新規性:手描きに近いstorylineへ対話的に収束させる仕組み",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/392a2b92a0be230f8bb2a26c0e70cebc11ad6ff9",
+  "title": "PlotThread: Creating Expressive Storyline Visualizations using Reinforcement Learning",
+  "context": "要約:強化学習エージェントがレイアウト作成を補助。新規性:AIと人が協調して表現豊かなstorylineを作るツール",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b",
+  "title": "NewsLines: Narrative Visualization of News Stories",
+  "context": "要約:ニュース記事の出来事と参加者をstorylineで表示。新規性:ニュース文章から生成するOSSのWeb試作",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/eea1717db0943d1e53c98e2faa298618f39c81d3",
+  "title": "A system for generating storyline visualizations using hierarchical task network planning",
+  "context": "要約:複数の時間軸を持つ物語を自動構成し可視化。新規性:HTN計画をYarnに組込み非線形の物語も扱う",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "2408.01775",
+  "title": "3DStoryline: Immersive Visual Storytelling",
+  "context": "要約:storylineを3D空間に拡張し没入環境で閲覧。新規性:VRでのstorylineの表現と操作を検討",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/8f8a2194b9357a6b117d8b252c95d1e688e89ea8",
+  "title": "StoryExplorer: A Visualization Framework for Storyline Generation of Textual Narratives",
+  "context": "要約:文章から物語の断片を抽出しstorylineを構築。新規性:手書き注釈とGPTのヒントを組合せた作成手順",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/154026c491fe603984ff66200970b7a1b713247e",
+  "title": "Story Ribbons: Reimagining Storyline Visualizations with Large Language Models",
+  "context": "要約:LLMで小説や脚本から人物・テーマを抽出。新規性:抽出結果を複数の粒度で探れる対話型システム",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "1609.00321",
+  "title": "Block Crossings in Storyline Visualizations",
+  "context": "要約:隣接する線の束を一度に入れ替えるブロック交差を提案。新規性:最小化の計算困難性とアルゴリズムを示した",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "1709.01055",
+  "title": "Computing Storyline Visualizations with Few Block Crossings",
+  "context": "要約:ブロック交差が少ないレイアウトを計算。新規性:SATやILPによる厳密解法を実装し比較",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/67ffdc021fc339f090c450b72fa0e7d610914226",
+  "title": "An Efficient Framework for Generating Storyline Visualizations from Streaming Data",
+  "context": "要約:逐次届くデータでstorylineを更新。新規性:過去の配置を保ちつつ効率よく再最適化する枠組み",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/59200768e4316ab899523161c4552e005e10688c",
+  "title": "Storytelling and Visualization: A Survey",
+  "context": "要約:可視化のストーリーテリング研究を概観。新規性:共通要素を整理し文献の新しい分類を提示",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/e247b1948acffc5241be56eefea158eb9dc800c2",
+  "title": "Visual Story-Writing: Writing by Manipulating Visual Representations of Stories",
+  "context": "要約:人物・場所・出来事の可視化を操作して文章を編集。新規性:可視化の操作をLLMで本文修正に反映",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:17:08Z"
+ }
+]
