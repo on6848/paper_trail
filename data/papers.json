@@ -1,6 +1,272 @@
 {
- "updated": "2026-09-29T21:23:38+00:00",
+ "updated": "2026-09-29T21:24:35+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:戯曲の人物網を台詞と同期した網の連続として表示。新規性:本文とネットワーク状態を並べて読めるOSSのWebアプリ",
+     "url": "https://www.semanticscholar.org/paper/b9ea5f5e7f7133c893c05c19de302e2f4afd5a75"
+    }
+   ],
+   "title": "Visualising the Dynamics of Character Networks",
+   "authors": [
+    "Aris Xanthos",
+    "Isaac Pante",
+    "Yannick Rochat",
+    "Martin Grandjean"
+   ],
+   "year": 2016,
+   "venue": "Digital Humanities Conference",
+   "abstract": null,
+   "tldr": "An open source web application which models the character-system of theatre plays as a sequence of network states synchronised with the actual narrative content is developed, successively focusing on the underlying structure extraction process, the conception of the graphical interface, and the range of uses envisioned for it.",
+   "citationCount": 20,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/b9ea5f5e7f7133c893c05c19de302e2f4afd5a75",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "b9ea5f5e7f7133c893c05c19de302e2f4afd5a75"
+   },
+   "key": "s2:b9ea5f5e7f7133c893c05c19de302e2f4afd5a75",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-29T21:22:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:3D舞台と台本をLine of Actionで結ぶSET。新規性:戯曲を上演の過程として時間と空間で可視化し立ち位置を検討できる",
+     "url": "https://www.digitalhumanities.org/dhq/vol/7/3/000166/000166.html"
+    }
+   ],
+   "title": "Visualizing Theatrical Text: From Watching the Script to the Simulated Environment for Theatre (SET)",
+   "authors": [
+    "Jennifer Roberts-Smith"
+   ],
+   "year": 2022,
+   "venue": null,
+   "abstract": null,
+   "tldr": "The Simulated Environment for Theatre (SET) offers an alternative to static, two-dimensional visualizations of theatrical text by modeling the process of moving from text to performance in the Western, text-based tradition of live theatre production and frees users from the limitations of the single, time-bound spectator's perspective.",
+   "citationCount": 7,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/772bd7f527a556cf08199ce8ad10d28586460fc0",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "772bd7f527a556cf08199ce8ad10d28586460fc0"
+   },
+   "key": "s2:772bd7f527a556cf08199ce8ad10d28586460fc0",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-29T21:22:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:台本が仮想舞台上で動くWatching the Scriptの再設計。新規性:台本を印刷物でなく上演の要素の一つとして捉え直した",
+     "url": null
+    }
+   ],
+   "title": "The Text and the Line of Action: Re-conceiving Watching the Script",
+   "authors": [
+    "Jennifer Roberts-Smith",
+    "Sandra Gabriele",
+    "Stan Ruecker",
+    "S. Sinclair"
+   ],
+   "year": 2012,
+   "venue": null,
+   "abstract": "In this paper, we describe a recent evolution in thinking about our digital tool called Watching the Script (WtS), which was designed for actors, directors and theatre researchers. In its original conception, WtS was centred on the text. We conceived of text primarily as a material object; speeches were visualized as impenetrable integral units delineated typographically by speech-headings of characters speaking; movement in the stage view was linked to entire speeches, with only one action permitted per speech. Text was privileged and its virtual manifestation was a literal visualization of its material manifestation in print. In contrast, our new design re-conceives text as one of a set of material phenomena occurring in time and space that together express theatrical action. The system’s new, navigable three-dimensional stage view accommodates a variety of phenomena linked directly to the line of action; the text, which is linked to the stage view only through the line of action, is as flexible and penetrable as other performance phenomena in the stage view. We also situate the interface within a set of specific sets and stages, consisting of 3D models of real spaces created to scale, so that the adoption of the tool involves an awareness of an actual setting rather than a single stylized space.",
+   "tldr": "A recent evolution in thinking about Watching the Script (WtS), which was designed for actors, directors and theatre researchers, re-conceives text as one of a set of material phenomena occurring in time and space that together express theatrical action.",
+   "citationCount": 7,
+   "pdf": "https://src-online.ca/index.php/src/article/download/96/102",
+   "url": "https://www.semanticscholar.org/paper/c13c51c850c61b4c0db8941adb0b439e64d1c44b",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "c13c51c850c61b4c0db8941adb0b439e64d1c44b",
+    "doi": "10.22230/src.2012v3n3a96"
+   },
+   "key": "doi:10.22230/src.2012v3n3a96",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-29T21:22:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:CHAPLINでハムレットの人物と場所の関係を網として表示。新規性:作品全体と幕ごとの人物の活躍度を比較",
+     "url": "https://arxiv.org/abs/1511.07001"
+    }
+   ],
+   "title": "Analysis of a Play by Means of CHAPLIN, the Characters and Places Interaction Network Software",
+   "authors": [
+    "A. C. Sparavigna",
+    "R. Marazzato"
+   ],
+   "year": 2015,
+   "venue": "arXiv",
+   "abstract": "Recently, we have developed a software able of gathering information on social networks from written texts. This software, the CHAracters and PLaces Interaction Network (CHAPLIN) tool, is implemented in Visual Basic. By means of it, characters and places of a literary work can be extracted from a list of raw words. The software interface helps users to select their names out of this list. Setting some parameters, CHAPLIN creates a network where nodes represent characters/places and edges give their interactions. Nodes and edges are labelled by performances. In this paper, we propose to use CHAPLIN for the analysis a William Shakespeare's play, the famous 'Tragedy of Hamlet, Prince of Denmark'. Performances of characters in the play as a whole and in each act of it are given by graphs.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/1511.07001",
+   "url": "https://arxiv.org/abs/1511.07001",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "1511.07001",
+    "doi": "10.18483/ijsci.662"
+   },
+   "key": "arxiv:1511.07001",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-29T21:22:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:シェイクスピア10作品の人物網を分析。新規性:劇中の集団構造が現実の人間関係やスモールワールド性と対応",
+     "url": null
+    }
+   ],
+   "title": "The small world of shakespeare’s plays",
+   "authors": [
+    "J. Stiller",
+    "D. Nettle",
+    "Robin I. M. Dunbar"
+   ],
+   "year": 2003,
+   "venue": "Human Nature",
+   "abstract": null,
+   "tldr": "This work outlines a methodology for investigating the hypothesis that successful dramas will portray fictional social networks that have the same properties as those typical of human beings across ages and cultures and examines ten of Shakespeare's plays.",
+   "citationCount": 117,
+   "pdf": "http://www.springer.com/cda/content/document/cda_downloaddocument/Disclosure+of+Interest+Form_12110.pdf?SGWID=0-0-45-1160637-p173732517",
+   "url": "https://www.semanticscholar.org/paper/d68d57abc41808c3b9b3b3385281c18de50f8a0a",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "d68d57abc41808c3b9b3b3385281c18de50f8a0a",
+    "doi": "10.1007/s12110-003-1013-1"
+   },
+   "key": "doi:10.1007/s12110-003-1013-1",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-29T21:22:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:ハムレット等の人物網から筋を分析する文学研究。新規性:ネットワーク理論を戯曲の構造分析に持ち込んだ先駆け",
+     "url": null
+    }
+   ],
+   "title": "Network theory, plot analysis",
+   "authors": [
+    "F. Moretti"
+   ],
+   "year": 2011,
+   "venue": null,
+   "abstract": null,
+   "tldr": "This paper is the beginning of an answer in network theory, a theory that studies connections within large groups of objects and reveals many unexpected features of large systems, the most famous one being the so-called \"small-world\" property, or \"six degrees of separation\".",
+   "citationCount": 221,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/637344c4b31eefa1c344a01694eb04572a2205a0",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "637344c4b31eefa1c344a01694eb04572a2205a0"
+   },
+   "key": "s2:637344c4b31eefa1c344a01694eb04572a2205a0",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-29T21:22:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:喜劇と悲劇の人物網の構造的な違いを比較。新規性:網の指標で戯曲のジャンルを分類できるか検証",
+     "url": "https://arxiv.org/abs/2302.08258"
+    }
+   ],
+   "title": "Tragic and Comical Networks. Clustering Dramatic Genres According to Structural Properties",
+   "authors": [
+    "Botond Szemes",
+    "Bence Vida"
+   ],
+   "year": 2023,
+   "venue": "arXiv.org",
+   "abstract": "There is a growing tradition in the joint field of network studies and drama history that produces interpretations from the character networks of the plays.The potential of such an interpretation is that the diagrams provide a different representation of the relationships between characters as compared to reading the text or watching the performance. Our aim is to create a method that is able to cluster texts with similar structures on the basis of the play's well-interpretable and simple properties, independent from the number of characters in the drama, or in other words, the size of the network. Finding these features is the most important part of our research, as well as establishing the appropriate statistical procedure to calculate the similarities between the texts. Our data was downloaded from the DraCor database and analyzed in R (we use the GerDracor and the ShakeDraCor sub-collection). We want to propose a robust method based on the distribution of words among characters; distribution of characters in scenes, average length of speech acts, or character-specific and macro-level network properties such as clusterization coefficient and network density. Based on these metrics a supervised classification procedure is applied to the sub-collections to classify comedies and tragedies using the Support Vector Machine (SVM) method. Our research shows that this approach can also produce reliable results on a small sample size.",
+   "tldr": "The aim is to create a method that is able to cluster texts with similar structures on the basis of the play's well-interpretable and simple properties, independent from the number of characters in the drama, or in other words, the size of the network.",
+   "citationCount": 0,
+   "pdf": "http://arxiv.org/pdf/2302.08258",
+   "url": "https://www.semanticscholar.org/paper/c641bc09d427942f5208c77ba870af6fed023549",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "c641bc09d427942f5208c77ba870af6fed023549",
+    "arxiv": "2302.08258",
+    "doi": "10.48550/arxiv.2302.08258"
+   },
+   "key": "arxiv:2302.08258",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-29T21:22:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:欧州の戯曲を人物網などで分析できるコーパス基盤DraCor。新規性:APIで戯曲の構造データを取り出せる",
+     "url": null
+    }
+   ],
+   "title": "Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama",
+   "authors": [
+    "Frank Fischer",
+    "I. Börner",
+    "Mathias Göbel",
+    "Angelika Hechtl",
+    "C. Kittel",
+    "C. Milling",
+    "Peer Trilcke"
+   ],
+   "year": 2020,
+   "venue": null,
+   "abstract": null,
+   "tldr": "Although there have been some infrastructural developments of late, the main modus operandi in digital literary studies is still to apply a certain research method to an ephemeral corpus, where the results are somehow reproducible, in a worst-case scenario they are not reproducible at all.",
+   "citationCount": 58,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/8f3a48a00996c1a91c4a518e0e373c30c9d7f98f",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "8f3a48a00996c1a91c4a518e0e373c30c9d7f98f"
+   },
+   "key": "s2:8f3a48a00996c1a91c4a518e0e373c30c9d7f98f",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-29T21:22:12Z"
+  },
   {
    "refs": [
     {
