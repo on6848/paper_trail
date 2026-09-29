@@ -1,0 +1,162 @@
+[
+ {
+  "url": "10.1111/cgf.70499",
+  "title": "The Story(line) So Far: A Survey on Storyline Visualization",
+  "context": "Storyline可視化の最新サーベイ（2026）。文献全体の地図として",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "",
+  "title": "Software Evolution Storylines",
+  "context": "Ogawa & Ma 2010。storyline可視化を最初に論文化した研究",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "10.1109/TVCG.2012.212",
+  "title": "Design Considerations for Optimizing Storyline Visualizations",
+  "context": "Tanahashi & Ma 2012。レイアウト最適化の基準を整理した古典",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "",
+  "title": "An Efficient Framework for Generating Storyline Visualizations from Streaming Data",
+  "context": "Tanahashi et al. 2015。ストリーミングデータへの対応。時間方向の一貫性に関連",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "",
+  "title": "On Minimizing Crossings in Storyline Visualizations",
+  "context": "Kostitsyna et al. GD 2015。交差最小化の理論的研究",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "1608.08027",
+  "title": "Crossing Minimization in Storyline Visualization",
+  "context": "Gronemann et al. GD 2016。多層交差最小化として定式化",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "1609.00321",
+  "title": "Block Crossings in Storyline Visualizations",
+  "context": "van Dijk et al. GD 2016。ブロック交差という指標の提案",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "1709.01055",
+  "title": "Computing Storyline Visualizations with Few Block Crossings",
+  "context": "GD 2017。SATによるブロック交差の最適化",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "",
+  "title": "The \"y\" of it Matters, Even for Storyline Visualization",
+  "context": "Arendt & Pirrung 2017。縦位置の意味づけに関する研究",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "10.1109/TVCG.2018.2864899",
+  "title": "iStoryline: Effective Convergence to Hand-drawn Storylines",
+  "context": "Tang et al. 2018。手描き風レイアウトへのインタラクティブ調整",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "10.1109/TVCG.2020.3030467",
+  "title": "PlotThread: Creating Expressive Storyline Visualizations using Reinforcement Learning",
+  "context": "Tang et al. 2020。強化学習によるレイアウト生成",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "",
+  "title": "Storyline Visualizations with Ubiquitous Actors",
+  "context": "Di Giacomo et al. GD 2020。常に登場する人物の扱い",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "",
+  "title": "A System for Generating Storyline Visualizations Using Hierarchical Task Network Planning",
+  "context": "Padia et al. 2019。計画手法によるstoryline生成",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "",
+  "title": "Geo-Storylines: Integrating Maps into Storyline Visualizations",
+  "context": "TVCG 2022。地図とstorylineの統合",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "2408.01775",
+  "title": "3DStoryline: Immersive Visual Storytelling",
+  "context": "2024。storylineの3D・没入型への拡張",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "2411.05435",
+  "title": "StoryExplorer: A Visualization Framework for Storyline Generation of Textual Narratives",
+  "context": "2024。GPT支援で文章からstorylineを構築",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "2508.06772",
+  "title": "Story Ribbons: Reimagining Storyline Visualizations with Large Language Models",
+  "context": "2025。LLMで小説から人物・テーマの軌跡を抽出",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "2410.07486",
+  "title": "Visual Story-Writing: Writing by Manipulating Visual Representations of Stories",
+  "context": "CHI 2025。storyline等の可視化を執筆支援に応用",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "https://www.semanticscholar.org/paper/59200768e4316ab899523161c4552e005e10688c",
+  "title": "Storytelling and Visualization: A Survey",
+  "context": "Tong et al. 2018。可視化ストーリーテリング全般のサーベイ",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ },
+ {
+  "url": "",
+  "title": "Tracing Genealogical Data with TimeNets",
+  "context": "Kim, Card, Heer 2010。storylineに近い系譜の時系列可視化",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:07:13Z"
+ }
+]
