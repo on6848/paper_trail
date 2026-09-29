@@ -1,0 +1,102 @@
+name: papers
+
+on:
+  push:
+    branches: [main]
+    paths: ["inbox/**", "site/**", "scripts/**", "data/notes.json", ".github/workflows/**"]
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "論文のURL / arXiv ID / DOI（なければ空欄）"
+        required: false
+      title:
+        description: "タイトル（URLがわからないとき）"
+        required: false
+      context:
+        description: "メモ（何の作業中に参照したか）"
+        required: false
+  repository_dispatch:
+    types: [add-paper] # add_paper.sh や今後のフック・コネクタの入口
+  schedule:
+    - cron: "0 18 * * *" # 毎日 JST 3:00 に再試行待ちを処理
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  # 受け取った論文を inbox に積むだけ。並列で走っても衝突しない
+  enqueue:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: inbox に書き出す
+        env:
+          PAYLOAD: ${{ toJSON(github.event_name == 'repository_dispatch' && github.event.client_payload || github.event.inputs) }}
+          SOURCE_DEFAULT: ${{ github.event_name == 'repository_dispatch' && 'api' || 'manual' }}
+        run: python3 scripts/enqueue.py
+      - name: push（他の実行とぶつかったら rebase して再試行）
+        run: |
+          git config user.name "paper-trail-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add inbox
+          git commit -m "inbox: 論文を受信" || exit 0
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 3))
+          done
+          exit 1
+
+  # inbox をまとめて処理。1本ずつ順番に走らせて papers.json の競合を防ぐ
+  process:
+    needs: enqueue
+    if: always() && (needs.enqueue.result == 'success' || needs.enqueue.result == 'skipped')
+    concurrency:
+      group: process
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main # enqueue が積んだ最新の inbox を読む
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: メタデータを補完して統合
+        env:
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+        run: python3 scripts/process_inbox.py
+      - name: 結果を push
+        run: |
+          git config user.name "paper-trail-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data inbox
+          git commit -m "papers: 更新" || exit 0
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 3))
+          done
+          exit 1
+      - name: サイトを組み立てる
+        run: |
+          mkdir -p _site/data
+          cp -r site/* _site/
+          cp data/*.json _site/data/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: process
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

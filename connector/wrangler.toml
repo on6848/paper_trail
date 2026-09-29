@@ -1,0 +1,6 @@
+name = "paper-trail-connector"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+PAPER_REPO = "on6848/paper_trail" # 自分のリポジトリに書き換える

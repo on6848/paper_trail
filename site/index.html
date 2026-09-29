@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>論文の足あと</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👣</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #EDF1F3; --surface: #F8FAFB; --ink: #17242C; --muted: #5B6B75; --line: #CBD5DB;
+  --code: #2B5AA6; --chat: #4E7D45; --manual: #A87A1E; --other: #8A969D;
+  --sans: "IBM Plex Sans JP", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --serif: "Source Serif 4", "Hiragino Mincho ProN", "Noto Serif JP", Georgia, serif;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121A1F; --surface: #1A242A; --ink: #E3EAEE; --muted: #93A3AC; --line: #2C3940;
+    --code: #7FA6E8; --chat: #8DBB7E; --manual: #D9AE55; --other: #6F7D85;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121A1F; --surface: #1A242A; --ink: #E3EAEE; --muted: #93A3AC; --line: #2C3940;
+  --code: #7FA6E8; --chat: #8DBB7E; --manual: #D9AE55; --other: #6F7D85;
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.7 var(--sans); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 64px; }
+a { color: inherit; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--code); outline-offset: 2px; }
+
+header { padding: 40px 0 8px; }
+h1 { font-family: var(--serif); font-weight: 600; font-size: 32px; line-height: 1.2; margin: 0; letter-spacing: .01em; }
+.lede { color: var(--muted); margin: 6px 0 0; }
+
+/* 足あとの帯：直近の日ごとの参照数を参照元別に積む */
+.trail { margin: 28px 0 6px; }
+.days { display: flex; align-items: flex-end; gap: 2px; height: 72px; border-bottom: 1px solid var(--line); }
+.day { flex: 1; display: flex; flex-direction: column-reverse; gap: 1px; min-width: 0; }
+.day span { display: block; border-radius: 1px; }
+.trail-axis { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); margin-top: 4px; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); margin-top: 10px; }
+.legend i, .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+.legend i { margin-right: 6px; vertical-align: 1px; }
+
+.controls { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 14px 0 12px; margin-top: 18px; border-bottom: 1px solid var(--line); }
+.search { width: 100%; padding: 10px 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+.chip { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 3px 12px; font-size: 13px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+select { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 3px 8px; font-size: 13px; }
+label.toggle { font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; margin-left: auto; }
+.count { font-size: 13px; color: var(--muted); margin: 14px 0 4px; }
+
+ol.papers { list-style: none; margin: 0; padding: 0; }
+.paper { padding: 18px 0 18px 16px; border-left: 3px solid var(--line); margin: 10px 0; }
+.paper.unverified { border-left-style: dashed; }
+.paper h2 { overflow-wrap: anywhere; font-family: var(--serif); font-weight: 600; font-size: 19px; line-height: 1.35; margin: 0; }
+.paper h2 a { text-decoration: none; }
+.paper h2 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.byline { color: var(--muted); font-size: 14px; margin-top: 4px; }
+.steps { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-top: 10px; font-size: 13px; color: var(--muted); }
+.steps .dot { width: 7px; height: 7px; }
+.steps .n { margin-left: 6px; }
+.flag { font-size: 13px; color: var(--manual); margin-top: 6px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag { font-size: 12px; border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; }
+.more { margin-top: 10px; border: 0; background: none; padding: 0; color: var(--code); cursor: pointer; font-size: 14px; }
+.detail { margin-top: 12px; padding: 14px 16px; background: var(--surface); border-radius: 6px; }
+.detail h3 { font-size: 13px; font-weight: 600; margin: 14px 0 4px; color: var(--muted); }
+.detail h3:first-child { margin-top: 0; }
+.detail p { margin: 0; max-width: 68ch; }
+.note { white-space: pre-wrap; }
+.history { list-style: none; margin: 0; padding: 0; font-size: 14px; }
+.history li { display: grid; grid-template-columns: 7.5em 1fr; gap: 8px; padding: 3px 0; }
+.history time { color: var(--muted); font-variant-numeric: tabular-nums; }
+.links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; font-size: 14px; }
+.links button { border: 1px solid var(--line); background: var(--bg); border-radius: 6px; padding: 2px 10px; cursor: pointer; }
+.empty { padding: 40px 0; color: var(--muted); max-width: 60ch; }
+.empty strong { color: var(--ink); }
+@media (max-width: 520px) {
+  h1 { font-size: 26px; }
+  label.toggle { margin-left: 0; }
+  .history li { grid-template-columns: 1fr; gap: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .detail { animation: open .18s ease-out; }
+  @keyframes open { from { opacity: 0; transform: translateY(-4px); } }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>論文の足あと</h1>
+    <p class="lede">Claude との作業中に参照した論文を、いつ・どこで読んだかと一緒に残しています。</p>
+  </header>
+
+  <section class="trail" aria-label="直近60日の参照数">
+    <div class="days" id="days"></div>
+    <div class="trail-axis"><span id="axis-from"></span><span>今日</span></div>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <div class="controls">
+    <input class="search" id="q" type="search" placeholder="タイトル・著者・概要・メモで検索" aria-label="検索">
+    <div class="row" id="sources" role="group" aria-label="参照元で絞り込む"></div>
+    <div class="row">
+      <select id="project" aria-label="プロジェクト"></select>
+      <select id="sort" aria-label="並び順">
+        <option value="recent">最近参照した順</option>
+        <option value="count">参照回数が多い順</option>
+        <option value="year">発表年が新しい順</option>
+        <option value="added">最初に参照した順</option>
+      </select>
+      <label class="toggle"><input type="checkbox" id="showUnverified" checked> 未確認も表示</label>
+    </div>
+  </div>
+
+  <p class="count" id="count" aria-live="polite"></p>
+  <ol class="papers" id="list"></ol>
+</div>
+
+<script>
+const SOURCES = {
+  "claude-code": { label: "Claude Code", color: "var(--code)" },
+  "chat": { label: "チャット", color: "var(--chat)" },
+  "manual": { label: "手動", color: "var(--manual)" },
+  "other": { label: "その他", color: "var(--other)" },
+};
+const srcOf = (s) => (SOURCES[s] ? s : "other");
+const state = { q: "", source: "all", project: "all", sort: "recent", showUnverified: true, open: new Set() };
+let papers = [], notes = {};
+
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmtDate = (iso) => { const d = new Date(iso); return isNaN(d) ? "" : `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()}`; };
+const dayKey = (d) => `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+
+async function load() {
+  try {
+    const [p, n] = await Promise.all([
+      fetch("data/papers.json", { cache: "no-store" }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+      fetch("data/notes.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
+    ]);
+    papers = p.papers || [];
+    notes = n || {};
+    document.getElementById("count").dataset.updated = p.updated ? fmtDate(p.updated) : "";
+    buildControls();
+    drawTrail();
+    render();
+  } catch (e) {
+    document.getElementById("list").innerHTML = `<li class="empty"><strong>papers.json を読み込めませんでした（${esc(e.message)}）。</strong><br>GitHub Actions の「papers」が最後まで成功しているか確認してください。</li>`;
+  }
+}
+
+function buildControls() {
+  const used = new Set(papers.flatMap((p) => p.refs.map((r) => srcOf(r.source))));
+  const chips = [["all", "すべて"], ...Object.keys(SOURCES).filter((k) => used.has(k)).map((k) => [k, SOURCES[k].label])];
+  const box = document.getElementById("sources");
+  box.innerHTML = chips.map(([k, l]) => `<button class="chip" data-src="${k}" aria-pressed="${k === state.source}">${esc(l)}</button>`).join("");
+  box.onclick = (e) => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    state.source = b.dataset.src;
+    box.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", c === b));
+    render();
+  };
+  const projects = [...new Set(papers.flatMap((p) => p.refs.map((r) => r.project).filter(Boolean)))].sort();
+  const sel = document.getElementById("project");
+  sel.innerHTML = `<option value="all">すべてのプロジェクト</option>` + projects.map((x) => `<option>${esc(x)}</option>`).join("");
+  sel.hidden = projects.length === 0;
+  document.getElementById("legend").innerHTML = Object.keys(SOURCES).filter((k) => used.has(k))
+    .map((k) => `<span><i style="background:${SOURCES[k].color}"></i>${SOURCES[k].label}</span>`).join("");
+}
+
+function drawTrail() {
+  const DAYS = 60, today = new Date(), buckets = {};
+  papers.forEach((p) => p.refs.forEach((r) => {
+    const k = dayKey(new Date(r.at)); (buckets[k] ||= {})[srcOf(r.source)] = (buckets[k]?.[srcOf(r.source)] || 0) + 1;
+  }));
+  const cols = [];
+  let max = 1;
+  for (let i = DAYS - 1; i >= 0; i--) {
+    const d = new Date(today); d.setDate(today.getDate() - i);
+    const b = buckets[dayKey(d)] || {};
+    max = Math.max(max, Object.values(b).reduce((a, c) => a + c, 0));
+    cols.push({ d, b });
+  }
+  const unit = 68 / max;
+  document.getElementById("days").innerHTML = cols.map(({ d, b }) => {
+    const total = Object.values(b).reduce((a, c) => a + c, 0);
+    const bars = Object.keys(SOURCES).filter((k) => b[k]).map((k) => `<span style="height:${Math.max(2, b[k] * unit - 1)}px;background:${SOURCES[k].color}"></span>`).join("");
+    return `<div class="day" title="${fmtDate(d)}：${total}件">${bars}</div>`;
+  }).join("");
+  document.getElementById("axis-from").textContent = fmtDate(cols[0].d);
+}
+
+function matches(p) {
+  if (!state.showUnverified && !p.verified) return false;
+  if (state.source !== "all" && !p.refs.some((r) => srcOf(r.source) === state.source)) return false;
+  if (state.project !== "all" && !p.refs.some((r) => r.project === state.project)) return false;
+  if (!state.q) return true;
+  const n = notes[p.key] || {};
+  const hay = [p.title, (p.authors || []).join(" "), p.venue, p.abstract, p.tldr, n.note, (n.tags || []).join(" "),
+    ...p.refs.map((r) => `${r.context || ""} ${r.project || ""}`)].join(" ").toLowerCase();
+  return state.q.toLowerCase().split(/\s+/).every((w) => hay.includes(w));
+}
+
+const sorters = {
+  recent: (a, b) => (b.lastSeen || "").localeCompare(a.lastSeen || ""),
+  count: (a, b) => b.refs.length - a.refs.length || sorters.recent(a, b),
+  year: (a, b) => (b.year || 0) - (a.year || 0) || sorters.recent(a, b),
+  added: (a, b) => (a.firstSeen || "").localeCompare(b.firstSeen || ""),
+};
+
+function authorsLine(p) {
+  const a = p.authors || [];
+  const who = a.length > 3 ? `${a.slice(0, 3).join(", ")} ほか` : a.join(", ");
+  return [who, p.venue, p.year].filter(Boolean).map(esc).join("、");
+}
+
+function render() {
+  const shown = papers.filter(matches).sort(sorters[state.sort]);
+  const upd = document.getElementById("count").dataset.updated;
+  document.getElementById("count").textContent = papers.length
+    ? `${papers.length}本中 ${shown.length}本を表示${upd ? `（最終更新 ${upd}）` : ""}` : "";
+  const list = document.getElementById("list");
+  if (!papers.length) {
+    list.innerHTML = `<li class="empty"><strong>まだ論文がありません。</strong><br>GitHub の Actions タブで「papers」を選び、Run workflow から論文の URL を入れると最初の1本が追加されます。</li>`;
+    return;
+  }
+  if (!shown.length) { list.innerHTML = `<li class="empty">条件に合う論文はありません。検索語か絞り込みを変えてください。</li>`; return; }
+  list.innerHTML = shown.map((p) => {
+    const n = notes[p.key] || {};
+    const refs = p.refs.slice(-16);
+    const steps = refs.map((r) => `<span class="dot" style="background:${SOURCES[srcOf(r.source)].color}" title="${fmtDate(r.at)} ${SOURCES[srcOf(r.source)].label}"></span>`).join("");
+    const open = state.open.has(p.key);
+    const link = p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title);
+    return `<li class="paper${p.verified ? "" : " unverified"}" data-key="${esc(p.key)}">
+      <h2>${link}</h2>
+      ${p.verified ? `<div class="byline">${authorsLine(p)}</div>` : `<div class="flag">未確認：論文データベースで見つかりませんでした。実在するか確かめてください。</div>`}
+      ${p.matchedByTitle ? `<div class="flag">タイトル検索で一致した論文です。別の論文の可能性があります。</div>` : ""}
+      ${(n.tags || []).length ? `<div class="tags">${n.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
+      <div class="steps">${p.refs.length > 16 ? "…" : ""}${steps}<span class="n">${p.refs.length}回参照、最後は${fmtDate(p.lastSeen)}</span></div>
+      <button class="more" aria-expanded="${open}">${open ? "閉じる" : "詳しく見る"}</button>
+      ${open ? detail(p, n) : ""}
+    </li>`;
+  }).join("");
+}
+
+function detail(p, n) {
+  const summary = p.tldr || p.abstract;
+  const ids = p.ids || {};
+  const links = [
+    p.pdf && `<a href="${esc(p.pdf)}" target="_blank" rel="noopener">PDF</a>`,
+    ids.arxiv && `<a href="https://arxiv.org/abs/${esc(ids.arxiv)}" target="_blank" rel="noopener">arXiv</a>`,
+    ids.doi && `<a href="https://doi.org/${esc(ids.doi)}" target="_blank" rel="noopener">DOI</a>`,
+    ids.s2 && `<a href="https://www.semanticscholar.org/paper/${esc(ids.s2)}" target="_blank" rel="noopener">Semantic Scholar</a>`,
+    p.verified && `<button data-bib="${esc(p.key)}">BibTeX をコピー</button>`,
+  ].filter(Boolean).join("");
+  return `<div class="detail">
+    ${summary ? `<h3>${p.tldr ? "要点（TLDR）" : "概要"}</h3><p>${esc(summary)}</p>` : ""}
+    ${p.tldr && p.abstract ? `<details><summary style="cursor:pointer;margin-top:8px;font-size:14px;color:var(--muted)">概要の全文</summary><p style="margin-top:6px">${esc(p.abstract)}</p></details>` : ""}
+    ${n.note ? `<h3>自分のメモ</h3><p class="note">${esc(n.note)}</p>` : ""}
+    <h3>参照の履歴</h3>
+    <ul class="history">${[...p.refs].reverse().map((r) => `<li><time>${fmtDate(r.at)}</time><span><span class="dot" style="background:${SOURCES[srcOf(r.source)].color};margin-right:6px"></span>${esc(SOURCES[srcOf(r.source)].label)}${r.project ? `（${esc(r.project)}）` : ""}${r.context ? `：${esc(r.context)}` : ""}</span></li>`).join("")}</ul>
+    ${p.citationCount != null ? `<h3>被引用数</h3><p>${p.citationCount}</p>` : ""}
+    <div class="links">${links}</div>
+  </div>`;
+}
+
+function bibtex(p) {
+  const last = ((p.authors || [])[0] || "anon").split(/\s+/).pop().replace(/[^A-Za-z]/g, "").toLowerCase() || "anon";
+  const word = (p.title || "").split(/\s+/).find((w) => w.length > 3)?.replace(/[^A-Za-z]/g, "").toLowerCase() || "paper";
+  const ids = p.ids || {};
+  const venue = p.venue && p.venue !== "arXiv" ? p.venue : null;
+  const f = [
+    ["title", `{${p.title}}`], ["author", (p.authors || []).join(" and ")], ["year", p.year],
+    venue && [/conf|proc|symposium|workshop|vis\b/i.test(venue) ? "booktitle" : "journal", venue],
+    ids.doi && ["doi", ids.doi],
+    ids.arxiv && ["eprint", ids.arxiv], ids.arxiv && ["archivePrefix", "arXiv"],
+    p.url && ["url", p.url],
+  ].filter((x) => x && x[1]);
+  const type = venue ? (/conf|proc|symposium|workshop|vis\b/i.test(venue) ? "inproceedings" : "article") : "misc";
+  return `@${type}{${last}${p.year || ""}${word},\n${f.map(([k, v]) => `  ${k} = {${v}}`).join(",\n")}\n}`;
+}
+
+document.getElementById("list").addEventListener("click", async (e) => {
+  const more = e.target.closest(".more");
+  if (more) {
+    const key = more.closest(".paper").dataset.key;
+    state.open.has(key) ? state.open.delete(key) : state.open.add(key);
+    render();
+    return;
+  }
+  const bib = e.target.closest("[data-bib]");
+  if (bib) {
+    const p = papers.find((x) => x.key === bib.dataset.bib);
+    try { await navigator.clipboard.writeText(bibtex(p)); bib.textContent = "コピーしました"; }
+    catch { bib.textContent = "コピーできませんでした"; }
+    setTimeout(() => (bib.textContent = "BibTeX をコピー"), 1600);
+  }
+});
+document.getElementById("q").addEventListener("input", (e) => { state.q = e.target.value.trim(); render(); });
+document.getElementById("project").addEventListener("change", (e) => { state.project = e.target.value; render(); });
+document.getElementById("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+document.getElementById("showUnverified").addEventListener("change", (e) => { state.showUnverified = e.target.checked; render(); });
+load();
+</script>
+</body>
+</html>
