@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T20:49:12+00:00",
+ "updated": "2026-09-29T20:51:33+00:00",
  "papers": [
   {
    "refs": [
@@ -16,6 +16,13 @@
      "project": null,
      "context": "卒論（Storyline可視化）の先行研究として記録",
      "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e"
+    },
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "場所を背景の色帯にするストーリーラインの例として紹介",
+     "url": null
     }
    ],
    "title": "StoryFlow: Tracking the Evolution of Stories",
@@ -41,7 +48,482 @@
    "key": "doi:10.1109/tvcg.2013.196",
    "verified": true,
    "firstSeen": "2026-09-29T20:21:38+00:00",
-   "lastSeen": "2026-09-29T20:48:46Z"
+   "lastSeen": "2026-09-29T20:50:20Z",
+   "matchedByTitle": true
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "源氏物語の可視化案でストーリーライン図の代表例として紹介",
+     "url": null
+    }
+   ],
+   "title": "Design Considerations for Optimizing Storyline Visualizations",
+   "authors": [
+    "Y. Tanahashi",
+    "K. Ma"
+   ],
+   "year": 2012,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 214,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/a88d7d5bed8f7b30b5ac50a1b250000ec4913f66",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "a88d7d5bed8f7b30b5ac50a1b250000ec4913f66",
+    "doi": "10.1109/tvcg.2012.212"
+   },
+   "key": "doi:10.1109/tvcg.2012.212",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "書簡の向き表現で先細りの辺を採用した根拠",
+     "url": null
+    }
+   ],
+   "title": "A user study on visualizing directed edges in graphs",
+   "authors": [
+    "Danny Holten",
+    "J. V. van Wijk"
+   ],
+   "year": 2009,
+   "venue": "International Conference on Human Factors in Computing Systems",
+   "abstract": null,
+   "tldr": "Five additional directed-edge representations using combinations of shape and color are developed and a user study is performed in which subjects performed different tasks on a collection of graphs using these representations and combinations to investigate which representation is best in terms of speed and accuracy.",
+   "citationCount": 155,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/902702d8e3a5eed4617316e429255df7891a40e6",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "902702d8e3a5eed4617316e429255df7891a40e6",
+    "doi": "10.1145/1518701.1519054"
+   },
+   "key": "doi:10.1145/1518701.1519054",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "先細りの辺が他の静的表現より優れることの追加根拠",
+     "url": null
+    }
+   ],
+   "title": "An extended evaluation of the readability of tapered, animated, and textured directed-edge representations in node-link graphs",
+   "authors": [
+    "Danny Holten",
+    "Petra Isenberg",
+    "J. V. Wijk",
+    "Jean-Daniel Fekete"
+   ],
+   "year": 2011,
+   "venue": "IEEE Pacific Visualization Symposium",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 115,
+   "pdf": "https://pure.tue.nl/ws/files/3484069/Metis253959.pdf",
+   "url": "https://www.semanticscholar.org/paper/0269bd2ccddf36309869e37b1bfb964d7921e800",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "0269bd2ccddf36309869e37b1bfb964d7921e800",
+    "doi": "10.1109/pacificvis.2011.5742390"
+   },
+   "key": "doi:10.1109/pacificvis.2011.5742390",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "key": "title:dynamic network visualization with extended massive sequence views",
+   "title": "Dynamic Network Visualization with Extended Massive Sequence Views",
+   "authors": [],
+   "year": null,
+   "venue": null,
+   "abstract": null,
+   "tldr": null,
+   "citationCount": null,
+   "pdf": null,
+   "url": null,
+   "ids": {
+    "title": "dynamic network visualization with extended massive sequence views"
+   },
+   "verified": false,
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "人物を横線・書簡を縦線にするMSV型の根拠、TAMの出典",
+     "url": null
+    }
+   ],
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "行列のまま時間を扱う場合の対案として紹介",
+     "url": null
+    }
+   ],
+   "title": "Visualizing dynamic networks with matrix cubes",
+   "authors": [
+    "Benjamin Bach",
+    "Emmanuel Pietriga",
+    "Jean-Daniel Fekete"
+   ],
+   "year": 2014,
+   "venue": "International Conference on Human Factors in Computing Systems",
+   "abstract": "Designing visualizations of dynamic networks is challenging, both because the data sets tend to be complex and because the tasks associated with them are often cognitively demand- ing. We introduce the Matrix Cube, a novel visual representation and navigation model for dynamic networks, inspired by the way people comprehend and manipulate physical cubes. Users can change their perspective on the data by rotating or decomposing the 3D cube. These manipulations can produce a range of different 2D visualizations that emphasize specific aspects of the dynamic network suited to particular analysis tasks. We describe Matrix Cubes and the interactions that can be performed on them in the Cubix system. We then show how two domain experts, an astronomer and a neurologist, used Cubix to explore and report on their own network data.",
+   "tldr": "The Matrix Cube is introduced, a novel visual representation and navigation model for dynamic networks inspired by the way people comprehend and manipulate physical cubes that can produce a range of different 2D visualizations that emphasize specific aspects of the dynamic network suited to particular analysis tasks.",
+   "citationCount": 151,
+   "pdf": "https://inria.hal.science/hal-00931911/document",
+   "url": "https://www.semanticscholar.org/paper/21256c969d3807e358b1220f33b8721ec5828f1b",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "21256c969d3807e358b1220f33b8721ec5828f1b",
+    "doi": "10.1145/2556288.2557010"
+   },
+   "key": "doi:10.1145/2556288.2557010",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "ノードを横線・辺を縦線にし対角線の無駄をなくす根拠",
+     "url": null
+    }
+   ],
+   "title": "Combing the hairball with BioFabric: a new approach for visualization of large networks",
+   "authors": [
+    "W. Longabaugh"
+   ],
+   "year": 2012,
+   "venue": "BMC Bioinformatics",
+   "abstract": "The analysis of large, complex networks is an important aspect of ongoing biological research. Yet there is a need for entirely new, scalable approaches for network visualization that can provide more insight into the structure and function of these complex networks. To address this need, we have developed a software tool named BioFabric, which uses a novel network visualization technique that depicts nodes as one-dimensional horizontal lines arranged in unique rows. This is in distinct contrast to the traditional approach that represents nodes as discrete symbols that behave essentially as zero-dimensional points. BioFabric then depicts each edge in the network using a vertical line assigned to its own unique column, which spans between the source and target rows, i.e. nodes. This method of displaying the network allows a full-scale view to be organized in a rational fashion; interesting network structures, such as sets of nodes with similar connectivity, can be quickly scanned and visually identified in the full network view, even in networks with well over 100,000 edges. This approach means that the network is being represented as a fundamentally linear, sequential entity, where the horizontal scroll bar provides the basic navigation tool for browsing the entire network. BioFabric provides a novel and powerful way of looking at any size of network, including very large networks, using horizontal lines to represent nodes and vertical lines to represent edges. It is freely available as an open-source Java application.",
+   "tldr": "A software tool named BioFabric, which uses a novel network visualization technique that depicts nodes as one-dimensional horizontal lines arranged in unique rows, in distinct contrast to the traditional approach that represents nodes as discrete symbols that behave essentially as zero-dimensional points.",
+   "citationCount": 66,
+   "pdf": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-13-275",
+   "url": "https://www.semanticscholar.org/paper/3b9b29581b30bb3c1b3418d3f129881e5917704d",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "3b9b29581b30bb3c1b3418d3f129881e5917704d",
+    "doi": "10.1186/1471-2105-13-275"
+   },
+   "key": "doi:10.1186/1471-2105-13-275",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "関連研究を洗う起点として勧めた動的グラフ可視化サーベイ",
+     "url": null
+    }
+   ],
+   "title": "The State of the Art in Visualizing Dynamic Graphs",
+   "authors": [
+    "Fabian Beck",
+    "Michael Burch",
+    "S. Diehl",
+    "D. Weiskopf"
+   ],
+   "year": 2014,
+   "venue": "Eurographics Conference on Visualization",
+   "abstract": null,
+   "tldr": "A hierarchical taxonomy of techniques is derived by systematically categorizing and tagging techniques in dynamic graph visualization and identifying the representation of time as the major distinguishing feature for dynamic graph visualizations.",
+   "citationCount": 260,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/a4db7fdb7224456e98bd41b6803b5fb29296ec01",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "a4db7fdb7224456e98bd41b6803b5fb29296ec01",
+    "doi": "10.2312/eurovisstar.20141174"
+   },
+   "key": "doi:10.2312/eurovisstar.20141174",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "並び替え最適化の厳密解（ILP）の土台として紹介",
+     "url": null
+    }
+   ],
+   "title": "Crossing Minimization in Storyline Visualization",
+   "authors": [
+    "M. Gronemann",
+    "M. Jünger",
+    "F. Liers",
+    "Francesco Mambelli"
+   ],
+   "year": 2016,
+   "venue": "International Symposium Graph Drawing and Network Visualization",
+   "abstract": "A storyline visualization is a layout that represents the temporal dynamics of social interactions along time by the convergence of chronological lines. Among the criteria oriented at improving aesthetics and legibility of a representation of this type, a small number of line crossings is the hardest to achieve. We model the crossing minimization in the storyline visualization problem as a multi-layer crossing minimization problem with tree constraints. Our algorithm can compute a layout with the minimum number of crossings of the chronological lines. Computational results demonstrate that it can solve instances with more than 100 interactions and with more than 100 chronological lines to optimality.",
+   "tldr": "The algorithm can compute a layout with the minimum number of crossings of the chronological lines in a storyline visualization problem as a multi-layer crossing minimization problem with tree constraints.",
+   "citationCount": 40,
+   "pdf": "https://arxiv.org/pdf/1608.08027",
+   "url": "https://www.semanticscholar.org/paper/ceb225d434b1c3b192e6b57b0e590eca3914e2be",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "ceb225d434b1c3b192e6b57b0e590eca3914e2be",
+    "arxiv": "1608.08027",
+    "doi": "10.1007/978-3-319-50106-2_29"
+   },
+   "key": "arxiv:1608.08027",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "縦線の長さを間の人数で数えるコスト定義の先行例",
+     "url": null
+    }
+   ],
+   "title": "On Minimizing Crossings in Storyline Visualizations",
+   "authors": [
+    "I. Kostitsyna",
+    "M. Nöllenburg",
+    "V. Polishchuk",
+    "André Schulz",
+    "Darren Strash"
+   ],
+   "year": 2015,
+   "venue": "International Symposium Graph Drawing and Network Visualization",
+   "abstract": "In a storyline visualization, we visualize a collection of interacting characters e.g., in a movie, play, etc. by x-monotone curves that converge for each interaction, and diverge otherwise. Given a storyline with n characters, we show tight lower and upper bounds on the number of crossings required in any storyline visualization for a restricted case. In particular, we show that if 1 each meeting consists of exactly two characters and 2 the meetings can be modeled as a tree, then we can always find a storyline visualization with $$On\\log n$$ crossings. Furthermore, we show that there exist storylines in this restricted case that require $$\\varOmega n\\log n$$ crossings. Lastly, we show that, in the general case, minimizing the number of crossings in a storyline visualization is fixed-parameter tractable, when parameterized on the number of characters k. Our algorithm runs in time $$Ok!^2k\\log k + k!^2m$$, where m is the number of meetings.",
+   "tldr": "This work shows tight lower and upper bounds on the number of crossings required in any storyline visualization for a restricted case, and shows that, in the general case, minimizing theNumber of crossings in a storyline visualization is fixed-parameter tractable, when parameterized on thenumber of characters k.",
+   "citationCount": 29,
+   "pdf": "https://link.springer.com/content/pdf/10.1007/978-3-319-27261-0_16.pdf",
+   "url": "https://www.semanticscholar.org/paper/106e7ffc2ebe1decc52a01fca9e1d9b864e762b4",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "106e7ffc2ebe1decc52a01fca9e1d9b864e762b4",
+    "arxiv": "1509.00442",
+    "doi": "10.1007/978-3-319-27261-0_16"
+   },
+   "key": "arxiv:1509.00442",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "向きのある辺を持つストーリーライン系手法の例",
+     "url": null
+    }
+   ],
+   "title": "Tracing genealogical data with TimeNets",
+   "authors": [
+    "Nam Wook Kim",
+    "S. Card",
+    "Jeffrey Heer"
+   ],
+   "year": 2010,
+   "venue": "International Working Conference on Advanced Visual Interfaces",
+   "abstract": null,
+   "tldr": "TimeNets, a new visualization technique for genealogical data that facilitates perception of temporal trends and provides a substrate for communicating non-hierarchical patterns such as divorce, remarriage, and plural marriage is presented.",
+   "citationCount": 89,
+   "pdf": "http://hci.stanford.edu/jheer/files/2010-TimeNets-AVI.pdf",
+   "url": "https://www.semanticscholar.org/paper/24f0231e58fc41ee6c293f31b3eeb2244215da62",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "24f0231e58fc41ee6c293f31b3eeb2244215da62",
+    "doi": "10.1145/1842993.1843035"
+   },
+   "key": "doi:10.1145/1842993.1843035",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "時間軸上で人物を弧で結ぶ動的ネットワーク可視化の先行研究",
+     "url": null
+    }
+   ],
+   "title": "TimeArcs: Visualizing Fluctuations in Dynamic Networks",
+   "authors": [
+    "T. Dang",
+    "Nick Pendar",
+    "A. Forbes"
+   ],
+   "year": 2016,
+   "venue": "Computer graphics forum (Print)",
+   "abstract": null,
+   "tldr": "TimeArcs is introduced, a novel visualization technique for representing dynamic relationships between entities in a network that combines multiple force‐directed layouts at different time points into a single comprehensive visualization that provides a big picture overview of the most significant clusters within a user‐defined period of time.",
+   "citationCount": 66,
+   "pdf": "https://escholarship.org/content/qt5688d0x6/qt5688d0x6.pdf?t=p2n5pt",
+   "url": "https://www.semanticscholar.org/paper/9097271beb6ea506fbf7308c5149ca1252f37bed",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "9097271beb6ea506fbf7308c5149ca1252f37bed",
+    "doi": "10.1111/cgf.12882"
+   },
+   "key": "doi:10.1111/cgf.12882",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "書簡ストーリーライン案に最も近い先行研究、デモの拡張元",
+     "url": "https://arxiv.org/abs/1412.6706"
+    }
+   ],
+   "title": "SVEN: Informative Visual Representation of Complex Dynamic Structure",
+   "authors": [
+    "Dustin L. Arendt",
+    "Leslie M. Blaha"
+   ],
+   "year": 2014,
+   "venue": "arXiv",
+   "abstract": "Graphs change over time, and typically variations on the small multiples or animation pattern is used to convey this dynamism visually. However, both of these classical techniques have significant drawbacks, so a new approach, Storyline Visualization of Events on a Network (SVEN) is proposed. SVEN builds on storyline techniques, conveying nodes as contiguous lines over time. SVEN encodes time in a natural manner, along the horizontal axis, and optimizes the vertical placement of storylines to decrease clutter (line crossings, straightness, and bends) in the drawing. This paper demonstrates SVEN on several different flavors of real-world dynamic data, and outlines the remaining near-term future work.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/1412.6706",
+   "url": "https://arxiv.org/abs/1412.6706",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "1412.6706"
+   },
+   "key": "arxiv:1412.6706",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "ストーリーラインを時刻ごとの順列の列として定式化する根拠",
+     "url": null
+    }
+   ],
+   "title": "Storyline Visualizations with Ubiquitous Actors",
+   "authors": [
+    "E. Di Giacomo",
+    "W. Didimo",
+    "G. Liotta",
+    "F. Montecchiani",
+    "Alessandra Tappini"
+   ],
+   "year": 2020,
+   "venue": "International Symposium Graph Drawing and Network Visualization",
+   "abstract": "Storyline visualizations depict the temporal dynamics of social interactions, as they describe how groups of actors (individuals or organizations) change over time. A common constraint in storyline visualizations is that an actor cannot belong to two different groups at the same time instant. However, this constraint may be too severe in some application scenarios, thus we generalize the model by allowing an actor to simultaneously belong to distinct groups at any point in time. We call this model Storyline with Ubiquitous Actors (SUA). Essential to our model is that an actor is represented as a tree rather than a single line. We describe an algorithmic pipeline to compute storyline visualizations in the SUA model and discuss case studies on publication data.",
+   "tldr": "This work generalizes the model Storyline with Ubiquitous Actors by allowing an actor to simultaneously belong to distinct groups at any point in time, and describes an algorithmic pipeline to compute storyline visualizations in the SUA model.",
+   "citationCount": 20,
+   "pdf": "https://arxiv.org/pdf/2008.04125",
+   "url": "https://www.semanticscholar.org/paper/65472aceaeb5843ab3a135aaef72497931e3eda9",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "65472aceaeb5843ab3a135aaef72497931e3eda9",
+    "arxiv": "2008.04125",
+    "doi": "10.1007/978-3-030-68766-3_25"
+   },
+   "key": "arxiv:2008.04125",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "ストーリーライン可視化の最新サーベイ（CGF 2026）として紹介",
+     "url": null
+    }
+   ],
+   "title": "The\n Story(line)\n So Far: A Survey on Storyline Visualization",
+   "authors": [
+    "S. Di Bartolomeo",
+    "A. Dobler",
+    "V. Filipov",
+    "M. Nöllenburg",
+    "H. Ehlers"
+   ],
+   "year": 2026,
+   "venue": "Computer graphics forum (Print)",
+   "abstract": "\n Storyline visualizations model narratives as temporal networks, using x‐monotone lines to represent entities and their interactions over time. This technique offers an intuitive way to reveal structural patterns over time, such as character co‐occurrence and narrative flow. Storylines represent a visualization approach with growing interest from the visualization community and applications in diverse contexts. Researchers have developed various layout algorithms and formalized a set of optimization objectives with the goal of automating their generation and balancing their readability, graph aesthetics, and efficiency. These methods vary in their algorithmic formulations and implementations as well as the visual elements they support, such as labels, grouping, or continuity preservation across time. This state‐of‐the‐art report maps the current landscape of storyline visualization approaches, with a specific focus on the visual structures, optimization objectives, and the characteristic of the layout algorithms that generate these.",
+   "tldr": "This state‐of‐the‐art report maps the current landscape of storyline visualization approaches, with a specific focus on the visual structures, optimization objectives, and the characteristic of the layout algorithms that generate these.",
+   "citationCount": 0,
+   "pdf": "https://doi.org/10.1111/cgf.70499",
+   "url": "https://www.semanticscholar.org/paper/584c01df65dc14b6a7f9f3ecfd72e5d9417e89db",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "584c01df65dc14b6a7f9f3ecfd72e5d9417e89db",
+    "doi": "10.1111/cgf.70499"
+   },
+   "key": "doi:10.1111/cgf.70499",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T20:50:20Z"
   },
   {
    "refs": [
