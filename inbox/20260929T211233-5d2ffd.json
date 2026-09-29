@@ -1,0 +1,50 @@
+[
+ {
+  "url": "2008.09552",
+  "title": "In Search of Patient Zero: Visual Analytics of Pathogen Transmission Pathways in Hospitals",
+  "context": "要約:院内感染の伝播経路を接触と検査データから追跡。新規性:storylineを時系列接触網に拡張し感染候補を強調",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:12:24Z"
+ },
+ {
+  "url": "2408.08992",
+  "title": "SpreadLine: Visualizing Egocentric Dynamic Influence",
+  "context": "要約:1人を中心に周囲との関係と影響の時間変化を表示。新規性:storylineをエゴセントリックな動的影響に適用",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:12:24Z"
+ },
+ {
+  "url": "1412.6706",
+  "title": "SVEN: Informative Visual Representation of Complex Dynamic Structure",
+  "context": "要約:動的グラフの構造変化を線の合流と分岐で表示。新規性:storyline手法を一般の動的ネットワークへ拡張",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:12:24Z"
+ },
+ {
+  "url": "10.1371/journal.pone.0137502",
+  "title": "Netgram: Visualizing Communities in Evolving Networks",
+  "context": "要約:進化するネットワークのコミュニティの分裂と統合を線で追跡。新規性:交差を減らす線ベースの追跡表現",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:12:24Z"
+ },
+ {
+  "url": "",
+  "title": "Software Evolution Storylines",
+  "context": "要約:開発履歴から開発者の協力関係を時系列で表示。新規性:xkcd型storylineを初めて自動生成し論文化",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:12:24Z"
+ },
+ {
+  "url": "",
+  "title": "Geo-Storylines: Integrating Maps into Storyline Visualizations",
+  "context": "要約:storylineに地図情報を統合。新規性:時間と場所を1つのビューで扱う設計の選択肢を整理し提示",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:12:24Z"
+ }
+]
