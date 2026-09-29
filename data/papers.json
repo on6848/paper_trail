@@ -1,4 +1,77 @@
 {
- "updated": "2026-09-29T20:21:33+00:00",
- "papers": []
+ "updated": "2026-09-29T20:22:07+00:00",
+ "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:21:38+00:00",
+     "source": "manual",
+     "project": null,
+     "context": "動作確認",
+     "url": "https://arxiv.org/abs/1706.03762"
+    }
+   ],
+   "title": "Attention Is All You Need",
+   "authors": [
+    "Ashish Vaswani",
+    "Noam Shazeer",
+    "Niki Parmar",
+    "Jakob Uszkoreit",
+    "Llion Jones",
+    "Aidan N. Gomez",
+    "Lukasz Kaiser",
+    "Illia Polosukhin"
+   ],
+   "year": 2017,
+   "venue": "arXiv",
+   "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/1706.03762",
+   "url": "https://arxiv.org/abs/1706.03762",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "1706.03762"
+   },
+   "key": "arxiv:1706.03762",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:21:38+00:00",
+   "lastSeen": "2026-09-29T20:21:38+00:00"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:21:38+00:00",
+     "source": "manual",
+     "project": null,
+     "context": "動作確認",
+     "url": "https://doi.org/10.1109/TVCG.2013.196"
+    }
+   ],
+   "title": "StoryFlow: Tracking the Evolution of Stories",
+   "authors": [
+    "Shixia Liu",
+    "Yingcai Wu",
+    "Enxun Wei",
+    "Mengchen Liu",
+    "Yang Liu"
+   ],
+   "year": 2013,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 241,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
+    "doi": "10.1109/tvcg.2013.196"
+   },
+   "key": "doi:10.1109/tvcg.2013.196",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:21:38+00:00",
+   "lastSeen": "2026-09-29T20:21:38+00:00"
+  }
+ ]
 }
