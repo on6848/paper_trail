@@ -1,6 +1,149 @@
 {
- "updated": "2026-09-29T21:10:13+00:00",
+ "updated": "2026-09-29T21:12:49+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:09:31Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。院内感染の感染源と伝播経路を可視化",
+     "url": "https://arxiv.org/abs/2008.09552"
+    }
+   ],
+   "title": "In Search of Patient Zero: Visual Analytics of Pathogen Transmission Pathways in Hospitals",
+   "authors": [
+    "T. Baumgartl",
+    "M. Petzold",
+    "M. Wunderlich",
+    "M. Höhn",
+    "D. Archambault",
+    "M. Lieser",
+    "A. Dalpke",
+    "S. Scheithauer",
+    "M. Marschollek",
+    "V. M. Eichel",
+    "N. T. Mutters",
+    "HiGHmed Consortium",
+    "T. von Landesberger"
+   ],
+   "year": 2020,
+   "venue": "arXiv",
+   "abstract": "Pathogen outbreaks (i.e., outbreaks of bacteria and viruses) in hospitals can cause high mortality rates and increase costs for hospitals significantly. An outbreak is generally noticed when the number of infected patients rises above an endemic level or the usual prevalence of a pathogen in a defined population. Reconstructing transmission pathways back to the source of an outbreak -- the patient zero or index patient -- requires the analysis of microbiological data and patient contacts. This is often manually completed by infection control experts. We present a novel visual analytics approach to support the analysis of transmission pathways, patient contacts, the progression of the outbreak, and patient timelines during hospitalization. Infection control experts applied our solution to a real outbreak of Klebsiella pneumoniae in a large German hospital. Using our system, our experts were able to scale the analysis of transmission pathways to longer time intervals (i.e., several years of data instead of days) and across a larger number of wards. Also, the system is able to reduce the analysis time from days to hours. In our final study, feedback from twenty-five experts from seven German hospitals provides evidence that our solution brings significant benefits for analyzing outbreaks. It is also applicable to COVID-19 hospital-associated transmissions.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/2008.09552",
+   "url": "https://arxiv.org/abs/2008.09552",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "2008.09552",
+    "doi": "10.1109/tvcg.2020.3030437"
+   },
+   "key": "arxiv:2008.09552",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:09:31Z",
+   "lastSeen": "2026-09-29T21:09:31Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:09:31Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。個人中心の影響関係の時間変化を可視化",
+     "url": "https://arxiv.org/abs/2408.08992"
+    }
+   ],
+   "title": "SpreadLine: Visualizing Egocentric Dynamic Influence",
+   "authors": [
+    "Yun-Hsin Kuo",
+    "Dong-Yu Liu",
+    "Kwan-Liu Ma"
+   ],
+   "year": 2024,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": "Egocentric networks, often visualized as node-link diagrams, portray the complex relationship (link) dynamics between an entity (node) and others. However, common analytics tasks are multifaceted, encompassing interactions among four key aspects: strength, function, structure, and content. Current node-link visualization designs may fall short, focusing narrowly on certain aspects and neglecting the holistic, dynamic nature of egocentric networks. To bridge this gap, we introduce SpreadLine, a novel visualization framework designed to enable the visual exploration of egocentric networks from these four aspects at the microscopic level. Leveraging the intuitive appeal of storyline visualizations, SpreadLine adopts a storyline-based design to represent entities and their evolving relationships. We further encode essential topological information in the layout and condense the contextual information in a metro map metaphor, allowing for a more engaging and effective way to explore temporal and attribute-based information. To guide our work, with a thorough review of pertinent literature, we have distilled a task taxonomy that addresses the analytical needs specific to egocentric network exploration. Acknowledging the diverse analytical requirements of users, SpreadLine offers customizable encodings to enable users to tailor the framework for their tasks. We demonstrate the efficacy and general applicability of SpreadLine through three diverse real-world case studies (disease surveillance, social media trends, and academic career evolution) and a usability study.",
+   "tldr": "SpreadLine is introduced, a novel visualization framework designed to enable the visual exploration of egocentric networks from these four aspects at the microscopic level and offers customizable encodings to enable users to tailor the framework for their tasks.",
+   "citationCount": 6,
+   "pdf": "https://doi.org/10.1109/tvcg.2024.3456373",
+   "url": "https://www.semanticscholar.org/paper/a093c4af07b25c20628a8b3d57487a2b4186379c",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "a093c4af07b25c20628a8b3d57487a2b4186379c",
+    "arxiv": "2408.08992",
+    "doi": "10.1109/tvcg.2024.3456373"
+   },
+   "key": "arxiv:2408.08992",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:09:31Z",
+   "lastSeen": "2026-09-29T21:09:31Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:09:31Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。映画視聴中の視線データをstorylineで表示",
+     "url": null
+    }
+   ],
+   "title": "Storyline visualizations of eye tracking of movie viewing",
+   "authors": [
+    "J. Balint",
+    "Dustin L. Arendt",
+    "L. Blaha"
+   ],
+   "year": 2016,
+   "venue": "IEEE Workshop on Eye Tracking and Visualization",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 9,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/5cdf7fac2018ebf4e417627692492164ee2ef5ae",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "5cdf7fac2018ebf4e417627692492164ee2ef5ae",
+    "doi": "10.1109/etvis.2016.7851163"
+   },
+   "key": "doi:10.1109/etvis.2016.7851163",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:09:31Z",
+   "lastSeen": "2026-09-29T21:09:31Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:09:31Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。ニュース記事の登場人物と出来事を可視化",
+     "url": null
+    }
+   ],
+   "title": "NewsLines: Narrative Visualization of News Stories",
+   "authors": [
+    "Mariana Costa",
+    "Sérgio Nunes"
+   ],
+   "year": 2023,
+   "venue": "Text2Story@ECIR",
+   "abstract": null,
+   "tldr": "The development of NewsLine, an open-source web-based prototype that focuses on narrative visualizations of news content, produces a storyline which showcases the narrative’s events and participants, allowing the user to interact with the visualization in a number of ways.",
+   "citationCount": 4,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b"
+   },
+   "key": "s2:a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:09:31Z",
+   "lastSeen": "2026-09-29T21:09:31Z"
+  },
   {
    "refs": [
     {
@@ -613,23 +756,25 @@
    "title": "Story Ribbons: Reimagining Storyline Visualizations with Large Language Models",
    "authors": [
     "Catherine Yeh",
-    "Tara Menon",
+    "T. Menon",
     "Robin Singh Arya",
-    "Helen He",
+    "He He",
     "Moira Weigel",
     "Fernanda Viégas",
-    "Martin Wattenberg"
+    "M. Wattenberg"
    ],
    "year": 2025,
-   "venue": "arXiv",
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
    "abstract": "Analyzing literature involves tracking interactions between characters, locations, and themes. Visualization has the potential to facilitate the mapping and analysis of these complex relationships, but capturing structured information from unstructured story data remains a challenge. As large language models (LLMs) continue to advance, we see an opportunity to use their text processing and analysis capabilities to augment and reimagine existing storyline visualization techniques. Toward this goal, we introduce an LLM-driven data parsing pipeline that automatically extracts relevant narrative information from novels and scripts. We then apply this pipeline to create Story Ribbons, an interactive visualization system that helps novice and expert literary analysts explore detailed character and theme trajectories at multiple narrative levels. Through pipeline evaluations and user studies with Story Ribbons on 36 literary works, we demonstrate the potential of LLMs to streamline narrative visualization creation and reveal new insights about familiar stories. We also describe current limitations of AI-based systems, and interaction motifs designed to address these issues.",
-   "tldr": null,
-   "citationCount": null,
-   "pdf": "https://arxiv.org/pdf/2508.06772",
-   "url": "https://arxiv.org/abs/2508.06772",
-   "metaSource": "arxiv",
+   "tldr": "An LLM-driven data parsing pipeline is introduced that automatically extracts relevant narrative information from novels and scripts and is applied to create Story Ribbons, an interactive visualization system that helps novice and expert literary analysts explore detailed character and theme trajectories at multiple narrative levels.",
+   "citationCount": 3,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/154026c491fe603984ff66200970b7a1b713247e",
+   "metaSource": "semanticscholar",
    "ids": {
-    "arxiv": "2508.06772"
+    "arxiv": "2508.06772",
+    "s2": "154026c491fe603984ff66200970b7a1b713247e",
+    "doi": "10.1109/tvcg.2025.3634265"
    },
    "key": "arxiv:2508.06772",
    "verified": true,
@@ -707,6 +852,51 @@
    "key": "doi:10.5220/0006601102120224",
    "verified": true,
    "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:07:13Z",
+   "matchedByTitle": true
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "縦線の長さを間の人数で数えるコスト定義の先行例",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "Kostitsyna et al. GD 2015。交差最小化の理論的研究",
+     "url": null
+    }
+   ],
+   "title": "On Minimizing Crossings in Storyline Visualizations",
+   "authors": [
+    "I. Kostitsyna",
+    "M. Nöllenburg",
+    "V. Polishchuk",
+    "André Schulz",
+    "Darren Strash"
+   ],
+   "year": 2015,
+   "venue": "International Symposium Graph Drawing and Network Visualization",
+   "abstract": "In a storyline visualization, we visualize a collection of interacting characters e.g., in a movie, play, etc. by x-monotone curves that converge for each interaction, and diverge otherwise. Given a storyline with n characters, we show tight lower and upper bounds on the number of crossings required in any storyline visualization for a restricted case. In particular, we show that if 1 each meeting consists of exactly two characters and 2 the meetings can be modeled as a tree, then we can always find a storyline visualization with $$On\\log n$$ crossings. Furthermore, we show that there exist storylines in this restricted case that require $$\\varOmega n\\log n$$ crossings. Lastly, we show that, in the general case, minimizing the number of crossings in a storyline visualization is fixed-parameter tractable, when parameterized on the number of characters k. Our algorithm runs in time $$Ok!^2k\\log k + k!^2m$$, where m is the number of meetings.",
+   "tldr": "This work shows tight lower and upper bounds on the number of crossings required in any storyline visualization for a restricted case, and shows that, in the general case, minimizing theNumber of crossings in a storyline visualization is fixed-parameter tractable, when parameterized on thenumber of characters k.",
+   "citationCount": 29,
+   "pdf": "https://link.springer.com/content/pdf/10.1007/978-3-319-27261-0_16.pdf",
+   "url": "https://www.semanticscholar.org/paper/106e7ffc2ebe1decc52a01fca9e1d9b864e762b4",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "106e7ffc2ebe1decc52a01fca9e1d9b864e762b4",
+    "arxiv": "1509.00442",
+    "doi": "10.1007/978-3-319-27261-0_16"
+   },
+   "key": "arxiv:1509.00442",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
    "lastSeen": "2026-09-29T21:07:13Z"
   },
   {
@@ -1036,43 +1226,6 @@
     "doi": "10.2312/eurovisstar.20141174"
    },
    "key": "doi:10.2312/eurovisstar.20141174",
-   "verified": true,
-   "firstSeen": "2026-09-29T20:50:20Z",
-   "lastSeen": "2026-09-29T20:50:20Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T20:50:20Z",
-     "source": "chat",
-     "project": null,
-     "context": "縦線の長さを間の人数で数えるコスト定義の先行例",
-     "url": null
-    }
-   ],
-   "title": "On Minimizing Crossings in Storyline Visualizations",
-   "authors": [
-    "I. Kostitsyna",
-    "M. Nöllenburg",
-    "V. Polishchuk",
-    "André Schulz",
-    "Darren Strash"
-   ],
-   "year": 2015,
-   "venue": "International Symposium Graph Drawing and Network Visualization",
-   "abstract": "In a storyline visualization, we visualize a collection of interacting characters e.g., in a movie, play, etc. by x-monotone curves that converge for each interaction, and diverge otherwise. Given a storyline with n characters, we show tight lower and upper bounds on the number of crossings required in any storyline visualization for a restricted case. In particular, we show that if 1 each meeting consists of exactly two characters and 2 the meetings can be modeled as a tree, then we can always find a storyline visualization with $$On\\log n$$ crossings. Furthermore, we show that there exist storylines in this restricted case that require $$\\varOmega n\\log n$$ crossings. Lastly, we show that, in the general case, minimizing the number of crossings in a storyline visualization is fixed-parameter tractable, when parameterized on the number of characters k. Our algorithm runs in time $$Ok!^2k\\log k + k!^2m$$, where m is the number of meetings.",
-   "tldr": "This work shows tight lower and upper bounds on the number of crossings required in any storyline visualization for a restricted case, and shows that, in the general case, minimizing theNumber of crossings in a storyline visualization is fixed-parameter tractable, when parameterized on thenumber of characters k.",
-   "citationCount": 29,
-   "pdf": "https://link.springer.com/content/pdf/10.1007/978-3-319-27261-0_16.pdf",
-   "url": "https://www.semanticscholar.org/paper/106e7ffc2ebe1decc52a01fca9e1d9b864e762b4",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "106e7ffc2ebe1decc52a01fca9e1d9b864e762b4",
-    "arxiv": "1509.00442",
-    "doi": "10.1007/978-3-319-27261-0_16"
-   },
-   "key": "arxiv:1509.00442",
    "verified": true,
    "firstSeen": "2026-09-29T20:50:20Z",
    "lastSeen": "2026-09-29T20:50:20Z"
