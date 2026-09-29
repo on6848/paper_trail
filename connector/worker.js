@@ -54,6 +54,54 @@ const TOOLS = [
     },
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
+  {
+    name: "list_unsummarized",
+    title: "未要約の論文を取り出す",
+    description:
+      "List papers in the user's paper log that do not yet have a Japanese summary, with their key, title, " +
+      "authors, year and abstract. Use it when the user asks to summarize the papers in their log. " +
+      "Then write the summaries and call save_summaries.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        limit: { type: "integer", minimum: 1, maximum: 15, description: "How many papers to return (default 8)." },
+        include_summarized: { type: "boolean", description: "Also return papers that already have a summary, to rewrite them." },
+      },
+    },
+    annotations: { readOnlyHint: true, openWorldHint: false },
+  },
+  {
+    name: "save_summaries",
+    title: "要約を保存",
+    description:
+      "Save Japanese summaries for papers in the user's paper log. For each paper write summary_ja " +
+      "(2 to 3 plain Japanese sentences: the problem, the method, the main result) and novelty " +
+      "(2 to 4 short Japanese points on what is new compared with prior work). Do not use em dashes. " +
+      "Base them on the abstract. If the abstract is missing, you may use your own knowledge of the paper, " +
+      "but set basis to \"knowledge\" so the site marks it for checking; never guess about a paper you do not know.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        items: {
+          type: "array",
+          minItems: 1,
+          maxItems: 15,
+          items: {
+            type: "object",
+            properties: {
+              key: { type: "string", description: "The paper key returned by list_unsummarized." },
+              summary_ja: { type: "string" },
+              novelty: { type: "array", items: { type: "string" }, minItems: 1, maxItems: 5 },
+              basis: { type: "string", enum: ["abstract", "knowledge"] },
+            },
+            required: ["key", "summary_ja", "novelty", "basis"],
+          },
+        },
+      },
+      required: ["items"],
+    },
+    annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false },
+  },
 ];
 
 const json = (body, status = 200, headers = {}) =>
@@ -74,6 +122,79 @@ async function github(env, path, init = {}) {
   });
   if (!res.ok) throw new Error(`GitHub API ${res.status}: ${(await res.text()).slice(0, 200)}`);
   return res;
+}
+
+// ---------- リポジトリ内の JSON を読み書きする ----------
+
+const b64decode = (b64) => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\n/g, "")), (c) => c.charCodeAt(0)));
+function b64encode(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000)); // 大きな配列で落ちないよう分割
+  return btoa(bin);
+}
+
+async function readJson(env, path, fallback) {
+  try {
+    const f = await (await github(env, `/contents/${path}`)).json();
+    return { sha: f.sha, data: JSON.parse(b64decode(f.content)) };
+  } catch (e) {
+    if (String(e.message).includes(" 404")) return { sha: null, data: fallback };
+    throw e;
+  }
+}
+
+async function loadPapers(env) {
+  const res = await github(env, "/contents/data/papers.json", { headers: { Accept: "application/vnd.github.raw+json" } });
+  return (await res.json()).papers || [];
+}
+
+async function listUnsummarized(env, args) {
+  const [papers, { data: sums }] = await Promise.all([loadPapers(env), readJson(env, "data/summaries.json", {})]);
+  const todo = papers.filter((p) => p.verified && (args.include_summarized || !sums[p.key]));
+  if (!todo.length) return toolText("要約のない論文はありません。");
+  const limit = Math.min(Math.max(args.limit || 8, 1), 15);
+  const out = todo.slice(0, limit).map((p) => ({
+    key: p.key,
+    title: p.title,
+    authors: (p.authors || []).slice(0, 6),
+    year: p.year,
+    venue: p.venue,
+    abstract: p.abstract || p.tldr || null,
+  }));
+  return toolText(`未要約 ${todo.length} 本のうち ${out.length} 本:\n` + JSON.stringify(out, null, 1));
+}
+
+async function saveSummaries(env, args) {
+  const clip = (s, n) => String(s ?? "").trim().slice(0, n);
+  const items = (Array.isArray(args.items) ? args.items : []).slice(0, 15).filter((x) => x.key && x.summary_ja);
+  if (!items.length) return toolText("保存できる項目がありません。", true);
+  const papers = await loadPapers(env);
+  const known = new Set(papers.map((p) => p.key));
+  const unknown = items.filter((x) => !known.has(x.key)).map((x) => x.key);
+  const ok = items.filter((x) => known.has(x.key));
+  if (!ok.length) return toolText(`どの key も記録にありません: ${unknown.join(", ")}`, true);
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const { sha, data } = await readJson(env, "data/summaries.json", {});
+    for (const x of ok) {
+      data[x.key] = {
+        summary_ja: clip(x.summary_ja, 600),
+        novelty: (Array.isArray(x.novelty) ? x.novelty : []).slice(0, 5).map((n) => clip(n, 200)).filter(Boolean),
+        basis: x.basis === "knowledge" ? "knowledge" : "abstract",
+        at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
+      };
+    }
+    try {
+      await github(env, "/contents/data/summaries.json", {
+        method: "PUT",
+        body: JSON.stringify({ message: `summaries: ${ok.length} 本の要約を保存`, content: b64encode(JSON.stringify(data, null, 1)), ...(sha ? { sha } : {}) }),
+      });
+      const note = unknown.length ? `\n記録にない key は飛ばしました: ${unknown.join(", ")}` : "";
+      return toolText(`${ok.length} 本の要約を保存しました。数分後にサイトへ反映されます。${note}`);
+    } catch (e) {
+      if (!/ (409|422)/.test(e.message) || attempt === 2) throw e; // 同時更新で競合したら読み直して再試行
+    }
+  }
 }
 
 async function addPapers(env, args) {
@@ -100,11 +221,11 @@ async function addPapers(env, args) {
 }
 
 async function searchPapers(env, args) {
-  const res = await github(env, "/contents/data/papers.json", { headers: { Accept: "application/vnd.github.raw+json" } });
-  const papers = (await res.json()).papers || [];
+  const [papers, { data: sums }] = await Promise.all([loadPapers(env), readJson(env, "data/summaries.json", {})]);
   const words = String(args.query || "").toLowerCase().split(/\s+/).filter(Boolean);
   const hits = papers.filter((p) => {
-    const hay = [p.title, (p.authors || []).join(" "), p.venue, p.abstract, p.tldr,
+    const sm = sums[p.key] || {};
+    const hay = [p.title, (p.authors || []).join(" "), p.venue, p.abstract, p.tldr, sm.summary_ja, (sm.novelty || []).join(" "),
       ...(p.refs || []).map((r) => `${r.context || ""} ${r.project || ""}`)].join(" ").toLowerCase();
     return words.every((w) => hay.includes(w));
   });
@@ -117,7 +238,7 @@ async function searchPapers(env, args) {
       [who, p.venue, p.year].filter(Boolean).join("、"),
       p.url || "",
       `参照 ${(p.refs || []).length} 回、最後は ${String(p.lastSeen || "").slice(0, 10)}${last.context ? `（${last.context}）` : ""}`,
-      p.tldr ? `要点: ${p.tldr}` : "",
+      sums[p.key] ? `概要: ${sums[p.key].summary_ja}` : p.tldr ? `要点: ${p.tldr}` : "",
     ].filter(Boolean).join("\n");
   });
   return toolText(`${hits.length} 件中 ${lines.length} 件\n\n${lines.join("\n\n")}`);
@@ -144,6 +265,8 @@ async function handleRpc(env, msg) {
         const args = params.arguments || {};
         if (params.name === "add_papers") return rpcResult(id, await addPapers(env, args));
         if (params.name === "search_papers") return rpcResult(id, await searchPapers(env, args));
+        if (params.name === "list_unsummarized") return rpcResult(id, await listUnsummarized(env, args));
+        if (params.name === "save_summaries") return rpcResult(id, await saveSummaries(env, args));
         return rpcError(id, -32602, `Unknown tool: ${params.name}`);
       } catch (e) {
         return rpcResult(id, toolText(`失敗しました: ${e.message}`, true)); // ツールの失敗は Claude に文章で伝える

@@ -3,7 +3,7 @@ name: papers
 on:
   push:
     branches: [main]
-    paths: ["inbox/**", "site/**", "scripts/**", "data/notes.json", ".github/workflows/**"]
+    paths: ["inbox/**", "site/**", "scripts/**", "data/notes.json", "data/summaries.json", ".github/workflows/**"]
   workflow_dispatch:
     inputs:
       url:

@@ -83,6 +83,11 @@ ol.papers { list-style: none; margin: 0; padding: 0; }
 .history time { color: var(--muted); font-variant-numeric: tabular-nums; }
 .links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; font-size: 14px; }
 .links button { border: 1px solid var(--line); background: var(--bg); border-radius: 6px; padding: 2px 10px; cursor: pointer; }
+.gist { margin: 8px 0 0; max-width: 68ch; font-size: 14.5px; }
+.novelty { margin: 0; padding-left: 1.2em; }
+.novelty li { margin: 2px 0; }
+.basis { font-size: 13px; color: var(--muted); margin-top: 6px !important; }
+.basis.warn { color: var(--manual); }
 .empty { padding: 40px 0; color: var(--muted); max-width: 60ch; }
 .empty strong { color: var(--ink); }
 @media (max-width: 520px) {
@@ -137,7 +142,7 @@ const SOURCES = {
 };
 const srcOf = (s) => (SOURCES[s] ? s : "other");
 const state = { q: "", source: "all", project: "all", sort: "recent", showUnverified: true, open: new Set() };
-let papers = [], notes = {};
+let papers = [], notes = {}, sums = {};
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const fmtDate = (iso) => { const d = new Date(iso); return isNaN(d) ? "" : `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()}`; };
@@ -148,7 +153,8 @@ async function load() {
     const [p, n] = await Promise.all([
       fetch("data/papers.json", { cache: "no-store" }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }),
       fetch("data/notes.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
-    ]);
+      fetch("data/summaries.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
+    ]).then((x) => { sums = x[2] || {}; return x; });
     papers = p.papers || [];
     notes = n || {};
     document.getElementById("count").dataset.updated = p.updated ? fmtDate(p.updated) : "";
@@ -206,8 +212,8 @@ function matches(p) {
   if (state.source !== "all" && !p.refs.some((r) => srcOf(r.source) === state.source)) return false;
   if (state.project !== "all" && !p.refs.some((r) => r.project === state.project)) return false;
   if (!state.q) return true;
-  const n = notes[p.key] || {};
-  const hay = [p.title, (p.authors || []).join(" "), p.venue, p.abstract, p.tldr, n.note, (n.tags || []).join(" "),
+  const n = notes[p.key] || {}, sm = sums[p.key] || {};
+  const hay = [sm.summary_ja, (sm.novelty || []).join(" "), p.title, (p.authors || []).join(" "), p.venue, p.abstract, p.tldr, n.note, (n.tags || []).join(" "),
     ...p.refs.map((r) => `${r.context || ""} ${r.project || ""}`)].join(" ").toLowerCase();
   return state.q.toLowerCase().split(/\s+/).every((w) => hay.includes(w));
 }
@@ -245,6 +251,7 @@ function render() {
     return `<li class="paper${p.verified ? "" : " unverified"}" data-key="${esc(p.key)}">
       <h2>${link}</h2>
       ${p.verified ? `<div class="byline">${authorsLine(p)}</div>` : `<div class="flag">未確認：論文データベースで見つかりませんでした。実在するか確かめてください。</div>`}
+      ${sums[p.key] ? `<p class="gist">${esc(sums[p.key].summary_ja)}</p>` : ""}
       ${p.matchedByTitle ? `<div class="flag">タイトル検索で一致した論文です。別の論文の可能性があります。</div>` : ""}
       ${(n.tags || []).length ? `<div class="tags">${n.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
       <div class="steps">${p.refs.length > 16 ? "…" : ""}${steps}<span class="n">${p.refs.length}回参照、最後は${fmtDate(p.lastSeen)}</span></div>
@@ -255,6 +262,7 @@ function render() {
 }
 
 function detail(p, n) {
+  const sm = sums[p.key];
   const summary = p.tldr || p.abstract;
   const ids = p.ids || {};
   const links = [
@@ -265,7 +273,9 @@ function detail(p, n) {
     p.verified && `<button data-bib="${esc(p.key)}">BibTeX をコピー</button>`,
   ].filter(Boolean).join("");
   return `<div class="detail">
-    ${summary ? `<h3>${p.tldr ? "要点（TLDR）" : "概要"}</h3><p>${esc(summary)}</p>` : ""}
+    ${sm ? `<h3>新規性のポイント</h3><ul class="novelty">${(sm.novelty || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+      <p class="basis${sm.basis === "knowledge" ? " warn" : ""}">${sm.basis === "knowledge" ? "アブストラクトがないため Claude の知識をもとに要約しました。本文で確認してください。" : "アブストラクトをもとに Claude が要約しました。"}</p>` : ""}
+    ${summary ? `<h3>${p.tldr ? "要点（TLDR、英語）" : "アブストラクト（原文）"}</h3><p lang="en">${esc(summary)}</p>` : ""}
     ${p.tldr && p.abstract ? `<details><summary style="cursor:pointer;margin-top:8px;font-size:14px;color:var(--muted)">概要の全文</summary><p style="margin-top:6px">${esc(p.abstract)}</p></details>` : ""}
     ${n.note ? `<h3>自分のメモ</h3><p class="note">${esc(n.note)}</p>` : ""}
     <h3>参照の履歴</h3>
