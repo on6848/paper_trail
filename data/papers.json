@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T21:12:49+00:00",
+ "updated": "2026-09-29T21:13:49+00:00",
  "papers": [
   {
    "refs": [
@@ -9,40 +9,48 @@
      "project": null,
      "context": "storylineの応用例。院内感染の感染源と伝播経路を可視化",
      "url": "https://arxiv.org/abs/2008.09552"
+    },
+    {
+     "at": "2026-09-29T21:12:24Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:院内感染の伝播経路を接触と検査データから追跡。新規性:storylineを時系列接触網に拡張し感染候補を強調",
+     "url": "https://arxiv.org/abs/2008.09552"
     }
    ],
    "title": "In Search of Patient Zero: Visual Analytics of Pathogen Transmission Pathways in Hospitals",
    "authors": [
-    "T. Baumgartl",
-    "M. Petzold",
+    "Tom Baumgartl",
+    "Markus Petzold",
     "M. Wunderlich",
-    "M. Höhn",
+    "Markus Höhn",
     "D. Archambault",
     "M. Lieser",
     "A. Dalpke",
-    "S. Scheithauer",
+    "Simone Scheithauer",
     "M. Marschollek",
-    "V. M. Eichel",
-    "N. T. Mutters",
-    "HiGHmed Consortium",
+    "V. Eichel",
+    "Nico T. Mutters",
+    "Highmed Consortium",
     "T. von Landesberger"
    ],
    "year": 2020,
-   "venue": "arXiv",
-   "abstract": "Pathogen outbreaks (i.e., outbreaks of bacteria and viruses) in hospitals can cause high mortality rates and increase costs for hospitals significantly. An outbreak is generally noticed when the number of infected patients rises above an endemic level or the usual prevalence of a pathogen in a defined population. Reconstructing transmission pathways back to the source of an outbreak -- the patient zero or index patient -- requires the analysis of microbiological data and patient contacts. This is often manually completed by infection control experts. We present a novel visual analytics approach to support the analysis of transmission pathways, patient contacts, the progression of the outbreak, and patient timelines during hospitalization. Infection control experts applied our solution to a real outbreak of Klebsiella pneumoniae in a large German hospital. Using our system, our experts were able to scale the analysis of transmission pathways to longer time intervals (i.e., several years of data instead of days) and across a larger number of wards. Also, the system is able to reduce the analysis time from days to hours. In our final study, feedback from twenty-five experts from seven German hospitals provides evidence that our solution brings significant benefits for analyzing outbreaks. It is also applicable to COVID-19 hospital-associated transmissions.",
-   "tldr": null,
-   "citationCount": null,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": "Pathogen outbreaks (i.e., outbreaks of bacteria and viruses) in hospitals can cause high mortality rates and increase costs for hospitals significantly. An outbreak is generally noticed when the number of infected patients rises above an endemic level or the usual prevalence of a pathogen in a defined population. Reconstructing transmission pathways back to the source of an outbreak - the patient zero or index patient - requires the analysis of microbiological data and patient contacts. This is often manually completed by infection control experts. We present a novel visual analytics approach to support the analysis of transmission pathways, patient contacts, the progression of the outbreak, and patient timelines during hospitalization. Infection control experts applied our solution to a real outbreak of Klebsiella pneumoniae in a large German hospital. Using our system, our experts were able to scale the analysis of transmission pathways to longer time intervals (i.e., several years of data instead of days) and across a larger number of wards. Also, the system is able to reduce the analysis time from days to hours. In our final study, feedback from twenty-five experts from seven German hospitals provides evidence that our solution brings significant benefits for analyzing outbreaks.",
+   "tldr": "A novel visual analytics approach is presented to support the analysis of transmission pathways, patient contacts, the progression of the outbreak, and patient timelines during hospitalization to bring significant benefits for analyzing outbreaks.",
+   "citationCount": 40,
    "pdf": "https://arxiv.org/pdf/2008.09552",
-   "url": "https://arxiv.org/abs/2008.09552",
-   "metaSource": "arxiv",
+   "url": "https://www.semanticscholar.org/paper/0640387220c45c0a34ffde773b1ae201663d4a26",
+   "metaSource": "semanticscholar",
    "ids": {
     "arxiv": "2008.09552",
-    "doi": "10.1109/tvcg.2020.3030437"
+    "doi": "10.1109/tvcg.2020.3030437",
+    "s2": "0640387220c45c0a34ffde773b1ae201663d4a26"
    },
    "key": "arxiv:2008.09552",
    "verified": true,
    "firstSeen": "2026-09-29T21:09:31Z",
-   "lastSeen": "2026-09-29T21:09:31Z"
+   "lastSeen": "2026-09-29T21:12:24Z"
   },
   {
    "refs": [
@@ -51,6 +59,13 @@
      "source": "chat",
      "project": null,
      "context": "storylineの応用例。個人中心の影響関係の時間変化を可視化",
+     "url": "https://arxiv.org/abs/2408.08992"
+    },
+    {
+     "at": "2026-09-29T21:12:24Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:1人を中心に周囲との関係と影響の時間変化を表示。新規性:storylineをエゴセントリックな動的影響に適用",
      "url": "https://arxiv.org/abs/2408.08992"
     }
    ],
@@ -76,7 +91,315 @@
    "key": "arxiv:2408.08992",
    "verified": true,
    "firstSeen": "2026-09-29T21:09:31Z",
-   "lastSeen": "2026-09-29T21:09:31Z"
+   "lastSeen": "2026-09-29T21:12:24Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "Ogawa & Ma 2010。storyline可視化を最初に論文化した研究",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:12:24Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:開発履歴から開発者の協力関係を時系列で表示。新規性:xkcd型storylineを初めて自動生成し論文化",
+     "url": null
+    }
+   ],
+   "title": "Software evolution storylines",
+   "authors": [
+    "Michael Ogawa",
+    "K. Ma"
+   ],
+   "year": 2010,
+   "venue": "Software Visualization",
+   "abstract": null,
+   "tldr": "The software evolution storylines technique draws inspiration from XKCD's \"Movie Narrative Charts\" and the aesthetic design of metro maps to produce a visualization that shows more detail than animated software histories, but keeps the same focus on aesthetics and presentation.",
+   "citationCount": 148,
+   "pdf": "http://vis.cs.ucdavis.edu/papers/softvis2010.pdf",
+   "url": "https://www.semanticscholar.org/paper/93b20637a8fb4ef3db785e8bc618bfe051c779eb",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "93b20637a8fb4ef3db785e8bc618bfe051c779eb",
+    "doi": "10.1145/1879211.1879219"
+   },
+   "key": "doi:10.1145/1879211.1879219",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:12:24Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "TVCG 2022。地図とstorylineの統合",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:12:24Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:storylineに地図情報を統合。新規性:時間と場所を1つのビューで扱う設計の選択肢を整理し提示",
+     "url": null
+    }
+   ],
+   "title": "Geo-Storylines: Integrating Maps into Storyline Visualizations",
+   "authors": [
+    "Golina Hulstein",
+    "Vanessa Peña-Araya",
+    "A. Bezerianos"
+   ],
+   "year": 2022,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": "Storyline visualizations are a powerful way to compactly visualize how the relationships between people evolve over time. Real-world relationships often also involve space, for example the cities that two political rivals visited together or alone over the years. By default, Storyline visualizations only show implicitly geospatial co-occurrence between people (drawn as lines), by bringing their lines together. Even the few designs that do explicitly show geographic locations only do so in abstract ways (e.g., annotations) and do not communicate geospatial information, such as the direction or extent of their political campains. We introduce Geo-Storylines, a collection of visualisation designs that integrate geospatial context into Storyline visualizations, using different strategies for compositing time and space. Our contribution is twofold. First, we present the results of a sketching workshop with 11 participants, that we used to derive a design space for integrating maps into Storylines. Second, by analyzing the strengths and weaknesses of the potential designs of the design space in terms of legibility and ability to scale to multiple relationships, we extract the three most promising: Time Glyphs, Coordinated Views, and Map Glyphs. We compare these three techniques first in a controlled study with 18 participants, under five different geospatial tasks and two maps of different complexity. We additionally collected informal feedback about their usefulness from domain experts in data journalism. Our results indicate that, as expected, detailed performance depends on the task. Nevertheless, Coordinated Views remain a highly effective and preferred technique across the board.",
+   "tldr": null,
+   "citationCount": 21,
+   "pdf": "https://inria.hal.science/hal-03752409v1/document",
+   "url": "https://www.semanticscholar.org/paper/11e484c15e81f9ec16fb025ea180afefd7d06e1d",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "11e484c15e81f9ec16fb025ea180afefd7d06e1d",
+    "doi": "10.1109/tvcg.2022.3209480"
+   },
+   "key": "doi:10.1109/tvcg.2022.3209480",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:12:24Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "書簡ストーリーライン案に最も近い先行研究、デモの拡張元",
+     "url": "https://arxiv.org/abs/1412.6706"
+    },
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。動的グラフの構造変化をstoryline形式で表示",
+     "url": "https://arxiv.org/abs/1412.6706"
+    },
+    {
+     "at": "2026-09-29T21:12:24Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:動的グラフの構造変化を線の合流と分岐で表示。新規性:storyline手法を一般の動的ネットワークへ拡張",
+     "url": "https://arxiv.org/abs/1412.6706"
+    }
+   ],
+   "title": "SVEN: Informative Visual Representation of Complex Dynamic Structure",
+   "authors": [
+    "Dustin L. Arendt",
+    "L. Blaha"
+   ],
+   "year": 2014,
+   "venue": "arXiv.org",
+   "abstract": "Abstract : Graphs change over time, and typically variations on the small multiples or animation pattern is used to convey this dynamism visually. However, both of these classical techniques have significant drawbacks, so a new approach, Storyline Visualization of Events on a Network (SVEN) is proposed. SVEN builds on storyline techniques, conveying nodes as contiguous lines over time. SVEN encodes time in a natural manner, along the horizontal axis, and optimizes the vertical placement of storylines to decrease clutter (line crossings, straightness, and bends) in the drawing. This paper demonstrates SVEN on several different flavors of real-world dynamic data, and outlines the remaining near-term future work.",
+   "tldr": "SVEN encodes time in a natural manner, along the horizontal axis, and optimizes the vertical placement of storylines to decrease clutter (line crossings, straightness, and bends) in the drawing.",
+   "citationCount": 16,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/b555c0e78682ddc1c948f4e55bd6750df570e2b0",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "arxiv": "1412.6706",
+    "s2": "b555c0e78682ddc1c948f4e55bd6750df570e2b0"
+   },
+   "key": "arxiv:1412.6706",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-29T21:12:24Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineに近い線ベース表現で進化するネットワークのコミュニティを追跡",
+     "url": "https://doi.org/10.1371/journal.pone.0137502"
+    },
+    {
+     "at": "2026-09-29T21:12:24Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:進化するネットワークのコミュニティの分裂と統合を線で追跡。新規性:交差を減らす線ベースの追跡表現",
+     "url": "https://doi.org/10.1371/journal.pone.0137502"
+    }
+   ],
+   "title": "Netgram: Visualizing Communities in Evolving Networks",
+   "authors": [
+    "Raghvendra Mall",
+    "R. Langone",
+    "J. Suykens"
+   ],
+   "year": 2015,
+   "venue": "PLoS ONE",
+   "abstract": "Real-world complex networks are dynamic in nature and change over time. The change is usually observed in the interactions within the network over time. Complex networks exhibit community like structures. A key feature of the dynamics of complex networks is the evolution of communities over time. Several methods have been proposed to detect and track the evolution of these groups over time. However, there is no generic tool which visualizes all the aspects of group evolution in dynamic networks including birth, death, splitting, merging, expansion, shrinkage and continuation of groups. In this paper, we propose Netgram: a tool for visualizing evolution of communities in time-evolving graphs. Netgram maintains evolution of communities over 2 consecutive time-stamps in tables which are used to create a query database using the sql outer-join operation. It uses a line-based visualization technique which adheres to certain design principles and aesthetic guidelines. Netgram uses a greedy solution to order the initial community information provided by the evolutionary clustering technique such that we have fewer line cross-overs in the visualization. This makes it easier to track the progress of individual communities in time evolving graphs. Netgram is a generic toolkit which can be used with any evolutionary community detection algorithm as illustrated in our experiments. We use Netgram for visualization of topic evolution in the NIPS conference over a period of 11 years and observe the emergence and merging of several disciplines in the field of information processing systems.",
+   "tldr": "Netgram is a generic toolkit which can be used with any evolutionary community detection algorithm as illustrated in the authors' experiments and is used for visualization of topic evolution in the NIPS conference over a period of 11 years.",
+   "citationCount": 9,
+   "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0137502&type=printable",
+   "url": "https://www.semanticscholar.org/paper/8c2d1cdf00586eab9f2fe5ff51814063f658add3",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "8c2d1cdf00586eab9f2fe5ff51814063f658add3",
+    "doi": "10.1371/journal.pone.0137502"
+   },
+   "key": "doi:10.1371/journal.pone.0137502",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:12:24Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。動的ハイパーグラフ（多人数の関係）を展開",
+     "url": null
+    }
+   ],
+   "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
+   "authors": [
+    "Vanessa Peña-Araya",
+    "Tong Xue",
+    "Emmanuel Pietriga",
+    "L. Amsaleg",
+    "A. Bezerianos"
+   ],
+   "year": 2021,
+   "venue": "Information Visualization",
+   "abstract": "We present the design and evaluation of HyperStorylines, a technique that generalizes Storylines to visualize the evolution of relationships involving multiple types of entities such as, for example, people, locations, and companies. Datasets which describe such multi-entity relationships are often modeled as hypergraphs, that can be difficult to visualize, especially when these relationships evolve over time. HyperStorylines builds upon Storylines, enabling the aggregation and nesting of these dynamic, multi-entity relationships. We report on the design process of HyperStorylines, which was informed by discussions and workshops with data journalists; and on the results of a comparative study in which participants had to answer questions inspired by the tasks that journalists typically perform with such data. We observe that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
+   "tldr": "It is observed that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
+   "citationCount": 23,
+   "pdf": "https://hal.inria.fr/hal-03352276/file/main.pdf",
+   "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "de68b032dab743d5f0236aa043990e037c477d0e",
+    "doi": "10.1177/14738716211045007"
+   },
+   "key": "doi:10.1177/14738716211045007",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:11:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。SNSのコミュニティ構造の時間変化",
+     "url": null
+    }
+   ],
+   "title": "Visualizing the Evolution of Community Structures in Dynamic Social Networks",
+   "authors": [
+    "Khairi Reda",
+    "Chayant Tantipathananandh",
+    "Andrew E. Johnson",
+    "J. Leigh",
+    "T. Berger-Wolf"
+   ],
+   "year": 2011,
+   "venue": "Computer graphics forum (Print)",
+   "abstract": null,
+   "tldr": "This paper presents an interactive visualization methodology for dynamic social networks that focuses on revealing the community structure implied by the evolving interaction patterns between individuals, and applies this technique to analyze thecommunity structure in the US House of Representatives.",
+   "citationCount": 105,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/f7d3b47f21b19faa1da7aad282a7c326a91f1520",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "f7d3b47f21b19faa1da7aad282a7c326a91f1520",
+    "doi": "10.1111/j.1467-8659.2011.01955.x"
+   },
+   "key": "doi:10.1111/j.1467-8659.2011.01955.x",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:11:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。階層的な物語構造を表現",
+     "url": null
+    }
+   ],
+   "title": "Storytelling by the StoryCake visualization",
+   "authors": [
+    "Qiang Lu",
+    "Bing-Jie Chai",
+    "Hai-Bo Zhang"
+   ],
+   "year": 2017,
+   "venue": "The Visual Computer",
+   "abstract": null,
+   "tldr": "Experimental results show that the proposed hierarchical plot visualization method in polarcoordinates can reveal the narrative structure and development of the story and a fan-shaped visualization view to enable people better understand how story evolves and track thehierarchical relationship more conveniently.",
+   "citationCount": 16,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/b16147d467777cb59732932a168e6d63ef2ec7e0",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "b16147d467777cb59732932a168e6d63ef2ec7e0",
+    "doi": "10.1007/s00371-017-1409-2"
+   },
+   "key": "doi:10.1007/s00371-017-1409-2",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:11:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。グループ共同作業の分析",
+     "url": null
+    }
+   ],
+   "title": "An effective demonstration for group collaboration based on storyline visualization technology",
+   "authors": [
+    "Qiang Lu",
+    "Xiang-Yuan Zhu",
+    "Li Liu",
+    "Shu-Bo Cao"
+   ],
+   "year": 2014,
+   "venue": "International Conference on Computer Supported Cooperative Work in Design",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 13,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/4c719be1b4e45d2d9a8b49faebc73a696daade33",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "4c719be1b4e45d2d9a8b49faebc73a696daade33",
+    "doi": "10.1109/cscwd.2014.6846815"
+   },
+   "key": "doi:10.1109/cscwd.2014.6846815",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:11:08Z"
   },
   {
    "refs": [
@@ -361,39 +684,6 @@
      "at": "2026-09-29T21:07:13Z",
      "source": "chat",
      "project": null,
-     "context": "Ogawa & Ma 2010。storyline可視化を最初に論文化した研究",
-     "url": null
-    }
-   ],
-   "title": "Software evolution storylines",
-   "authors": [
-    "Michael Ogawa",
-    "K. Ma"
-   ],
-   "year": 2010,
-   "venue": "Software Visualization",
-   "abstract": null,
-   "tldr": "The software evolution storylines technique draws inspiration from XKCD's \"Movie Narrative Charts\" and the aesthetic design of metro maps to produce a visualization that shows more detail than animated software histories, but keeps the same focus on aesthetics and presentation.",
-   "citationCount": 148,
-   "pdf": "http://vis.cs.ucdavis.edu/papers/softvis2010.pdf",
-   "url": "https://www.semanticscholar.org/paper/93b20637a8fb4ef3db785e8bc618bfe051c779eb",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "93b20637a8fb4ef3db785e8bc618bfe051c779eb",
-    "doi": "10.1145/1879211.1879219"
-   },
-   "key": "doi:10.1145/1879211.1879219",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
      "context": "Tanahashi et al. 2015。ストリーミングデータへの対応。時間方向の一貫性に関連",
      "url": null
     }
@@ -632,40 +922,6 @@
     "doi": "10.1016/j.cag.2018.11.004"
    },
    "key": "doi:10.1016/j.cag.2018.11.004",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "TVCG 2022。地図とstorylineの統合",
-     "url": null
-    }
-   ],
-   "title": "Geo-Storylines: Integrating Maps into Storyline Visualizations",
-   "authors": [
-    "Golina Hulstein",
-    "Vanessa Peña-Araya",
-    "A. Bezerianos"
-   ],
-   "year": 2022,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": "Storyline visualizations are a powerful way to compactly visualize how the relationships between people evolve over time. Real-world relationships often also involve space, for example the cities that two political rivals visited together or alone over the years. By default, Storyline visualizations only show implicitly geospatial co-occurrence between people (drawn as lines), by bringing their lines together. Even the few designs that do explicitly show geographic locations only do so in abstract ways (e.g., annotations) and do not communicate geospatial information, such as the direction or extent of their political campains. We introduce Geo-Storylines, a collection of visualisation designs that integrate geospatial context into Storyline visualizations, using different strategies for compositing time and space. Our contribution is twofold. First, we present the results of a sketching workshop with 11 participants, that we used to derive a design space for integrating maps into Storylines. Second, by analyzing the strengths and weaknesses of the potential designs of the design space in terms of legibility and ability to scale to multiple relationships, we extract the three most promising: Time Glyphs, Coordinated Views, and Map Glyphs. We compare these three techniques first in a controlled study with 18 participants, under five different geospatial tasks and two maps of different complexity. We additionally collected informal feedback about their usefulness from domain experts in data journalism. Our results indicate that, as expected, detailed performance depends on the task. Nevertheless, Coordinated Views remain a highly effective and preferred technique across the board.",
-   "tldr": null,
-   "citationCount": 21,
-   "pdf": "https://inria.hal.science/hal-03752409v1/document",
-   "url": "https://www.semanticscholar.org/paper/11e484c15e81f9ec16fb025ea180afefd7d06e1d",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "11e484c15e81f9ec16fb025ea180afefd7d06e1d",
-    "doi": "10.1109/tvcg.2022.3209480"
-   },
-   "key": "doi:10.1109/tvcg.2022.3209480",
    "verified": true,
    "firstSeen": "2026-09-29T21:07:13Z",
    "lastSeen": "2026-09-29T21:07:13Z"
@@ -1260,37 +1516,6 @@
     "doi": "10.1111/cgf.12882"
    },
    "key": "doi:10.1111/cgf.12882",
-   "verified": true,
-   "firstSeen": "2026-09-29T20:50:20Z",
-   "lastSeen": "2026-09-29T20:50:20Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T20:50:20Z",
-     "source": "chat",
-     "project": null,
-     "context": "書簡ストーリーライン案に最も近い先行研究、デモの拡張元",
-     "url": "https://arxiv.org/abs/1412.6706"
-    }
-   ],
-   "title": "SVEN: Informative Visual Representation of Complex Dynamic Structure",
-   "authors": [
-    "Dustin L. Arendt",
-    "Leslie M. Blaha"
-   ],
-   "year": 2014,
-   "venue": "arXiv",
-   "abstract": "Graphs change over time, and typically variations on the small multiples or animation pattern is used to convey this dynamism visually. However, both of these classical techniques have significant drawbacks, so a new approach, Storyline Visualization of Events on a Network (SVEN) is proposed. SVEN builds on storyline techniques, conveying nodes as contiguous lines over time. SVEN encodes time in a natural manner, along the horizontal axis, and optimizes the vertical placement of storylines to decrease clutter (line crossings, straightness, and bends) in the drawing. This paper demonstrates SVEN on several different flavors of real-world dynamic data, and outlines the remaining near-term future work.",
-   "tldr": null,
-   "citationCount": null,
-   "pdf": "https://arxiv.org/pdf/1412.6706",
-   "url": "https://arxiv.org/abs/1412.6706",
-   "metaSource": "arxiv",
-   "ids": {
-    "arxiv": "1412.6706"
-   },
-   "key": "arxiv:1412.6706",
    "verified": true,
    "firstSeen": "2026-09-29T20:50:20Z",
    "lastSeen": "2026-09-29T20:50:20Z"
