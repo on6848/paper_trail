@@ -1,0 +1,66 @@
+[
+ {
+  "url": "https://www.semanticscholar.org/paper/b9ea5f5e7f7133c893c05c19de302e2f4afd5a75",
+  "title": "Visualising the Dynamics of Character Networks",
+  "context": "要約:戯曲の人物網を台詞と同期した網の連続として表示。新規性:本文とネットワーク状態を並べて読めるOSSのWebアプリ",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:22:12Z"
+ },
+ {
+  "url": "https://www.digitalhumanities.org/dhq/vol/7/3/000166/000166.html",
+  "title": "Visualizing Theatrical Text: From Watching the Script to the Simulated Environment for Theatre (SET)",
+  "context": "要約:3D舞台と台本をLine of Actionで結ぶSET。新規性:戯曲を上演の過程として時間と空間で可視化し立ち位置を検討できる",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:22:12Z"
+ },
+ {
+  "url": "",
+  "title": "The Text and the Line of Action: Re-conceiving Watching the Script",
+  "context": "要約:台本が仮想舞台上で動くWatching the Scriptの再設計。新規性:台本を印刷物でなく上演の要素の一つとして捉え直した",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:22:12Z"
+ },
+ {
+  "url": "1511.07001",
+  "title": "Analysis of a Play by Means of CHAPLIN, the Characters and Places Interaction Network Software",
+  "context": "要約:CHAPLINでハムレットの人物と場所の関係を網として表示。新規性:作品全体と幕ごとの人物の活躍度を比較",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:22:12Z"
+ },
+ {
+  "url": "",
+  "title": "The Small World of Shakespeare's Plays",
+  "context": "要約:シェイクスピア10作品の人物網を分析。新規性:劇中の集団構造が現実の人間関係やスモールワールド性と対応",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:22:12Z"
+ },
+ {
+  "url": "",
+  "title": "Network Theory, Plot Analysis",
+  "context": "要約:ハムレット等の人物網から筋を分析する文学研究。新規性:ネットワーク理論を戯曲の構造分析に持ち込んだ先駆け",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:22:12Z"
+ },
+ {
+  "url": "2302.08258",
+  "title": "Tragic and Comical Networks",
+  "context": "要約:喜劇と悲劇の人物網の構造的な違いを比較。新規性:網の指標で戯曲のジャンルを分類できるか検証",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:22:12Z"
+ },
+ {
+  "url": "",
+  "title": "Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama",
+  "context": "要約:欧州の戯曲を人物網などで分析できるコーパス基盤DraCor。新規性:APIで戯曲の構造データを取り出せる",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:22:12Z"
+ }
+]
