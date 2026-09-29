@@ -1,6 +1,656 @@
 {
- "updated": "2026-09-29T21:13:49+00:00",
+ "updated": "2026-09-29T21:20:05+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。動的ハイパーグラフ（多人数の関係）を展開",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:多人数が同時に関わる関係の時間変化を線で展開。新規性:動的ハイパーグラフにstorylineを適用しPAOHVisより良好",
+     "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e"
+    }
+   ],
+   "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
+   "authors": [
+    "Vanessa Peña-Araya",
+    "Tong Xue",
+    "Emmanuel Pietriga",
+    "L. Amsaleg",
+    "A. Bezerianos"
+   ],
+   "year": 2021,
+   "venue": "Information Visualization",
+   "abstract": "We present the design and evaluation of HyperStorylines, a technique that generalizes Storylines to visualize the evolution of relationships involving multiple types of entities such as, for example, people, locations, and companies. Datasets which describe such multi-entity relationships are often modeled as hypergraphs, that can be difficult to visualize, especially when these relationships evolve over time. HyperStorylines builds upon Storylines, enabling the aggregation and nesting of these dynamic, multi-entity relationships. We report on the design process of HyperStorylines, which was informed by discussions and workshops with data journalists; and on the results of a comparative study in which participants had to answer questions inspired by the tasks that journalists typically perform with such data. We observe that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
+   "tldr": "It is observed that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
+   "citationCount": 23,
+   "pdf": "https://hal.inria.fr/hal-03352276/file/main.pdf",
+   "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "de68b032dab743d5f0236aa043990e037c477d0e",
+    "doi": "10.1177/14738716211045007"
+   },
+   "key": "doi:10.1177/14738716211045007",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。SNSのコミュニティ構造の時間変化",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:SNSのコミュニティ変化を人物の線と集団の帯で表示。新規性:コミュニティ検出結果をstoryline型で描き米下院に適用",
+     "url": "https://www.semanticscholar.org/paper/f7d3b47f21b19faa1da7aad282a7c326a91f1520"
+    }
+   ],
+   "title": "Visualizing the Evolution of Community Structures in Dynamic Social Networks",
+   "authors": [
+    "Khairi Reda",
+    "Chayant Tantipathananandh",
+    "Andrew E. Johnson",
+    "J. Leigh",
+    "T. Berger-Wolf"
+   ],
+   "year": 2011,
+   "venue": "Computer graphics forum (Print)",
+   "abstract": null,
+   "tldr": "This paper presents an interactive visualization methodology for dynamic social networks that focuses on revealing the community structure implied by the evolving interaction patterns between individuals, and applies this technique to analyze thecommunity structure in the US House of Representatives.",
+   "citationCount": 105,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/f7d3b47f21b19faa1da7aad282a7c326a91f1520",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "f7d3b47f21b19faa1da7aad282a7c326a91f1520",
+    "doi": "10.1111/j.1467-8659.2011.01955.x"
+   },
+   "key": "doi:10.1111/j.1467-8659.2011.01955.x",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。階層的な物語構造を表現",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:物語の階層構造を極座標の扇形で表示。新規性:storylineを極座標化し階層的な筋の関係を追いやすくした",
+     "url": "https://www.semanticscholar.org/paper/b16147d467777cb59732932a168e6d63ef2ec7e0"
+    }
+   ],
+   "title": "Storytelling by the StoryCake visualization",
+   "authors": [
+    "Qiang Lu",
+    "Bing-Jie Chai",
+    "Hai-Bo Zhang"
+   ],
+   "year": 2017,
+   "venue": "The Visual Computer",
+   "abstract": null,
+   "tldr": "Experimental results show that the proposed hierarchical plot visualization method in polarcoordinates can reveal the narrative structure and development of the story and a fan-shaped visualization view to enable people better understand how story evolves and track thehierarchical relationship more conveniently.",
+   "citationCount": 16,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/b16147d467777cb59732932a168e6d63ef2ec7e0",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "b16147d467777cb59732932a168e6d63ef2ec7e0",
+    "doi": "10.1007/s00371-017-1409-2"
+   },
+   "key": "doi:10.1007/s00371-017-1409-2",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。グループ共同作業の分析",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:グループ共同作業の推移をstorylineで表示。新規性:協働分析へのstoryline適用（題名ベースの要約）",
+     "url": "https://www.semanticscholar.org/paper/4c719be1b4e45d2d9a8b49faebc73a696daade33"
+    }
+   ],
+   "title": "An effective demonstration for group collaboration based on storyline visualization technology",
+   "authors": [
+    "Qiang Lu",
+    "Xiang-Yuan Zhu",
+    "Li Liu",
+    "Shu-Bo Cao"
+   ],
+   "year": 2014,
+   "venue": "International Conference on Computer Supported Cooperative Work in Design",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 13,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/4c719be1b4e45d2d9a8b49faebc73a696daade33",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "4c719be1b4e45d2d9a8b49faebc73a696daade33",
+    "doi": "10.1109/cscwd.2014.6846815"
+   },
+   "key": "doi:10.1109/cscwd.2014.6846815",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:09:31Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。ニュース記事の登場人物と出来事を可視化",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:ニュース記事の出来事と参加者をstorylineで表示。新規性:ニュース文章から生成するOSSのWeb試作",
+     "url": "https://www.semanticscholar.org/paper/a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b"
+    }
+   ],
+   "title": "NewsLines: Narrative Visualization of News Stories",
+   "authors": [
+    "Mariana Costa",
+    "Sérgio Nunes"
+   ],
+   "year": 2023,
+   "venue": "Text2Story@ECIR",
+   "abstract": null,
+   "tldr": "The development of NewsLine, an open-source web-based prototype that focuses on narrative visualizations of news content, produces a storyline which showcases the narrative’s events and participants, allowing the user to interact with the visualization in a number of ways.",
+   "citationCount": 4,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b"
+   },
+   "key": "s2:a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:09:31Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "Tanahashi et al. 2015。ストリーミングデータへの対応。時間方向の一貫性に関連",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:逐次届くデータでstorylineを更新。新規性:過去の配置を保ちつつ効率よく再最適化する枠組み",
+     "url": "https://www.semanticscholar.org/paper/67ffdc021fc339f090c450b72fa0e7d610914226"
+    }
+   ],
+   "title": "An Efficient Framework for Generating Storyline Visualizations from Streaming Data",
+   "authors": [
+    "Y. Tanahashi",
+    "Chien-Hsin Hsueh",
+    "K. Ma"
+   ],
+   "year": 2015,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 82,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/67ffdc021fc339f090c450b72fa0e7d610914226",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "67ffdc021fc339f090c450b72fa0e7d610914226",
+    "doi": "10.1109/tvcg.2015.2392771"
+   },
+   "key": "doi:10.1109/tvcg.2015.2392771",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "van Dijk et al. GD 2016。ブロック交差という指標の提案",
+     "url": "https://arxiv.org/abs/1609.00321"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:隣接する線の束を一度に入れ替えるブロック交差を提案。新規性:最小化の計算困難性とアルゴリズムを示した",
+     "url": "https://arxiv.org/abs/1609.00321"
+    }
+   ],
+   "title": "Block Crossings in Storyline Visualizations",
+   "authors": [
+    "T. V. van Dijk",
+    "Martin Fink",
+    "Norbert Fischer",
+    "Fabian Lipp",
+    "Peter Markfelder",
+    "A. Ravsky",
+    "S. Suri",
+    "Alexander Wolff"
+   ],
+   "year": 2016,
+   "venue": "International Symposium Graph Drawing and Network Visualization",
+   "abstract": "Storyline visualizations help visualize encounters of the characters in a story over time. Each character is represented by an x-monotone curve that goes from left to right. A meeting is represented by having the characters that participate in the meeting run close together for some time. In order to keep the visual complexity low, rather than just minimizing pairwise crossings of curves, we propose to count block crossings, that is, pairs of intersecting bundles of lines. \nOur main results are as follows. We show that minimizing the number of block crossings is NP-hard, and we develop, for meetings of bounded size, a constant-factor approximation. We also present two fixed-parameter algorithms and, for meetings of size 2, a greedy heuristic that we evaluate experimentally.",
+   "tldr": "It is shown that minimizing the number of block crossings is NP-hard, and the model is developed, for meetings of bounded size, a constant-factor approximation and two fixed-parameter algorithms and a greedy heuristic.",
+   "citationCount": 26,
+   "pdf": "https://doi.org/10.7155/jgaa.00443",
+   "url": "https://www.semanticscholar.org/paper/cc2cfc9011a57f866ea156d364c266b3923470d6",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "arxiv": "1609.00321",
+    "s2": "cc2cfc9011a57f866ea156d364c266b3923470d6",
+    "doi": "10.1007/978-3-319-50106-2_30"
+   },
+   "key": "arxiv:1609.00321",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "GD 2017。SATによるブロック交差の最適化",
+     "url": "https://arxiv.org/abs/1709.01055"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:ブロック交差が少ないレイアウトを計算。新規性:SATやILPによる厳密解法を実装し比較",
+     "url": "https://arxiv.org/abs/1709.01055"
+    }
+   ],
+   "title": "Computing Storyline Visualizations with Few Block Crossings",
+   "authors": [
+    "Thomas C. van Dijk",
+    "Fabian Lipp",
+    "Peter Markfelder",
+    "Alexander Wolff"
+   ],
+   "year": 2017,
+   "venue": "arXiv",
+   "abstract": "Storyline visualizations show the structure of a story, by depicting the interactions of the characters over time. Each character is represented by an x-monotone curve from left to right, and a meeting is represented by having the curves of the participating characters run close together for some time. There have been various approaches to drawing storyline visualizations in an automated way. In order to keep the visual complexity low, rather than minimizing pairwise crossings of curves, we count block crossings, that is, pairs of intersecting bundles of lines. Partly inspired by the ILP-based approach of Gronemann et al. [GD 2016] for minimizing the number of pairwise crossings, we model the problem as a satisfiability problem (since the straightforward ILP formulation becomes more complicated and harder to solve). Having restricted ourselves to a decision problem, we can apply powerful SAT solvers to find optimal drawings in reasonable time. We compare this SAT-based approach with two exact algorithms for block crossing minimization, using both the benchmark instances of Gronemann et al. and random instances. We show that the SAT approach is suitable for real-world instances and identify cases where the other algorithms are preferable.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/1709.01055",
+   "url": "https://arxiv.org/abs/1709.01055",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "1709.01055"
+   },
+   "key": "arxiv:1709.01055",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "Tang et al. 2018。手描き風レイアウトへのインタラクティブ調整",
+     "url": "https://doi.org/10.1109/tvcg.2018.2864899"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:ユーザー操作を制約として最適化に取り込む。新規性:手描きに近いstorylineへ対話的に収束させる仕組み",
+     "url": "https://www.semanticscholar.org/paper/0b0549975c366abac203294099da2e3ac9e87172"
+    }
+   ],
+   "title": "iStoryline: Effective Convergence to Hand-drawn Storylines",
+   "authors": [
+    "Tan Tang",
+    "Sadia Rubab",
+    "Jiewen Lai",
+    "Weiwei Cui",
+    "Lingyun Yu",
+    "Yingcai Wu"
+   ],
+   "year": 2019,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": "Storyline visualization techniques have progressed significantly to generate illustrations of complex stories automatically. However, the visual layouts of storylines are not enhanced accordingly despite the improvement in the performance and extension of its application area. Existing methods attempt to achieve several shared optimization goals, such as reducing empty space and minimizing line crossings and wiggles. However, these goals do not always produce optimal results when compared to hand-drawn storylines. We conducted a preliminary study to learn how users translate a narrative into a hand-drawn storyline and check whether the visual elements in hand-drawn illustrations can be mapped back to appropriate narrative contexts. We also compared the hand-drawn storylines with storylines generated by the state-of-the-art methods and found they have significant differences. Our findings led to a design space that summarizes 1) how artists utilize narrative elements and 2) the sequence of actions artists follow to portray expressive and attractive storylines. We developed iStoryline, an authoring tool for integrating high-level user interactions into optimization algorithms and achieving a balance between hand-drawn storylines and automatic layouts. iStoryline allows users to create novel storyline visualizations easily according to their preferences by modifying the automatically generated layouts. The effectiveness and usability of iStoryline are studied with qualitative evaluations.",
+   "tldr": null,
+   "citationCount": 57,
+   "pdf": "https://research.rug.nl/files/81367771/08440828.pdf",
+   "url": "https://www.semanticscholar.org/paper/0b0549975c366abac203294099da2e3ac9e87172",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "0b0549975c366abac203294099da2e3ac9e87172",
+    "doi": "10.1109/tvcg.2018.2864899"
+   },
+   "key": "doi:10.1109/tvcg.2018.2864899",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "Tang et al. 2020。強化学習によるレイアウト生成",
+     "url": "https://doi.org/10.1109/tvcg.2020.3030467"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:強化学習エージェントがレイアウト作成を補助。新規性:AIと人が協調して表現豊かなstorylineを作るツール",
+     "url": "https://www.semanticscholar.org/paper/392a2b92a0be230f8bb2a26c0e70cebc11ad6ff9"
+    }
+   ],
+   "title": "PlotThread: Creating Expressive Storyline Visualizations using Reinforcement Learning",
+   "authors": [
+    "Tan Tang",
+    "Renzhong Li",
+    "Xinke Wu",
+    "Shuhan Liu",
+    "Johannes Knittel",
+    "Steffen Koch",
+    "Lingyun Yu",
+    "Peiran Ren",
+    "Thomas Ertl",
+    "Yingcai Wu"
+   ],
+   "year": 2020,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": "Storyline visualizations are an effective means to present the evolution of plots and reveal the scenic interactions among characters. However, the design of storyline visualizations is a difficult task as users need to balance between aesthetic goals and narrative constraints. Despite that the optimization-based methods have been improved significantly in terms of producing aesthetic and legible layouts, the existing (semi-) automatic methods are still limited regarding 1) efficient exploration of the storyline design space and 2) flexible customization of storyline layouts. In this work, we propose a reinforcement learning framework to train an AI agent that assists users in exploring the design space efficiently and generating well-optimized storylines. Based on the framework, we introduce PlotThread, an authoring tool that integrates a set of flexible interactions to support easy customization of storyline visualizations. To seamlessly integrate the AI agent into the authoring process, we employ a mixed-initiative approach where both the agent and designers work on the same canvas to boost the collaborative design of storylines. We evaluate the reinforcement learning model through qualitative and quantitative experiments and demonstrate the usage of PlotThread using a collection of use cases.",
+   "tldr": "This work proposes a reinforcement learning framework to train an AI agent that assists users in exploring the design space efficiently and generating well-optimized storylines and introduces PlotThread, an authoring tool that integrates a set of flexible interactions to support easy customization of storyline visualizations.",
+   "citationCount": 68,
+   "pdf": "https://arxiv.org/pdf/2009.00249",
+   "url": "https://www.semanticscholar.org/paper/392a2b92a0be230f8bb2a26c0e70cebc11ad6ff9",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "392a2b92a0be230f8bb2a26c0e70cebc11ad6ff9",
+    "arxiv": "2009.00249",
+    "doi": "10.1109/tvcg.2020.3030467"
+   },
+   "key": "arxiv:2009.00249",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z",
+   "matchedByTitle": true
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "2024。storylineの3D・没入型への拡張",
+     "url": "https://arxiv.org/abs/2408.01775"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:storylineを3D空間に拡張し没入環境で閲覧。新規性:VRでのstorylineの表現と操作を検討",
+     "url": "https://arxiv.org/abs/2408.01775"
+    }
+   ],
+   "title": "3DStoryline: immersive visual storytelling",
+   "authors": [
+    "Haonan Yao",
+    "Lixiang Zhao",
+    "Boyuan Chen",
+    "Kai-Wen Li",
+    "Hai-Ning Liang",
+    "Lingyun Yu"
+   ],
+   "year": 2024,
+   "venue": "Journal of Vision",
+   "abstract": "In this study, we investigate the potential of immersive environments, such as virtual reality (VR), for enhancing storyline visualizations. Storyline visualization has gained attention as an innovative method for illustrating the progression and dynamics of stories across various domains. However, traditional approaches use 2D lines on 2D screens, which, due to limited space and simplistic layouts, often struggle to effectively represent complex stories involving multiple characters and intricate temporal and spatial dynamics. To address these limitations, we explore the use of immersive VR environments as a storytelling medium. We began by identifying key design considerations for effective storyline visualization in VR. Guided by these considerations, we developed 3DStoryline, a system that allows users to view, navigate and interact with 3D immersive storyline visualizations by exploring storylines from multiple angles and perspectives. To evaluate the effectiveness of 3DStoryline, we conducted a task-based user study, revealing that the system significantly enhances users’ comprehension of complex narratives. Through our exploration of storytelling visualization in VR, we recognize the potential of 3D immersive environments in assisting users to better understand complex story structures.",
+   "tldr": "3DStoryline, a system that allows users to view, navigate and interact with 3D immersive storyline visualizations by exploring storylines from multiple angles and perspectives, is developed and evaluated, revealing that the system significantly enhances users’ comprehension of complex narratives.",
+   "citationCount": 6,
+   "pdf": "http://arxiv.org/pdf/2408.01775",
+   "url": "https://www.semanticscholar.org/paper/5bc1980f1f7a5adbabda5751307f2ce041a50186",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "arxiv": "2408.01775",
+    "s2": "5bc1980f1f7a5adbabda5751307f2ce041a50186",
+    "doi": "10.1007/s12650-025-01058-5"
+   },
+   "key": "arxiv:2408.01775",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "2024。GPT支援で文章からstorylineを構築",
+     "url": "https://arxiv.org/abs/2411.05435"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:文章から物語の断片を抽出しstorylineを構築。新規性:手書き注釈とGPTのヒントを組合せた作成手順",
+     "url": "https://www.semanticscholar.org/paper/8f8a2194b9357a6b117d8b252c95d1e688e89ea8"
+    }
+   ],
+   "title": "StoryExplorer: A Visualization Framework for Storyline Generation of Textual Narratives",
+   "authors": [
+    "Li Ye",
+    "Lei Wang",
+    "Shaolun Ruan",
+    "Yuwei Meng",
+    "Yi-Gang Wang",
+    "Wei Chen",
+    "Zhiguang Zhou"
+   ],
+   "year": 2024,
+   "venue": "arXiv.org",
+   "abstract": "In the context of the exponentially increasing volume of narrative texts such as novels and news, readers struggle to extract and consistently remember storyline from these intricate texts due to the constraints of human working memory and attention span. To tackle this issue, we propose a visualization approach StoryExplorer, which facilitates the process of knowledge externalization of narrative texts and further makes the form of mental models more coherent. Through the formative study and close collaboration with 2 domain experts, we identified key challenges for the extraction of the storyline. Guided by the distilled requirements, we then propose a set of workflow (i.e., insight finding-scripting-storytelling) to enable users to interactively generate fragments of narrative structures. We then propose a visualization system StoryExplorer which combines stroke annotation and GPT-based visual hints to quickly extract story fragments and interactively construct storyline. To evaluate the effectiveness and usefulness of StoryExplorer, we conducted 2 case studies and in-depth user interviews with 16 target users. The result shows that users can better extract the storyline by using StoryExplorer along with the proposed workflow.",
+   "tldr": "The result shows that users can better extract the storyline by using StoryExplorer along with the proposed workflow, which combines stroke annotation and GPT-based visual hints to quickly extract story fragments and interactively construct storyline.",
+   "citationCount": 5,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/8f8a2194b9357a6b117d8b252c95d1e688e89ea8",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "8f8a2194b9357a6b117d8b252c95d1e688e89ea8",
+    "arxiv": "2411.05435",
+    "doi": "10.48550/arxiv.2411.05435"
+   },
+   "key": "arxiv:2411.05435",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "2025。LLMで小説から人物・テーマの軌跡を抽出",
+     "url": "https://arxiv.org/abs/2508.06772"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:LLMで小説や脚本から人物・テーマを抽出。新規性:抽出結果を複数の粒度で探れる対話型システム",
+     "url": "https://www.semanticscholar.org/paper/154026c491fe603984ff66200970b7a1b713247e"
+    }
+   ],
+   "title": "Story Ribbons: Reimagining Storyline Visualizations with Large Language Models",
+   "authors": [
+    "Catherine Yeh",
+    "T. Menon",
+    "Robin Singh Arya",
+    "He He",
+    "Moira Weigel",
+    "Fernanda Viégas",
+    "M. Wattenberg"
+   ],
+   "year": 2025,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": "Analyzing literature involves tracking interactions between characters, locations, and themes. Visualization has the potential to facilitate the mapping and analysis of these complex relationships, but capturing structured information from unstructured story data remains a challenge. As large language models (LLMs) continue to advance, we see an opportunity to use their text processing and analysis capabilities to augment and reimagine existing storyline visualization techniques. Toward this goal, we introduce an LLM-driven data parsing pipeline that automatically extracts relevant narrative information from novels and scripts. We then apply this pipeline to create Story Ribbons, an interactive visualization system that helps novice and expert literary analysts explore detailed character and theme trajectories at multiple narrative levels. Through pipeline evaluations and user studies with Story Ribbons on 36 literary works, we demonstrate the potential of LLMs to streamline narrative visualization creation and reveal new insights about familiar stories. We also describe current limitations of AI-based systems, and interaction motifs designed to address these issues.",
+   "tldr": "An LLM-driven data parsing pipeline is introduced that automatically extracts relevant narrative information from novels and scripts and is applied to create Story Ribbons, an interactive visualization system that helps novice and expert literary analysts explore detailed character and theme trajectories at multiple narrative levels.",
+   "citationCount": 3,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/154026c491fe603984ff66200970b7a1b713247e",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "arxiv": "2508.06772",
+    "s2": "154026c491fe603984ff66200970b7a1b713247e",
+    "doi": "10.1109/tvcg.2025.3634265"
+   },
+   "key": "arxiv:2508.06772",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z",
+   "matchedByTitle": true
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "CHI 2025。storyline等の可視化を執筆支援に応用",
+     "url": "https://arxiv.org/abs/2410.07486"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:人物・場所・出来事の可視化を操作して文章を編集。新規性:可視化の操作をLLMで本文修正に反映",
+     "url": "https://www.semanticscholar.org/paper/e247b1948acffc5241be56eefea158eb9dc800c2"
+    }
+   ],
+   "title": "Visual Story-Writing: Writing by Manipulating Visual Representations of Stories",
+   "authors": [
+    "Damien Masson",
+    "Zixin Zhao",
+    "Fanny Chevalier"
+   ],
+   "year": 2024,
+   "venue": "ACM Symposium on User Interface Software and Technology",
+   "abstract": "We define “visual story-writing” as using visual representations of story elements to support writing and revising narrative texts. To demonstrate this approach, we developed a text editor that automatically visualizes a graph of entity interactions, movement between locations, and a timeline of story events. Interacting with these visualizations results in suggested text edits: for example, connecting two characters in the graph creates an interaction between them, moving an entity updates their described location, and rearranging events on the timeline reorganizes the narrative sequence. Through two user studies on narrative text editing and writing, we found that visuals supported participants in planning high-level revisions, tracking story elements, and exploring story variations in ways that encourage creativity. Broadly, our work lays the foundation for writing support, not just through words, but also visuals.",
+   "tldr": "Through two user studies on narrative text editing and writing, it is found that visuals supported participants in planning high-level revisions, tracking story elements, and exploring story variations in ways that encourage creativity.",
+   "citationCount": 19,
+   "pdf": "https://dl.acm.org/doi/pdf/10.1145/3746059.3747758",
+   "url": "https://www.semanticscholar.org/paper/e247b1948acffc5241be56eefea158eb9dc800c2",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "e247b1948acffc5241be56eefea158eb9dc800c2",
+    "arxiv": "2410.07486",
+    "doi": "10.1145/3746059.3747758"
+   },
+   "key": "arxiv:2410.07486",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "Tong et al. 2018。可視化ストーリーテリング全般のサーベイ",
+     "url": "https://www.semanticscholar.org/paper/59200768e4316ab899523161c4552e005e10688c"
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:可視化のストーリーテリング研究を概観。新規性:共通要素を整理し文献の新しい分類を提示",
+     "url": "https://www.semanticscholar.org/paper/59200768e4316ab899523161c4552e005e10688c"
+    }
+   ],
+   "title": "Storytelling and Visualization: A Survey",
+   "authors": [
+    "Chao Tong",
+    "Richard C. Roberts",
+    "R. Laramee",
+    "Kodzo Wegba",
+    "Aidong Lu",
+    "Yun Wang",
+    "Hua-Min Qu",
+    "Qiong Luo",
+    "Xiaojuan Ma"
+   ],
+   "year": 2018,
+   "venue": "VISIGRAPP",
+   "abstract": "Throughout history, storytelling has been an effective way of conveying information and knowledge. In the field of visualization, storytelling is rapidly gaining momentum and evolving cutting-edge techniques that enhance understanding. Many communities have commented on the importance of storytelling in data visualization. Storytellers tend to be integrating complex visualizations into their narratives in growing numbers. In this paper, we present a survey of storytelling literature in visualization and present an overview of the common and important elements in storytelling visualization. We also describe the challenges in this field as well as a novel classification of the literature on storytelling in visualization. Our classification scheme highlights the open and unsolved problems in this field as well as the more mature storytelling sub-fields. The benefits offer a concise overview and a starting point into this rapidly evolving research trend and provide a deeper understanding of this topic.",
+   "tldr": "This paper presents a survey of storytelling literature in visualization and presents an overview of the common and important elements in storytelling visualization, as well as a novel classification of the literature on storytelling in visualization.",
+   "citationCount": 16,
+   "pdf": "https://doi.org/10.5220/0006601102120224",
+   "url": "https://www.semanticscholar.org/paper/59200768e4316ab899523161c4552e005e10688c",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "59200768e4316ab899523161c4552e005e10688c",
+    "doi": "10.5220/0006601102120224"
+   },
+   "key": "doi:10.5220/0006601102120224",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-29T21:17:08Z",
+   "matchedByTitle": true
+  },
   {
    "refs": [
     {
@@ -263,147 +913,6 @@
   {
    "refs": [
     {
-     "at": "2026-09-29T21:11:08Z",
-     "source": "chat",
-     "project": null,
-     "context": "storylineの応用例。動的ハイパーグラフ（多人数の関係）を展開",
-     "url": null
-    }
-   ],
-   "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
-   "authors": [
-    "Vanessa Peña-Araya",
-    "Tong Xue",
-    "Emmanuel Pietriga",
-    "L. Amsaleg",
-    "A. Bezerianos"
-   ],
-   "year": 2021,
-   "venue": "Information Visualization",
-   "abstract": "We present the design and evaluation of HyperStorylines, a technique that generalizes Storylines to visualize the evolution of relationships involving multiple types of entities such as, for example, people, locations, and companies. Datasets which describe such multi-entity relationships are often modeled as hypergraphs, that can be difficult to visualize, especially when these relationships evolve over time. HyperStorylines builds upon Storylines, enabling the aggregation and nesting of these dynamic, multi-entity relationships. We report on the design process of HyperStorylines, which was informed by discussions and workshops with data journalists; and on the results of a comparative study in which participants had to answer questions inspired by the tasks that journalists typically perform with such data. We observe that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
-   "tldr": "It is observed that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
-   "citationCount": 23,
-   "pdf": "https://hal.inria.fr/hal-03352276/file/main.pdf",
-   "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "de68b032dab743d5f0236aa043990e037c477d0e",
-    "doi": "10.1177/14738716211045007"
-   },
-   "key": "doi:10.1177/14738716211045007",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:11:08Z",
-   "lastSeen": "2026-09-29T21:11:08Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:11:08Z",
-     "source": "chat",
-     "project": null,
-     "context": "storylineの応用例。SNSのコミュニティ構造の時間変化",
-     "url": null
-    }
-   ],
-   "title": "Visualizing the Evolution of Community Structures in Dynamic Social Networks",
-   "authors": [
-    "Khairi Reda",
-    "Chayant Tantipathananandh",
-    "Andrew E. Johnson",
-    "J. Leigh",
-    "T. Berger-Wolf"
-   ],
-   "year": 2011,
-   "venue": "Computer graphics forum (Print)",
-   "abstract": null,
-   "tldr": "This paper presents an interactive visualization methodology for dynamic social networks that focuses on revealing the community structure implied by the evolving interaction patterns between individuals, and applies this technique to analyze thecommunity structure in the US House of Representatives.",
-   "citationCount": 105,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/f7d3b47f21b19faa1da7aad282a7c326a91f1520",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "f7d3b47f21b19faa1da7aad282a7c326a91f1520",
-    "doi": "10.1111/j.1467-8659.2011.01955.x"
-   },
-   "key": "doi:10.1111/j.1467-8659.2011.01955.x",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:11:08Z",
-   "lastSeen": "2026-09-29T21:11:08Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:11:08Z",
-     "source": "chat",
-     "project": null,
-     "context": "storylineの応用例。階層的な物語構造を表現",
-     "url": null
-    }
-   ],
-   "title": "Storytelling by the StoryCake visualization",
-   "authors": [
-    "Qiang Lu",
-    "Bing-Jie Chai",
-    "Hai-Bo Zhang"
-   ],
-   "year": 2017,
-   "venue": "The Visual Computer",
-   "abstract": null,
-   "tldr": "Experimental results show that the proposed hierarchical plot visualization method in polarcoordinates can reveal the narrative structure and development of the story and a fan-shaped visualization view to enable people better understand how story evolves and track thehierarchical relationship more conveniently.",
-   "citationCount": 16,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/b16147d467777cb59732932a168e6d63ef2ec7e0",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "b16147d467777cb59732932a168e6d63ef2ec7e0",
-    "doi": "10.1007/s00371-017-1409-2"
-   },
-   "key": "doi:10.1007/s00371-017-1409-2",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:11:08Z",
-   "lastSeen": "2026-09-29T21:11:08Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:11:08Z",
-     "source": "chat",
-     "project": null,
-     "context": "storylineの応用例。グループ共同作業の分析",
-     "url": null
-    }
-   ],
-   "title": "An effective demonstration for group collaboration based on storyline visualization technology",
-   "authors": [
-    "Qiang Lu",
-    "Xiang-Yuan Zhu",
-    "Li Liu",
-    "Shu-Bo Cao"
-   ],
-   "year": 2014,
-   "venue": "International Conference on Computer Supported Cooperative Work in Design",
-   "abstract": null,
-   "tldr": null,
-   "citationCount": 13,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/4c719be1b4e45d2d9a8b49faebc73a696daade33",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "4c719be1b4e45d2d9a8b49faebc73a696daade33",
-    "doi": "10.1109/cscwd.2014.6846815"
-   },
-   "key": "doi:10.1109/cscwd.2014.6846815",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:11:08Z",
-   "lastSeen": "2026-09-29T21:11:08Z"
-  },
-  {
-   "refs": [
-    {
      "at": "2026-09-29T21:09:31Z",
      "source": "chat",
      "project": null,
@@ -431,38 +940,6 @@
     "doi": "10.1109/etvis.2016.7851163"
    },
    "key": "doi:10.1109/etvis.2016.7851163",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:09:31Z",
-   "lastSeen": "2026-09-29T21:09:31Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:09:31Z",
-     "source": "chat",
-     "project": null,
-     "context": "storylineの応用例。ニュース記事の登場人物と出来事を可視化",
-     "url": null
-    }
-   ],
-   "title": "NewsLines: Narrative Visualization of News Stories",
-   "authors": [
-    "Mariana Costa",
-    "Sérgio Nunes"
-   ],
-   "year": 2023,
-   "venue": "Text2Story@ECIR",
-   "abstract": null,
-   "tldr": "The development of NewsLine, an open-source web-based prototype that focuses on narrative visualizations of news content, produces a storyline which showcases the narrative’s events and participants, allowing the user to interact with the visualization in a number of ways.",
-   "citationCount": 4,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b"
-   },
-   "key": "s2:a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b",
    "verified": true,
    "firstSeen": "2026-09-29T21:09:31Z",
    "lastSeen": "2026-09-29T21:09:31Z"
@@ -684,110 +1161,6 @@
      "at": "2026-09-29T21:07:13Z",
      "source": "chat",
      "project": null,
-     "context": "Tanahashi et al. 2015。ストリーミングデータへの対応。時間方向の一貫性に関連",
-     "url": null
-    }
-   ],
-   "title": "An Efficient Framework for Generating Storyline Visualizations from Streaming Data",
-   "authors": [
-    "Y. Tanahashi",
-    "Chien-Hsin Hsueh",
-    "K. Ma"
-   ],
-   "year": 2015,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": null,
-   "tldr": null,
-   "citationCount": 82,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/67ffdc021fc339f090c450b72fa0e7d610914226",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "67ffdc021fc339f090c450b72fa0e7d610914226",
-    "doi": "10.1109/tvcg.2015.2392771"
-   },
-   "key": "doi:10.1109/tvcg.2015.2392771",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "van Dijk et al. GD 2016。ブロック交差という指標の提案",
-     "url": "https://arxiv.org/abs/1609.00321"
-    }
-   ],
-   "title": "Block Crossings in Storyline Visualizations",
-   "authors": [
-    "Thomas C. van Dijk",
-    "Martin Fink",
-    "Norbert Fischer",
-    "Fabian Lipp",
-    "Peter Markfelder",
-    "Alexander Ravsky",
-    "Subhash Suri",
-    "Alexander Wolff"
-   ],
-   "year": 2016,
-   "venue": "arXiv",
-   "abstract": "Storyline visualizations help visualize encounters of the characters in a story over time. Each character is represented by an x-monotone curve that goes from left to right. A meeting is represented by having the characters that participate in the meeting run close together for some time. In order to keep the visual complexity low, rather than just minimizing pairwise crossings of curves, we propose to count block crossings, that is, pairs of intersecting bundles of lines. Our main results are as follows. We show that minimizing the number of block crossings is NP-hard, and we develop, for meetings of bounded size, a constant-factor approximation. We also present two fixed-parameter algorithms and, for meetings of size 2, a greedy heuristic that we evaluate experimentally.",
-   "tldr": null,
-   "citationCount": null,
-   "pdf": "https://arxiv.org/pdf/1609.00321",
-   "url": "https://arxiv.org/abs/1609.00321",
-   "metaSource": "arxiv",
-   "ids": {
-    "arxiv": "1609.00321"
-   },
-   "key": "arxiv:1609.00321",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "GD 2017。SATによるブロック交差の最適化",
-     "url": "https://arxiv.org/abs/1709.01055"
-    }
-   ],
-   "title": "Computing Storyline Visualizations with Few Block Crossings",
-   "authors": [
-    "Thomas C. van Dijk",
-    "Fabian Lipp",
-    "Peter Markfelder",
-    "Alexander Wolff"
-   ],
-   "year": 2017,
-   "venue": "arXiv",
-   "abstract": "Storyline visualizations show the structure of a story, by depicting the interactions of the characters over time. Each character is represented by an x-monotone curve from left to right, and a meeting is represented by having the curves of the participating characters run close together for some time. There have been various approaches to drawing storyline visualizations in an automated way. In order to keep the visual complexity low, rather than minimizing pairwise crossings of curves, we count block crossings, that is, pairs of intersecting bundles of lines. Partly inspired by the ILP-based approach of Gronemann et al. [GD 2016] for minimizing the number of pairwise crossings, we model the problem as a satisfiability problem (since the straightforward ILP formulation becomes more complicated and harder to solve). Having restricted ourselves to a decision problem, we can apply powerful SAT solvers to find optimal drawings in reasonable time. We compare this SAT-based approach with two exact algorithms for block crossing minimization, using both the benchmark instances of Gronemann et al. and random instances. We show that the SAT approach is suitable for real-world instances and identify cases where the other algorithms are preferable.",
-   "tldr": null,
-   "citationCount": null,
-   "pdf": "https://arxiv.org/pdf/1709.01055",
-   "url": "https://arxiv.org/abs/1709.01055",
-   "metaSource": "arxiv",
-   "ids": {
-    "arxiv": "1709.01055"
-   },
-   "key": "arxiv:1709.01055",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
      "context": "Arendt & Pirrung 2017。縦位置の意味づけに関する研究",
      "url": null
     }
@@ -811,83 +1184,6 @@
     "doi": "10.1109/vast.2017.8585487"
    },
    "key": "doi:10.1109/vast.2017.8585487",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "Tang et al. 2018。手描き風レイアウトへのインタラクティブ調整",
-     "url": "https://doi.org/10.1109/tvcg.2018.2864899"
-    }
-   ],
-   "title": "iStoryline: Effective Convergence to Hand-drawn Storylines",
-   "authors": [
-    "Tan Tang",
-    "Sadia Rubab",
-    "Jiewen Lai",
-    "Weiwei Cui",
-    "Lingyun Yu",
-    "Yingcai Wu"
-   ],
-   "year": 2019,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": "Storyline visualization techniques have progressed significantly to generate illustrations of complex stories automatically. However, the visual layouts of storylines are not enhanced accordingly despite the improvement in the performance and extension of its application area. Existing methods attempt to achieve several shared optimization goals, such as reducing empty space and minimizing line crossings and wiggles. However, these goals do not always produce optimal results when compared to hand-drawn storylines. We conducted a preliminary study to learn how users translate a narrative into a hand-drawn storyline and check whether the visual elements in hand-drawn illustrations can be mapped back to appropriate narrative contexts. We also compared the hand-drawn storylines with storylines generated by the state-of-the-art methods and found they have significant differences. Our findings led to a design space that summarizes 1) how artists utilize narrative elements and 2) the sequence of actions artists follow to portray expressive and attractive storylines. We developed iStoryline, an authoring tool for integrating high-level user interactions into optimization algorithms and achieving a balance between hand-drawn storylines and automatic layouts. iStoryline allows users to create novel storyline visualizations easily according to their preferences by modifying the automatically generated layouts. The effectiveness and usability of iStoryline are studied with qualitative evaluations.",
-   "tldr": null,
-   "citationCount": 57,
-   "pdf": "https://research.rug.nl/files/81367771/08440828.pdf",
-   "url": "https://www.semanticscholar.org/paper/0b0549975c366abac203294099da2e3ac9e87172",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "s2": "0b0549975c366abac203294099da2e3ac9e87172",
-    "doi": "10.1109/tvcg.2018.2864899"
-   },
-   "key": "doi:10.1109/tvcg.2018.2864899",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "Tang et al. 2020。強化学習によるレイアウト生成",
-     "url": "https://doi.org/10.1109/tvcg.2020.3030467"
-    }
-   ],
-   "title": "PlotThread: Creating Expressive Storyline Visualizations using Reinforcement Learning",
-   "authors": [
-    "Tan Tang",
-    "Renzhong Li",
-    "Xinke Wu",
-    "Shuhan Liu",
-    "Johannes Knittel",
-    "Steffen Koch",
-    "Lingyun Yu",
-    "Peiran Ren",
-    "Thomas Ertl",
-    "Yingcai Wu"
-   ],
-   "year": 2020,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": "Storyline visualizations are an effective means to present the evolution of plots and reveal the scenic interactions among characters. However, the design of storyline visualizations is a difficult task as users need to balance between aesthetic goals and narrative constraints. Despite that the optimization-based methods have been improved significantly in terms of producing aesthetic and legible layouts, the existing (semi-) automatic methods are still limited regarding 1) efficient exploration of the storyline design space and 2) flexible customization of storyline layouts. In this work, we propose a reinforcement learning framework to train an AI agent that assists users in exploring the design space efficiently and generating well-optimized storylines. Based on the framework, we introduce PlotThread, an authoring tool that integrates a set of flexible interactions to support easy customization of storyline visualizations. To seamlessly integrate the AI agent into the authoring process, we employ a mixed-initiative approach where both the agent and designers work on the same canvas to boost the collaborative design of storylines. We evaluate the reinforcement learning model through qualitative and quantitative experiments and demonstrate the usage of PlotThread using a collection of use cases.",
-   "tldr": "This work proposes a reinforcement learning framework to train an AI agent that assists users in exploring the design space efficiently and generating well-optimized storylines and introduces PlotThread, an authoring tool that integrates a set of flexible interactions to support easy customization of storyline visualizations.",
-   "citationCount": 68,
-   "pdf": "https://arxiv.org/pdf/2009.00249",
-   "url": "https://www.semanticscholar.org/paper/392a2b92a0be230f8bb2a26c0e70cebc11ad6ff9",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "s2": "392a2b92a0be230f8bb2a26c0e70cebc11ad6ff9",
-    "arxiv": "2009.00249",
-    "doi": "10.1109/tvcg.2020.3030467"
-   },
-   "key": "arxiv:2009.00249",
    "verified": true,
    "firstSeen": "2026-09-29T21:07:13Z",
    "lastSeen": "2026-09-29T21:07:13Z"
@@ -925,191 +1221,6 @@
    "verified": true,
    "firstSeen": "2026-09-29T21:07:13Z",
    "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "2024。storylineの3D・没入型への拡張",
-     "url": "https://arxiv.org/abs/2408.01775"
-    }
-   ],
-   "title": "3DStoryline: Immersive Visual Storytelling",
-   "authors": [
-    "Haonan Yao",
-    "Lixiang Zhao",
-    "Boyuan Chen",
-    "Kaiwen Li",
-    "Hai-Ning Liang",
-    "Lingyun Yu"
-   ],
-   "year": 2024,
-   "venue": "arXiv",
-   "abstract": "Storyline visualization has emerged as an innovative method for illustrating the development and changes in stories across various domains. Traditional approaches typically represent stories with one line per character, progressing from left to right. While effective for simpler narratives, this method faces significant challenges when dealing with complex stories involving multiple characters, as well as temporal and spatial dynamics. In this study, we investigate the potential of immersive environments for enhancing storyline visualizations. We begin by summarizing the key design considerations for effective storyline visualization in virtual reality (VR). Guided by these principles, we develop 3DStoryline, a system that allows users to view and interact with 3D immersive storyline visualizations. To evaluate the effectiveness of 3DStoryline, we conduct a task-based user study, revealing that the system significantly enhances users' comprehension of complex narratives.",
-   "tldr": null,
-   "citationCount": null,
-   "pdf": "https://arxiv.org/pdf/2408.01775",
-   "url": "https://arxiv.org/abs/2408.01775",
-   "metaSource": "arxiv",
-   "ids": {
-    "arxiv": "2408.01775"
-   },
-   "key": "arxiv:2408.01775",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "2024。GPT支援で文章からstorylineを構築",
-     "url": "https://arxiv.org/abs/2411.05435"
-    }
-   ],
-   "title": "StoryExplorer: A Visualization Framework for Storyline Generation of Textual Narratives",
-   "authors": [
-    "Li Ye",
-    "Lei Wang",
-    "Shaolun Ruan",
-    "Yuwei Meng",
-    "Yi-Gang Wang",
-    "Wei Chen",
-    "Zhiguang Zhou"
-   ],
-   "year": 2024,
-   "venue": "arXiv.org",
-   "abstract": "In the context of the exponentially increasing volume of narrative texts such as novels and news, readers struggle to extract and consistently remember storyline from these intricate texts due to the constraints of human working memory and attention span. To tackle this issue, we propose a visualization approach StoryExplorer, which facilitates the process of knowledge externalization of narrative texts and further makes the form of mental models more coherent. Through the formative study and close collaboration with 2 domain experts, we identified key challenges for the extraction of the storyline. Guided by the distilled requirements, we then propose a set of workflow (i.e., insight finding-scripting-storytelling) to enable users to interactively generate fragments of narrative structures. We then propose a visualization system StoryExplorer which combines stroke annotation and GPT-based visual hints to quickly extract story fragments and interactively construct storyline. To evaluate the effectiveness and usefulness of StoryExplorer, we conducted 2 case studies and in-depth user interviews with 16 target users. The result shows that users can better extract the storyline by using StoryExplorer along with the proposed workflow.",
-   "tldr": "The result shows that users can better extract the storyline by using StoryExplorer along with the proposed workflow, which combines stroke annotation and GPT-based visual hints to quickly extract story fragments and interactively construct storyline.",
-   "citationCount": 5,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/8f8a2194b9357a6b117d8b252c95d1e688e89ea8",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "s2": "8f8a2194b9357a6b117d8b252c95d1e688e89ea8",
-    "arxiv": "2411.05435",
-    "doi": "10.48550/arxiv.2411.05435"
-   },
-   "key": "arxiv:2411.05435",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "2025。LLMで小説から人物・テーマの軌跡を抽出",
-     "url": "https://arxiv.org/abs/2508.06772"
-    }
-   ],
-   "title": "Story Ribbons: Reimagining Storyline Visualizations with Large Language Models",
-   "authors": [
-    "Catherine Yeh",
-    "T. Menon",
-    "Robin Singh Arya",
-    "He He",
-    "Moira Weigel",
-    "Fernanda Viégas",
-    "M. Wattenberg"
-   ],
-   "year": 2025,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": "Analyzing literature involves tracking interactions between characters, locations, and themes. Visualization has the potential to facilitate the mapping and analysis of these complex relationships, but capturing structured information from unstructured story data remains a challenge. As large language models (LLMs) continue to advance, we see an opportunity to use their text processing and analysis capabilities to augment and reimagine existing storyline visualization techniques. Toward this goal, we introduce an LLM-driven data parsing pipeline that automatically extracts relevant narrative information from novels and scripts. We then apply this pipeline to create Story Ribbons, an interactive visualization system that helps novice and expert literary analysts explore detailed character and theme trajectories at multiple narrative levels. Through pipeline evaluations and user studies with Story Ribbons on 36 literary works, we demonstrate the potential of LLMs to streamline narrative visualization creation and reveal new insights about familiar stories. We also describe current limitations of AI-based systems, and interaction motifs designed to address these issues.",
-   "tldr": "An LLM-driven data parsing pipeline is introduced that automatically extracts relevant narrative information from novels and scripts and is applied to create Story Ribbons, an interactive visualization system that helps novice and expert literary analysts explore detailed character and theme trajectories at multiple narrative levels.",
-   "citationCount": 3,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/154026c491fe603984ff66200970b7a1b713247e",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "arxiv": "2508.06772",
-    "s2": "154026c491fe603984ff66200970b7a1b713247e",
-    "doi": "10.1109/tvcg.2025.3634265"
-   },
-   "key": "arxiv:2508.06772",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "CHI 2025。storyline等の可視化を執筆支援に応用",
-     "url": "https://arxiv.org/abs/2410.07486"
-    }
-   ],
-   "title": "Visual Story-Writing: Writing by Manipulating Visual Representations of Stories",
-   "authors": [
-    "Damien Masson",
-    "Zixin Zhao",
-    "Fanny Chevalier"
-   ],
-   "year": 2024,
-   "venue": "ACM Symposium on User Interface Software and Technology",
-   "abstract": "We define “visual story-writing” as using visual representations of story elements to support writing and revising narrative texts. To demonstrate this approach, we developed a text editor that automatically visualizes a graph of entity interactions, movement between locations, and a timeline of story events. Interacting with these visualizations results in suggested text edits: for example, connecting two characters in the graph creates an interaction between them, moving an entity updates their described location, and rearranging events on the timeline reorganizes the narrative sequence. Through two user studies on narrative text editing and writing, we found that visuals supported participants in planning high-level revisions, tracking story elements, and exploring story variations in ways that encourage creativity. Broadly, our work lays the foundation for writing support, not just through words, but also visuals.",
-   "tldr": "Through two user studies on narrative text editing and writing, it is found that visuals supported participants in planning high-level revisions, tracking story elements, and exploring story variations in ways that encourage creativity.",
-   "citationCount": 19,
-   "pdf": "https://dl.acm.org/doi/pdf/10.1145/3746059.3747758",
-   "url": "https://www.semanticscholar.org/paper/e247b1948acffc5241be56eefea158eb9dc800c2",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "s2": "e247b1948acffc5241be56eefea158eb9dc800c2",
-    "arxiv": "2410.07486",
-    "doi": "10.1145/3746059.3747758"
-   },
-   "key": "arxiv:2410.07486",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "Tong et al. 2018。可視化ストーリーテリング全般のサーベイ",
-     "url": "https://www.semanticscholar.org/paper/59200768e4316ab899523161c4552e005e10688c"
-    }
-   ],
-   "title": "Storytelling and Visualization: A Survey",
-   "authors": [
-    "Chao Tong",
-    "Richard C. Roberts",
-    "R. Laramee",
-    "Kodzo Wegba",
-    "Aidong Lu",
-    "Yun Wang",
-    "Hua-Min Qu",
-    "Qiong Luo",
-    "Xiaojuan Ma"
-   ],
-   "year": 2018,
-   "venue": "VISIGRAPP",
-   "abstract": "Throughout history, storytelling has been an effective way of conveying information and knowledge. In the field of visualization, storytelling is rapidly gaining momentum and evolving cutting-edge techniques that enhance understanding. Many communities have commented on the importance of storytelling in data visualization. Storytellers tend to be integrating complex visualizations into their narratives in growing numbers. In this paper, we present a survey of storytelling literature in visualization and present an overview of the common and important elements in storytelling visualization. We also describe the challenges in this field as well as a novel classification of the literature on storytelling in visualization. Our classification scheme highlights the open and unsolved problems in this field as well as the more mature storytelling sub-fields. The benefits offer a concise overview and a starting point into this rapidly evolving research trend and provide a deeper understanding of this topic.",
-   "tldr": "This paper presents a survey of storytelling literature in visualization and presents an overview of the common and important elements in storytelling visualization, as well as a novel classification of the literature on storytelling in visualization.",
-   "citationCount": 16,
-   "pdf": "https://doi.org/10.5220/0006601102120224",
-   "url": "https://www.semanticscholar.org/paper/59200768e4316ab899523161c4552e005e10688c",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "s2": "59200768e4316ab899523161c4552e005e10688c",
-    "doi": "10.5220/0006601102120224"
-   },
-   "key": "doi:10.5220/0006601102120224",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:07:13Z",
-   "matchedByTitle": true
   },
   {
    "refs": [
