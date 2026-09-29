@@ -90,6 +90,7 @@ jobs:
 
   deploy:
     needs: process
+    if: always() && needs.process.result == 'success' # enqueue がスキップされても公開まで進める
     concurrency:
       group: pages
       cancel-in-progress: false
