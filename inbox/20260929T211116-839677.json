@@ -1,0 +1,50 @@
+[
+ {
+  "url": "1412.6706",
+  "title": "SVEN: Informative Visual Representation of Complex Dynamic Structure",
+  "context": "storylineの応用例。動的グラフの構造変化をstoryline形式で表示",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:11:08Z"
+ },
+ {
+  "url": "",
+  "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
+  "context": "storylineの応用例。動的ハイパーグラフ（多人数の関係）を展開",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:11:08Z"
+ },
+ {
+  "url": "",
+  "title": "Visualizing the evolution of community structures in dynamic social networks",
+  "context": "storylineの応用例。SNSのコミュニティ構造の時間変化",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:11:08Z"
+ },
+ {
+  "url": "",
+  "title": "Storytelling by the StoryCake Visualization",
+  "context": "storylineの応用例。階層的な物語構造を表現",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:11:08Z"
+ },
+ {
+  "url": "",
+  "title": "An effective demonstration for group collaboration based on storyline visualization technology",
+  "context": "storylineの応用例。グループ共同作業の分析",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:11:08Z"
+ },
+ {
+  "url": "10.1371/journal.pone.0137502",
+  "title": "Netgram: Visualizing Communities in Evolving Networks",
+  "context": "storylineに近い線ベース表現で進化するネットワークのコミュニティを追跡",
+  "project": "",
+  "source": "chat",
+  "at": "2026-09-29T21:11:08Z"
+ }
+]
