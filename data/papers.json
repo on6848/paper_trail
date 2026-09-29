@@ -1,6 +1,91 @@
 {
- "updated": "2026-09-29T20:51:33+00:00",
+ "updated": "2026-09-29T20:51:52+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:51:22Z",
+     "source": "chat",
+     "project": null,
+     "context": "MSVではノード位置が時間で変えられないという根拠として参照",
+     "url": "https://arxiv.org/abs/2009.11422"
+    }
+   ],
+   "title": "An Online and Nonuniform Timeslicing Method for Network Visualisation",
+   "authors": [
+    "J. R. Ponciano",
+    "Cláudio D. G. Linhares",
+    "E. R. de Faria",
+    "B. Travençolo"
+   ],
+   "year": 2020,
+   "venue": "Computers & graphics",
+   "abstract": "Visual analysis of temporal networks comprises an effective way to understand the network dynamics, facilitating the identification of patterns, anomalies, and other network properties, thus resulting in fast decision making. The amount of data in real-world networks, however, may result in a layout with high visual clutter due to edge overlapping. This is particularly relevant in the so-called streaming networks, in which edges are continuously arriving (online) and in non-stationary distribution. All three network dimensions, namely node, edge, and time, can be manipulated to reduce such clutter and improve readability. This paper presents an online and nonuniform timeslicing method, thus considering the underlying network structure and addressing streaming network analyses. We conducted experiments using two real-world networks to compare our method against uniform and nonuniform timeslicing strategies. The results show that our method automatically selects timeslices that effectively reduce visual clutter in periods with bursts of events. As a consequence, decision making based on the identification of global temporal patterns becomes faster and more reliable.",
+   "tldr": "The results show that the online and nonuniform timeslicing method automatically selects timeslices that effectively reduce visual clutter in periods with bursts of events, so that decision making based on the identification of global temporal patterns becomes faster and more reliable.",
+   "citationCount": 13,
+   "pdf": "https://doi.org/10.1016/j.cag.2021.04.006",
+   "url": "https://www.semanticscholar.org/paper/45dbbdcffa456c5b0d4f4430a103a06cffb16688",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "45dbbdcffa456c5b0d4f4430a103a06cffb16688",
+    "arxiv": "2009.11422",
+    "doi": "10.1016/j.cag.2021.04.006"
+   },
+   "key": "arxiv:2009.11422",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:51:22Z",
+   "lastSeen": "2026-09-29T20:51:22Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:51:22Z",
+     "source": "chat",
+     "project": null,
+     "context": "人文系ネットワーク可視化が不確かさを十分に表現していないという根拠",
+     "url": "https://doi.org/10.3389/fcomm.2023.1305137"
+    }
+   ],
+   "title": "Uncertainty in humanities network visualization",
+   "authors": [
+    "M. Conroy",
+    "Christina Gillmann",
+    "F. Harvey",
+    "T. Mchedlidze",
+    "S. Fabrikant",
+    "F. Windhager",
+    "G. Scheuermann",
+    "Timothy R. Tangherlini",
+    "Christopher Warren",
+    "Scott B. Weingart",
+    "Malte Rehbein",
+    "K. Börner",
+    "Kimmo Elo",
+    "S. Jänicke",
+    "A. Kerren",
+    "M. Nöllenburg",
+    "Tim Dwyer",
+    "Øyvind Eide",
+    "Stephen G. Kobourov",
+    "Gregor Betz"
+   ],
+   "year": 2024,
+   "venue": "Frontiers in Communication",
+   "abstract": "Network visualization is one of the most widely used tools in digital humanities research. The idea of uncertain or “fuzzy” data is also a core notion in digital humanities research. Yet network visualizations in digital humanities do not always prominently represent uncertainty. In this article, we present a mathematical and logical model of uncertainty as a range of values which can be used in network visualizations. We review some of the principles for visualizing uncertainty of different kinds, visual variables that can be used for representing uncertainty, and how these variables have been used to represent different data types in visualizations drawn from a range of non-humanities fields like climate science and bioinformatics. We then provide examples of two diagrams: one in which the variables displaying degrees of uncertainty are integrated/pinto the graph and one in which glyphs are added to represent data certainty and uncertainty. Finally, we discuss how probabilistic data and what-if scenarios could be used to expand the representation of uncertainty in humanities network visualizations.",
+   "tldr": "A mathematical and logical model of uncertainty as a range of values which can be used in network visualizations, and examples of two diagrams: one in which the variables displaying degrees of uncertainty are integrated/pinto the graph and one in which glyphs are added to represent data certainty and uncertainty.",
+   "citationCount": 10,
+   "pdf": "https://www.frontiersin.org/articles/10.3389/fcomm.2023.1305137/pdf?isPublishedV2=False",
+   "url": "https://www.semanticscholar.org/paper/2c4084b869ca1387359da3c3027244e587a24a26",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "2c4084b869ca1387359da3c3027244e587a24a26",
+    "doi": "10.3389/fcomm.2023.1305137"
+   },
+   "key": "doi:10.3389/fcomm.2023.1305137",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:51:22Z",
+   "lastSeen": "2026-09-29T20:51:22Z"
+  },
   {
    "refs": [
     {
