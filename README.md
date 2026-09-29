@@ -74,6 +74,10 @@ claude.ai に自作のコネクタを追加し、Claude が論文に触れたと
 |---|---|
 | `add_papers` | 会話に出た論文を記録（URL・ID がなければタイトルだけでも可） |
 | `search_papers` | 記録済みの論文を検索（「前に読んだ交差数の論文どれ？」など） |
+| `list_unsummarized` | 日本語要約のない論文とアブストラクトを取り出す |
+| `save_summaries` | 日本語の概要と新規性のポイントを `data/summaries.json` に保存 |
+
+チャットで「足あとの未要約の論文を要約して」と頼むと、Claude が上の2つを使って要約を書き、サイトに反映される。要約はアブストラクトが材料。アブストラクトがなく Claude の知識で書いたものには、サイト上で「本文で確認」の注記が付く。
 
 ### デプロイ（Cloudflare Workers の無料枠）
 
@@ -154,6 +158,7 @@ python3 -m http.server -d _site 8000
 | `inbox/` | 受信した参照ログ（処理後に削除） |
 | `data/papers.json` | 論文データ本体（自動更新） |
 | `data/notes.json` | 自分で書くタグとメモ |
+| `data/summaries.json` | 日本語の概要と新規性（チャットから保存） |
 | `scripts/process_inbox.py` | メタデータ補完と統合 |
 | `scripts/enqueue.py` | 受信内容を inbox に書く（Actions 用） |
 | `scripts/add_paper.sh` | 手元から送る CLI |
