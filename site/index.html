@@ -71,7 +71,14 @@ ol.papers { list-style: none; margin: 0; padding: 0; }
 .steps .n { margin-left: 6px; }
 .flag { font-size: 13px; color: var(--manual); margin-top: 6px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.tag { font-size: 12px; border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; }
+.tag { font-size: 12px; border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; background: transparent; cursor: pointer; line-height: 1.7; }
+.tag[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+/* タグの絞り込みは1行に収め、横にスクロールする（固定ヘッダーを高くしない） */
+.tagbar { display: flex; gap: 6px; align-items: center; margin-top: 10px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 2px; }
+.tagbar .tag { flex: none; font-size: 13px; padding: 1px 9px; }
+.tagbar .tag .n { color: var(--muted); margin-left: 4px; font-variant-numeric: tabular-nums; }
+.tagbar .tag[aria-pressed="true"] .n { color: inherit; opacity: .7; }
+.tagbar .clear { flex: none; border: 0; background: none; color: var(--code); font-size: 13px; cursor: pointer; padding: 1px 4px; }
 .more { margin-top: 10px; border: 0; background: none; padding: 0; color: var(--code); cursor: pointer; font-size: 14px; }
 .detail { margin-top: 12px; padding: 14px 16px; background: var(--surface); border-radius: 6px; }
 .detail h3 { font-size: 13px; font-weight: 600; margin: 14px 0 4px; color: var(--muted); }
@@ -115,8 +122,9 @@ ol.papers { list-style: none; margin: 0; padding: 0; }
   </section>
 
   <div class="controls">
-    <input class="search" id="q" type="search" placeholder="タイトル・著者・概要・メモで検索" aria-label="検索">
+    <input class="search" id="q" type="search" placeholder="タイトル・著者・概要・タグ・メモで検索" aria-label="検索">
     <div class="row" id="sources" role="group" aria-label="参照元で絞り込む"></div>
+    <div class="tagbar" id="tagbar" role="group" aria-label="タグで絞り込む" hidden></div>
     <div class="row">
       <select id="project" aria-label="プロジェクト"></select>
       <select id="sort" aria-label="並び順">
@@ -141,7 +149,9 @@ const SOURCES = {
   "other": { label: "その他", color: "var(--other)" },
 };
 const srcOf = (s) => (SOURCES[s] ? s : "other");
-const state = { q: "", source: "all", project: "all", sort: "recent", showUnverified: true, open: new Set() };
+const state = { q: "", source: "all", project: "all", sort: "recent", showUnverified: true, open: new Set(), tags: new Set() };
+const UNTAGGED = "__untagged__"; // 「タグなし」を表す内部の目印
+const tagsOf = (p) => notes[p.key]?.tags || [];
 let papers = [], notes = {}, sums = {};
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -158,7 +168,9 @@ async function load() {
     papers = p.papers || [];
     notes = n || {};
     document.getElementById("count").dataset.updated = p.updated ? fmtDate(p.updated) : "";
+    readHash();
     buildControls();
+    drawTags();
     drawTrail();
     render();
   } catch (e) {
@@ -183,6 +195,39 @@ function buildControls() {
   sel.hidden = projects.length === 0;
   document.getElementById("legend").innerHTML = Object.keys(SOURCES).filter((k) => used.has(k))
     .map((k) => `<span><i style="background:${SOURCES[k].color}"></i>${SOURCES[k].label}</span>`).join("");
+}
+
+function drawTags() {
+  const count = new Map();
+  papers.forEach((p) => tagsOf(p).forEach((t) => count.set(t, (count.get(t) || 0) + 1)));
+  const bar = document.getElementById("tagbar");
+  if (!count.size) { bar.hidden = true; return; }
+  const none = papers.filter((p) => !tagsOf(p).length).length;
+  // 選択中のタグを先頭に出し、横スクロールの外に隠れないようにする
+  const list = [...count].sort((a, b) => state.tags.has(b[0]) - state.tags.has(a[0]) || b[1] - a[1] || a[0].localeCompare(b[0], "ja"));
+  if (none) list.push([UNTAGGED, none]);
+  bar.hidden = false;
+  bar.innerHTML = list.map(([t, n]) =>
+    `<button class="tag" data-tag="${esc(t)}" aria-pressed="${state.tags.has(t)}">${t === UNTAGGED ? "タグなし" : esc(t)}<span class="n">${n}</span></button>`).join("")
+    + (state.tags.size ? `<button class="clear" id="clearTags">タグの選択を解除</button>` : "");
+}
+
+function toggleTag(t) {
+  state.tags.has(t) ? state.tags.delete(t) : state.tags.add(t);
+  writeHash();
+  drawTags();
+  render();
+}
+
+// 選んだタグを URL に残し、共有やブラウザの戻るで同じ絞り込みを再現する
+function readHash() {
+  const h = new URLSearchParams(location.hash.slice(1));
+  state.tags = new Set(h.getAll("tag").map((t) => (t === "none" ? UNTAGGED : t)));
+}
+function writeHash() {
+  const h = new URLSearchParams();
+  state.tags.forEach((t) => h.append("tag", t === UNTAGGED ? "none" : t));
+  history.replaceState(null, "", h.toString() ? `#${h}` : location.pathname + location.search);
 }
 
 function drawTrail() {
@@ -211,6 +256,9 @@ function matches(p) {
   if (!state.showUnverified && !p.verified) return false;
   if (state.source !== "all" && !p.refs.some((r) => srcOf(r.source) === state.source)) return false;
   if (state.project !== "all" && !p.refs.some((r) => r.project === state.project)) return false;
+  for (const t of state.tags) {
+    if (t === UNTAGGED ? tagsOf(p).length : !tagsOf(p).includes(t)) return false; // 複数選んだときはすべてを満たす論文だけ
+  }
   if (!state.q) return true;
   const n = notes[p.key] || {}, sm = sums[p.key] || {};
   const hay = [sm.summary_ja, (sm.novelty || []).join(" "), p.title, (p.authors || []).join(" "), p.venue, p.abstract, p.tldr, n.note, (n.tags || []).join(" "),
@@ -234,8 +282,9 @@ function authorsLine(p) {
 function render() {
   const shown = papers.filter(matches).sort(sorters[state.sort]);
   const upd = document.getElementById("count").dataset.updated;
+  const sel = [...state.tags].map((t) => (t === UNTAGGED ? "タグなし" : t)).join(" かつ ");
   document.getElementById("count").textContent = papers.length
-    ? `${papers.length}本中 ${shown.length}本を表示${upd ? `（最終更新 ${upd}）` : ""}` : "";
+    ? `${papers.length}本中 ${shown.length}本を表示${sel ? `（${sel}）` : ""}${upd ? `、最終更新 ${upd}` : ""}` : "";
   const list = document.getElementById("list");
   if (!papers.length) {
     list.innerHTML = `<li class="empty"><strong>まだ論文がありません。</strong><br>GitHub の Actions タブで「papers」を選び、Run workflow から論文の URL を入れると最初の1本が追加されます。</li>`;
@@ -253,7 +302,7 @@ function render() {
       ${p.verified ? `<div class="byline">${authorsLine(p)}</div>` : `<div class="flag">未確認：論文データベースで見つかりませんでした。実在するか確かめてください。</div>`}
       ${sums[p.key] ? `<p class="gist">${esc(sums[p.key].summary_ja)}</p>` : ""}
       ${p.matchedByTitle ? `<div class="flag">タイトル検索で一致した論文です。別の論文の可能性があります。</div>` : ""}
-      ${(n.tags || []).length ? `<div class="tags">${n.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
+      ${(n.tags || []).length ? `<div class="tags">${n.tags.map((t) => `<button class="tag" data-tag="${esc(t)}" aria-pressed="${state.tags.has(t)}">${esc(t)}</button>`).join("")}</div>` : ""}
       <div class="steps">${p.refs.length > 16 ? "…" : ""}${steps}<span class="n">${p.refs.length}回参照、最後は${fmtDate(p.lastSeen)}</span></div>
       <button class="more" aria-expanded="${open}">${open ? "閉じる" : "詳しく見る"}</button>
       ${open ? detail(p, n) : ""}
@@ -309,6 +358,8 @@ document.getElementById("list").addEventListener("click", async (e) => {
     render();
     return;
   }
+  const tag = e.target.closest("[data-tag]");
+  if (tag) { toggleTag(tag.dataset.tag); return; }
   const bib = e.target.closest("[data-bib]");
   if (bib) {
     const p = papers.find((x) => x.key === bib.dataset.bib);
@@ -317,6 +368,11 @@ document.getElementById("list").addEventListener("click", async (e) => {
     setTimeout(() => (bib.textContent = "BibTeX をコピー"), 1600);
   }
 });
+document.getElementById("tagbar").addEventListener("click", (e) => {
+  if (e.target.closest("#clearTags")) { state.tags.clear(); writeHash(); drawTags(); render(); return; }
+  const b = e.target.closest("[data-tag]"); if (b) toggleTag(b.dataset.tag);
+});
+window.addEventListener("hashchange", () => { readHash(); drawTags(); render(); });
 document.getElementById("q").addEventListener("input", (e) => { state.q = e.target.value.trim(); render(); });
 document.getElementById("project").addEventListener("change", (e) => { state.project = e.target.value; render(); });
 document.getElementById("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });

@@ -15,6 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 INBOX = ROOT / "inbox"
 DATA = ROOT / "data" / "papers.json"
+NOTES = ROOT / "data" / "notes.json"
+MOVED = []  # 未確認から確認済みに統合されたときの (旧key, 新key)
 S2 = "https://api.semanticscholar.org/graph/v1/paper/"
 S2_FIELDS = "paperId,title,authors,year,venue,abstract,tldr,externalIds,url,citationCount,openAccessPdf"
 UA = "paper-trail/1.0 (personal paper log)"
@@ -294,6 +296,7 @@ def merge(papers, e, meta):
             for r in stale["refs"]:
                 add_ref(p, r)
             papers.remove(stale)
+            MOVED.append(stale["key"])
         downgrade = p.get("metaSource") == "semanticscholar" and meta["metaSource"] != "semanticscholar"
         for k, v in meta.items():
             if k == "ids" or (downgrade and p.get(k) is not None):
@@ -303,6 +306,8 @@ def merge(papers, e, meta):
         p["ids"] = {**p.get("ids", {}), **meta["ids"]}
         p["key"] = key_of(p["ids"])
         p["verified"] = True
+        if MOVED and isinstance(MOVED[-1], str):
+            MOVED[-1] = (MOVED[-1], p["key"])
     else:
         if not raw["url"]:
             raw = {"title": (e.get("title") or "").strip().lower()}
@@ -343,6 +348,30 @@ def normalize(e):
     return e
 
 
+def save_tags(papers, tagged):
+    """届いたタグを notes.json に足し、統合で key が変わった論文のタグとメモを引き継ぐ"""
+    if not tagged and not MOVED:
+        return
+    notes = json.loads(NOTES.read_text(encoding="utf-8")) if NOTES.exists() else {}
+    before = json.dumps(notes, ensure_ascii=False, sort_keys=True)
+    for old, new in (m for m in MOVED if isinstance(m, tuple)):
+        if old in notes and old != new:
+            src, dst = notes.pop(old), notes.setdefault(new, {})
+            dst["tags"] = list(dict.fromkeys(dst.get("tags", []) + src.get("tags", [])))
+            if src.get("note") and not dst.get("note"):
+                dst["note"] = src["note"]
+            if not dst["tags"]:
+                del dst["tags"]
+    for p, tags in tagged:
+        tags = [t[:30] for t in tags if t]
+        if tags:
+            n = notes.setdefault(p["key"], {})
+            n["tags"] = list(dict.fromkeys(n.get("tags", []) + tags))[:12]
+    if json.dumps(notes, ensure_ascii=False, sort_keys=True) != before:
+        NOTES.write_text(json.dumps(notes, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        print("notes.json のタグを更新しました")
+
+
 def main():
     db = json.loads(DATA.read_text(encoding="utf-8")) if DATA.exists() else {"papers": []}
     papers = db.get("papers", [])
@@ -350,6 +379,7 @@ def main():
     if not files:
         print("inbox は空です")
     added = unverified = kept = 0
+    tagged = []  # (論文, 付けるタグ)
     for f in files:
         done = True
         for e in load_entries(f):
@@ -360,10 +390,11 @@ def main():
             try:
                 meta = resolve(e)
                 p = merge(papers, e, meta)
+                tagged.append((p, e.get("tags") or []))
                 added += 1
                 print(f"✓ {p['title']}")
             except NotFound:
-                merge(papers, e, None)
+                tagged.append((merge(papers, e, None), e.get("tags") or []))
                 unverified += 1
                 print(f"? 未確認: {label}")
             except Temporary:
@@ -374,6 +405,7 @@ def main():
             f.unlink()
         else:
             kept += 1
+    save_tags(papers, tagged)
     papers.sort(key=lambda p: p.get("lastSeen", ""), reverse=True)
     DATA.parent.mkdir(exist_ok=True)
     DATA.write_text(json.dumps({"updated": now(), "papers": papers}, ensure_ascii=False, indent=1), encoding="utf-8")

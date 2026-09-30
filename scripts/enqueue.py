@@ -19,6 +19,7 @@ def entry(p):
         "title": (p.get("title") or "").strip(),
         "context": (p.get("context") or "").strip(),
         "project": (p.get("project") or "").strip(),
+        "tags": [str(t).strip() for t in (p.get("tags") or []) if str(t).strip()][:8] if isinstance(p.get("tags"), list) else [],
         "source": (p.get("source") or default_source).strip(),
         "at": p.get("at") or now,
     }

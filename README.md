@@ -76,6 +76,8 @@ claude.ai に自作のコネクタを追加し、Claude が論文に触れたと
 | `search_papers` | 記録済みの論文を検索（「前に読んだ交差数の論文どれ？」など） |
 | `list_unsummarized` | 日本語要約のない論文とアブストラクトを取り出す |
 | `save_summaries` | 日本語の概要と新規性のポイントを `data/summaries.json` に保存 |
+| `list_tags` | 使われているタグの一覧と、タグのない論文を取り出す |
+| `tag_papers` | 論文にタグを付ける・外す（`data/notes.json` に保存） |
 
 チャットで「足あとの未要約の論文を要約して」と頼むと、Claude が上の2つを使って要約を書き、サイトに反映される。要約はアブストラクトが材料。アブストラクトがなく Claude の知識で書いたものには、サイト上で「本文で確認」の注記が付く。
 
@@ -130,6 +132,8 @@ export PAPER_REPO=yourname/paper-trail
 `source` は `claude-code` / `chat` / `manual` のどれかにすると色分けされる。
 
 ## タグとメモ
+
+チャットで「足あとの論文をタグ付けして」と頼むと、Claude が `list_tags` と `tag_papers` でタグを付ける。`add_papers` でも記録と同時にタグを付けられる。サイトではタグを押すと絞り込め（複数選ぶとすべてを満たす論文だけ）、URL の `#tag=...` で同じ絞り込みを共有できる。手で直す場合は下のとおり。
 
 `data/notes.json` を GitHub 上で直接編集する。キーはサイトの論文の `key`（例 `arxiv:2106.15928`）。
 
