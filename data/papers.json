@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T03:46:24+00:00",
+ "updated": "2026-09-30T03:55:03+00:00",
  "papers": [
   {
    "refs": [
@@ -8,6 +8,13 @@
      "source": "chat",
      "project": null,
      "context": "複数人の推薦経路をstorylineでまとめる着想の根拠。推薦が行動を均質化することを示した",
+     "url": "https://arxiv.org/abs/1710.11214"
+    },
+    {
+     "at": "2026-09-30T03:52:35Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐりの推薦を繰り返した経路をstorylineで見る案の根拠（均質化）",
      "url": "https://arxiv.org/abs/1710.11214"
     }
    ],
@@ -33,7 +40,300 @@
    "key": "arxiv:1710.11214",
    "verified": true,
    "firstSeen": "2026-09-30T03:43:38Z",
-   "lastSeen": "2026-09-30T03:43:38Z"
+   "lastSeen": "2026-09-30T03:52:35Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:40:41Z",
+     "source": "chat",
+     "project": null,
+     "context": "storyline×推薦の着想。ユーザーの興味が時間で移り変わることを示した推薦手法",
+     "url": "https://arxiv.org/abs/1509.04640"
+    },
+    {
+     "at": "2026-09-30T03:52:35Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐりの題材の移り変わりをstorylineで見る案の根拠（興味の時間変化）",
+     "url": "https://arxiv.org/abs/1509.04640"
+    }
+   ],
+   "title": "Dynamic Poisson Factorization",
+   "authors": [
+    "Laurent Charlin",
+    "Rajesh Ranganath",
+    "James McInerney",
+    "D. Blei"
+   ],
+   "year": 2015,
+   "venue": "ACM Conference on Recommender Systems",
+   "abstract": "Models for recommender systems use latent factors to explain the preferences and behaviors of users with respect to a set of items (e.g., movies, books, academic papers). Typically, the latent factors are assumed to be static and, given these factors, the observed pref- erences and behaviors of users are assumed to be generated without order. These assumptions limit the explorative and predictive capabilities of such models, since users' interests and item popularity may evolve over time. To address this, we propose dPF, a dynamic matrix factorization model based on the recent Poisson factorization model for recommendations. dPF models the time evolving latent factors with a Kalman filter and the actions with Poisson distributions. We derive a scalable variational inference algorithm to infer the latent factors. Finally, we demonstrate dPF on 10 years of user click data from arXiv.org, one of the largest repository of scientific papers and a formidable source of information about the behavior of scientists. Empirically we show performance improvement over both static and, more recently proposed, dynamic recommendation models. We also provide a thorough exploration of the inferred posteriors over the latent variables.",
+   "tldr": "dPF, a dynamic matrix factorization model based on the recent Poisson factorizationmodel for recommendations, is proposed, which models the time evolving latent factors with a Kalman filter and the actions with Poisson distributions.",
+   "citationCount": 107,
+   "pdf": "https://arxiv.org/pdf/1509.04640",
+   "url": "https://www.semanticscholar.org/paper/39f249d4095fcb875f0b23655d1e734bd8c71b71",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "39f249d4095fcb875f0b23655d1e734bd8c71b71",
+    "arxiv": "1509.04640",
+    "doi": "10.1145/2792838.2800174"
+   },
+   "key": "arxiv:1509.04640",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:40:41Z",
+   "lastSeen": "2026-09-30T03:52:35Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:22:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:欧州の戯曲を人物網などで分析できるコーパス基盤DraCor。新規性:APIで戯曲の構造データを取り出せる",
+     "url": null
+    },
+    {
+     "at": "2026-09-30T03:52:35Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐり×storyline。既存の演劇可視化は戲曲内の登場人物が中心という対比で参照",
+     "url": null
+    }
+   ],
+   "title": "Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama",
+   "authors": [
+    "Frank Fischer",
+    "I. Börner",
+    "Mathias Göbel",
+    "Angelika Hechtl",
+    "C. Kittel",
+    "C. Milling",
+    "Peer Trilcke"
+   ],
+   "year": 2020,
+   "venue": null,
+   "abstract": null,
+   "tldr": "Although there have been some infrastructural developments of late, the main modus operandi in digital literary studies is still to apply a certain research method to an ephemeral corpus, where the results are somehow reproducible, in a worst-case scenario they are not reproducible at all.",
+   "citationCount": 58,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/8f3a48a00996c1a91c4a518e0e373c30c9d7f98f",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "8f3a48a00996c1a91c4a518e0e373c30c9d7f98f"
+   },
+   "key": "s2:8f3a48a00996c1a91c4a518e0e373c30c9d7f98f",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:22:12Z",
+   "lastSeen": "2026-09-30T03:52:35Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:11:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。動的ハイパーグラフ（多人数の関係）を展開",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:多人数が同時に関わる関係の時間変化を線で展開。新規性:動的ハイパーグラフにstorylineを適用しPAOHVisより良好",
+     "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e"
+    },
+    {
+     "at": "2026-09-30T03:52:35Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐり×storyline。多人数の関係（官公演の制作陣）を扱う先行例",
+     "url": "https://doi.org/10.1177/14738716211045007"
+    }
+   ],
+   "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
+   "authors": [
+    "Vanessa Peña-Araya",
+    "Tong Xue",
+    "Emmanuel Pietriga",
+    "L. Amsaleg",
+    "A. Bezerianos"
+   ],
+   "year": 2021,
+   "venue": "Information Visualization",
+   "abstract": "We present the design and evaluation of HyperStorylines, a technique that generalizes Storylines to visualize the evolution of relationships involving multiple types of entities such as, for example, people, locations, and companies. Datasets which describe such multi-entity relationships are often modeled as hypergraphs, that can be difficult to visualize, especially when these relationships evolve over time. HyperStorylines builds upon Storylines, enabling the aggregation and nesting of these dynamic, multi-entity relationships. We report on the design process of HyperStorylines, which was informed by discussions and workshops with data journalists; and on the results of a comparative study in which participants had to answer questions inspired by the tasks that journalists typically perform with such data. We observe that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
+   "tldr": "It is observed that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
+   "citationCount": 23,
+   "pdf": "https://hal.inria.fr/hal-03352276/file/main.pdf",
+   "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "de68b032dab743d5f0236aa043990e037c477d0e",
+    "doi": "10.1177/14738716211045007"
+   },
+   "key": "doi:10.1177/14738716211045007",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:11:08Z",
+   "lastSeen": "2026-09-30T03:52:35Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "TVCG 2022。地図とstorylineの統合",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:12:24Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:storylineに地図情報を統合。新規性:時間と場所を1つのビューで扱う設計の選択肢を整理し提示",
+     "url": null
+    },
+    {
+     "at": "2026-09-30T03:52:35Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐり×storyline。劇場の位置と地域の粒度を扱う案の先行研究",
+     "url": "https://doi.org/10.1109/tvcg.2022.3209480"
+    }
+   ],
+   "title": "Geo-Storylines: Integrating Maps into Storyline Visualizations",
+   "authors": [
+    "Golina Hulstein",
+    "Vanessa Peña-Araya",
+    "A. Bezerianos"
+   ],
+   "year": 2022,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": "Storyline visualizations are a powerful way to compactly visualize how the relationships between people evolve over time. Real-world relationships often also involve space, for example the cities that two political rivals visited together or alone over the years. By default, Storyline visualizations only show implicitly geospatial co-occurrence between people (drawn as lines), by bringing their lines together. Even the few designs that do explicitly show geographic locations only do so in abstract ways (e.g., annotations) and do not communicate geospatial information, such as the direction or extent of their political campains. We introduce Geo-Storylines, a collection of visualisation designs that integrate geospatial context into Storyline visualizations, using different strategies for compositing time and space. Our contribution is twofold. First, we present the results of a sketching workshop with 11 participants, that we used to derive a design space for integrating maps into Storylines. Second, by analyzing the strengths and weaknesses of the potential designs of the design space in terms of legibility and ability to scale to multiple relationships, we extract the three most promising: Time Glyphs, Coordinated Views, and Map Glyphs. We compare these three techniques first in a controlled study with 18 participants, under five different geospatial tasks and two maps of different complexity. We additionally collected informal feedback about their usefulness from domain experts in data journalism. Our results indicate that, as expected, detailed performance depends on the task. Nevertheless, Coordinated Views remain a highly effective and preferred technique across the board.",
+   "tldr": null,
+   "citationCount": 21,
+   "pdf": "https://inria.hal.science/hal-03752409v1/document",
+   "url": "https://www.semanticscholar.org/paper/11e484c15e81f9ec16fb025ea180afefd7d06e1d",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "11e484c15e81f9ec16fb025ea180afefd7d06e1d",
+    "doi": "10.1109/tvcg.2022.3209480"
+   },
+   "key": "doi:10.1109/tvcg.2022.3209480",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-30T03:52:35Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "ストーリーラインを時刻ごとの順列の列として定式化する根拠",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "Di Giacomo et al. GD 2020。常に登場する人物の扱い",
+     "url": null
+    },
+    {
+     "at": "2026-09-30T03:52:35Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐり×storyline。同時期に複数公演へ出る作り手の描き方の参考",
+     "url": "https://arxiv.org/abs/2008.04125"
+    }
+   ],
+   "title": "Storyline Visualizations with Ubiquitous Actors",
+   "authors": [
+    "E. Di Giacomo",
+    "W. Didimo",
+    "G. Liotta",
+    "F. Montecchiani",
+    "Alessandra Tappini"
+   ],
+   "year": 2020,
+   "venue": "International Symposium Graph Drawing and Network Visualization",
+   "abstract": "Storyline visualizations depict the temporal dynamics of social interactions, as they describe how groups of actors (individuals or organizations) change over time. A common constraint in storyline visualizations is that an actor cannot belong to two different groups at the same time instant. However, this constraint may be too severe in some application scenarios, thus we generalize the model by allowing an actor to simultaneously belong to distinct groups at any point in time. We call this model Storyline with Ubiquitous Actors (SUA). Essential to our model is that an actor is represented as a tree rather than a single line. We describe an algorithmic pipeline to compute storyline visualizations in the SUA model and discuss case studies on publication data.",
+   "tldr": "This work generalizes the model Storyline with Ubiquitous Actors by allowing an actor to simultaneously belong to distinct groups at any point in time, and describes an algorithmic pipeline to compute storyline visualizations in the SUA model.",
+   "citationCount": 20,
+   "pdf": "https://arxiv.org/pdf/2008.04125",
+   "url": "https://www.semanticscholar.org/paper/65472aceaeb5843ab3a135aaef72497931e3eda9",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "65472aceaeb5843ab3a135aaef72497931e3eda9",
+    "arxiv": "2008.04125",
+    "doi": "10.1007/978-3-030-68766-3_25"
+   },
+   "key": "arxiv:2008.04125",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:50:20Z",
+   "lastSeen": "2026-09-30T03:52:35Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:21:38+00:00",
+     "source": "manual",
+     "project": null,
+     "context": "動作確認",
+     "url": "https://doi.org/10.1109/TVCG.2013.196"
+    },
+    {
+     "at": "2026-09-29T20:48:46Z",
+     "source": "chat",
+     "project": null,
+     "context": "卒論（Storyline可視化）の先行研究として記録",
+     "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e"
+    },
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "場所を背景の色帯にするストーリーラインの例として紹介",
+     "url": null
+    },
+    {
+     "at": "2026-09-30T03:52:35Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐり×storyline。場所の階層をレイアウトに反映する先行例として参照",
+     "url": "https://doi.org/10.1109/tvcg.2013.196"
+    }
+   ],
+   "title": "StoryFlow: Tracking the Evolution of Stories",
+   "authors": [
+    "Shixia Liu",
+    "Yingcai Wu",
+    "Enxun Wei",
+    "Mengchen Liu",
+    "Yang Liu"
+   ],
+   "year": 2013,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 241,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
+    "doi": "10.1109/tvcg.2013.196"
+   },
+   "key": "doi:10.1109/tvcg.2013.196",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:21:38+00:00",
+   "lastSeen": "2026-09-30T03:52:35Z",
+   "matchedByTitle": true
   },
   {
    "refs": [
@@ -218,6 +518,54 @@
   {
    "refs": [
     {
+     "at": "2026-09-29T21:09:31Z",
+     "source": "chat",
+     "project": null,
+     "context": "storylineの応用例。個人中心の影響関係の時間変化を可視化",
+     "url": "https://arxiv.org/abs/2408.08992"
+    },
+    {
+     "at": "2026-09-29T21:12:24Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:1人を中心に周囲との関係と影響の時間変化を表示。新規性:storylineをエゴセントリックな動的影響に適用",
+     "url": "https://arxiv.org/abs/2408.08992"
+    },
+    {
+     "at": "2026-09-30T03:41:28Z",
+     "source": "chat",
+     "project": null,
+     "context": "storyline×推薦の着想。ユーザー中心のstoryline設計の土台として参照",
+     "url": "https://arxiv.org/abs/2408.08992"
+    }
+   ],
+   "title": "SpreadLine: Visualizing Egocentric Dynamic Influence",
+   "authors": [
+    "Yun-Hsin Kuo",
+    "Dong-Yu Liu",
+    "Kwan-Liu Ma"
+   ],
+   "year": 2024,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": "Egocentric networks, often visualized as node-link diagrams, portray the complex relationship (link) dynamics between an entity (node) and others. However, common analytics tasks are multifaceted, encompassing interactions among four key aspects: strength, function, structure, and content. Current node-link visualization designs may fall short, focusing narrowly on certain aspects and neglecting the holistic, dynamic nature of egocentric networks. To bridge this gap, we introduce SpreadLine, a novel visualization framework designed to enable the visual exploration of egocentric networks from these four aspects at the microscopic level. Leveraging the intuitive appeal of storyline visualizations, SpreadLine adopts a storyline-based design to represent entities and their evolving relationships. We further encode essential topological information in the layout and condense the contextual information in a metro map metaphor, allowing for a more engaging and effective way to explore temporal and attribute-based information. To guide our work, with a thorough review of pertinent literature, we have distilled a task taxonomy that addresses the analytical needs specific to egocentric network exploration. Acknowledging the diverse analytical requirements of users, SpreadLine offers customizable encodings to enable users to tailor the framework for their tasks. We demonstrate the efficacy and general applicability of SpreadLine through three diverse real-world case studies (disease surveillance, social media trends, and academic career evolution) and a usability study.",
+   "tldr": "SpreadLine is introduced, a novel visualization framework designed to enable the visual exploration of egocentric networks from these four aspects at the microscopic level and offers customizable encodings to enable users to tailor the framework for their tasks.",
+   "citationCount": 6,
+   "pdf": "https://arxiv.org/pdf/2408.08992",
+   "url": "https://www.semanticscholar.org/paper/a093c4af07b25c20628a8b3d57487a2b4186379c",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "a093c4af07b25c20628a8b3d57487a2b4186379c",
+    "arxiv": "2408.08992",
+    "doi": "10.1109/tvcg.2024.3456373"
+   },
+   "key": "arxiv:2408.08992",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:09:31Z",
+   "lastSeen": "2026-09-30T03:41:28Z"
+  },
+  {
+   "refs": [
+    {
      "at": "2026-09-30T03:40:41Z",
      "source": "chat",
      "project": null,
@@ -245,42 +593,6 @@
     "doi": "10.1145/3672276"
    },
    "key": "arxiv:2305.11755",
-   "verified": true,
-   "firstSeen": "2026-09-30T03:40:41Z",
-   "lastSeen": "2026-09-30T03:40:41Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-30T03:40:41Z",
-     "source": "chat",
-     "project": null,
-     "context": "storyline×推薦の着想。ユーザーの興味が時間で移り変わることを示した推薦手法",
-     "url": "https://arxiv.org/abs/1509.04640"
-    }
-   ],
-   "title": "Dynamic Poisson Factorization",
-   "authors": [
-    "Laurent Charlin",
-    "Rajesh Ranganath",
-    "James McInerney",
-    "D. Blei"
-   ],
-   "year": 2015,
-   "venue": "ACM Conference on Recommender Systems",
-   "abstract": "Models for recommender systems use latent factors to explain the preferences and behaviors of users with respect to a set of items (e.g., movies, books, academic papers). Typically, the latent factors are assumed to be static and, given these factors, the observed pref- erences and behaviors of users are assumed to be generated without order. These assumptions limit the explorative and predictive capabilities of such models, since users' interests and item popularity may evolve over time. To address this, we propose dPF, a dynamic matrix factorization model based on the recent Poisson factorization model for recommendations. dPF models the time evolving latent factors with a Kalman filter and the actions with Poisson distributions. We derive a scalable variational inference algorithm to infer the latent factors. Finally, we demonstrate dPF on 10 years of user click data from arXiv.org, one of the largest repository of scientific papers and a formidable source of information about the behavior of scientists. Empirically we show performance improvement over both static and, more recently proposed, dynamic recommendation models. We also provide a thorough exploration of the inferred posteriors over the latent variables.",
-   "tldr": "dPF, a dynamic matrix factorization model based on the recent Poisson factorizationmodel for recommendations, is proposed, which models the time evolving latent factors with a Kalman filter and the actions with Poisson distributions.",
-   "citationCount": 107,
-   "pdf": "https://arxiv.org/pdf/1509.04640",
-   "url": "https://www.semanticscholar.org/paper/39f249d4095fcb875f0b23655d1e734bd8c71b71",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "39f249d4095fcb875f0b23655d1e734bd8c71b71",
-    "arxiv": "1509.04640",
-    "doi": "10.1145/2792838.2800174"
-   },
-   "key": "arxiv:1509.04640",
    "verified": true,
    "firstSeen": "2026-09-30T03:40:41Z",
    "lastSeen": "2026-09-30T03:40:41Z"
@@ -546,43 +858,6 @@
     "doi": "10.48550/arxiv.2302.08258"
    },
    "key": "arxiv:2302.08258",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:22:12Z",
-   "lastSeen": "2026-09-29T21:22:12Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:22:12Z",
-     "source": "chat",
-     "project": null,
-     "context": "要約:欧州の戯曲を人物網などで分析できるコーパス基盤DraCor。新規性:APIで戯曲の構造データを取り出せる",
-     "url": null
-    }
-   ],
-   "title": "Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama",
-   "authors": [
-    "Frank Fischer",
-    "I. Börner",
-    "Mathias Göbel",
-    "Angelika Hechtl",
-    "C. Kittel",
-    "C. Milling",
-    "Peer Trilcke"
-   ],
-   "year": 2020,
-   "venue": null,
-   "abstract": null,
-   "tldr": "Although there have been some infrastructural developments of late, the main modus operandi in digital literary studies is still to apply a certain research method to an ephemeral corpus, where the results are somehow reproducible, in a worst-case scenario they are not reproducible at all.",
-   "citationCount": 58,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/8f3a48a00996c1a91c4a518e0e373c30c9d7f98f",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "8f3a48a00996c1a91c4a518e0e373c30c9d7f98f"
-   },
-   "key": "s2:8f3a48a00996c1a91c4a518e0e373c30c9d7f98f",
    "verified": true,
    "firstSeen": "2026-09-29T21:22:12Z",
    "lastSeen": "2026-09-29T21:22:12Z"
@@ -859,49 +1134,6 @@
    "verified": true,
    "firstSeen": "2026-09-29T21:20:02Z",
    "lastSeen": "2026-09-29T21:20:02Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:11:08Z",
-     "source": "chat",
-     "project": null,
-     "context": "storylineの応用例。動的ハイパーグラフ（多人数の関係）を展開",
-     "url": null
-    },
-    {
-     "at": "2026-09-29T21:17:08Z",
-     "source": "chat",
-     "project": null,
-     "context": "要約:多人数が同時に関わる関係の時間変化を線で展開。新規性:動的ハイパーグラフにstorylineを適用しPAOHVisより良好",
-     "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e"
-    }
-   ],
-   "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
-   "authors": [
-    "Vanessa Peña-Araya",
-    "Tong Xue",
-    "Emmanuel Pietriga",
-    "L. Amsaleg",
-    "A. Bezerianos"
-   ],
-   "year": 2021,
-   "venue": "Information Visualization",
-   "abstract": "We present the design and evaluation of HyperStorylines, a technique that generalizes Storylines to visualize the evolution of relationships involving multiple types of entities such as, for example, people, locations, and companies. Datasets which describe such multi-entity relationships are often modeled as hypergraphs, that can be difficult to visualize, especially when these relationships evolve over time. HyperStorylines builds upon Storylines, enabling the aggregation and nesting of these dynamic, multi-entity relationships. We report on the design process of HyperStorylines, which was informed by discussions and workshops with data journalists; and on the results of a comparative study in which participants had to answer questions inspired by the tasks that journalists typically perform with such data. We observe that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
-   "tldr": "It is observed that although HyperStorylines takes some practice to master, it performs better for identifying and characterizing relationships than the selected baseline visualization (PAOHVis) and was preferred overall.",
-   "citationCount": 23,
-   "pdf": "https://hal.inria.fr/hal-03352276/file/main.pdf",
-   "url": "https://www.semanticscholar.org/paper/de68b032dab743d5f0236aa043990e037c477d0e",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "de68b032dab743d5f0236aa043990e037c477d0e",
-    "doi": "10.1177/14738716211045007"
-   },
-   "key": "doi:10.1177/14738716211045007",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:11:08Z",
-   "lastSeen": "2026-09-29T21:17:08Z"
   },
   {
    "refs": [
@@ -1564,47 +1796,6 @@
   {
    "refs": [
     {
-     "at": "2026-09-29T21:09:31Z",
-     "source": "chat",
-     "project": null,
-     "context": "storylineの応用例。個人中心の影響関係の時間変化を可視化",
-     "url": "https://arxiv.org/abs/2408.08992"
-    },
-    {
-     "at": "2026-09-29T21:12:24Z",
-     "source": "chat",
-     "project": null,
-     "context": "要約:1人を中心に周囲との関係と影響の時間変化を表示。新規性:storylineをエゴセントリックな動的影響に適用",
-     "url": "https://arxiv.org/abs/2408.08992"
-    }
-   ],
-   "title": "SpreadLine: Visualizing Egocentric Dynamic Influence",
-   "authors": [
-    "Yun-Hsin Kuo",
-    "Dong-Yu Liu",
-    "Kwan-Liu Ma"
-   ],
-   "year": 2024,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": "Egocentric networks, often visualized as node-link diagrams, portray the complex relationship (link) dynamics between an entity (node) and others. However, common analytics tasks are multifaceted, encompassing interactions among four key aspects: strength, function, structure, and content. Current node-link visualization designs may fall short, focusing narrowly on certain aspects and neglecting the holistic, dynamic nature of egocentric networks. To bridge this gap, we introduce SpreadLine, a novel visualization framework designed to enable the visual exploration of egocentric networks from these four aspects at the microscopic level. Leveraging the intuitive appeal of storyline visualizations, SpreadLine adopts a storyline-based design to represent entities and their evolving relationships. We further encode essential topological information in the layout and condense the contextual information in a metro map metaphor, allowing for a more engaging and effective way to explore temporal and attribute-based information. To guide our work, with a thorough review of pertinent literature, we have distilled a task taxonomy that addresses the analytical needs specific to egocentric network exploration. Acknowledging the diverse analytical requirements of users, SpreadLine offers customizable encodings to enable users to tailor the framework for their tasks. We demonstrate the efficacy and general applicability of SpreadLine through three diverse real-world case studies (disease surveillance, social media trends, and academic career evolution) and a usability study.",
-   "tldr": "SpreadLine is introduced, a novel visualization framework designed to enable the visual exploration of egocentric networks from these four aspects at the microscopic level and offers customizable encodings to enable users to tailor the framework for their tasks.",
-   "citationCount": 6,
-   "pdf": "https://doi.org/10.1109/tvcg.2024.3456373",
-   "url": "https://www.semanticscholar.org/paper/a093c4af07b25c20628a8b3d57487a2b4186379c",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "s2": "a093c4af07b25c20628a8b3d57487a2b4186379c",
-    "arxiv": "2408.08992",
-    "doi": "10.1109/tvcg.2024.3456373"
-   },
-   "key": "arxiv:2408.08992",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:09:31Z",
-   "lastSeen": "2026-09-29T21:12:24Z"
-  },
-  {
-   "refs": [
-    {
      "at": "2026-09-29T21:07:13Z",
      "source": "chat",
      "project": null,
@@ -1638,47 +1829,6 @@
     "doi": "10.1145/1879211.1879219"
    },
    "key": "doi:10.1145/1879211.1879219",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
-   "lastSeen": "2026-09-29T21:12:24Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "TVCG 2022。地図とstorylineの統合",
-     "url": null
-    },
-    {
-     "at": "2026-09-29T21:12:24Z",
-     "source": "chat",
-     "project": null,
-     "context": "要約:storylineに地図情報を統合。新規性:時間と場所を1つのビューで扱う設計の選択肢を整理し提示",
-     "url": null
-    }
-   ],
-   "title": "Geo-Storylines: Integrating Maps into Storyline Visualizations",
-   "authors": [
-    "Golina Hulstein",
-    "Vanessa Peña-Araya",
-    "A. Bezerianos"
-   ],
-   "year": 2022,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": "Storyline visualizations are a powerful way to compactly visualize how the relationships between people evolve over time. Real-world relationships often also involve space, for example the cities that two political rivals visited together or alone over the years. By default, Storyline visualizations only show implicitly geospatial co-occurrence between people (drawn as lines), by bringing their lines together. Even the few designs that do explicitly show geographic locations only do so in abstract ways (e.g., annotations) and do not communicate geospatial information, such as the direction or extent of their political campains. We introduce Geo-Storylines, a collection of visualisation designs that integrate geospatial context into Storyline visualizations, using different strategies for compositing time and space. Our contribution is twofold. First, we present the results of a sketching workshop with 11 participants, that we used to derive a design space for integrating maps into Storylines. Second, by analyzing the strengths and weaknesses of the potential designs of the design space in terms of legibility and ability to scale to multiple relationships, we extract the three most promising: Time Glyphs, Coordinated Views, and Map Glyphs. We compare these three techniques first in a controlled study with 18 participants, under five different geospatial tasks and two maps of different complexity. We additionally collected informal feedback about their usefulness from domain experts in data journalism. Our results indicate that, as expected, detailed performance depends on the task. Nevertheless, Coordinated Views remain a highly effective and preferred technique across the board.",
-   "tldr": null,
-   "citationCount": 21,
-   "pdf": "https://inria.hal.science/hal-03752409v1/document",
-   "url": "https://www.semanticscholar.org/paper/11e484c15e81f9ec16fb025ea180afefd7d06e1d",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "11e484c15e81f9ec16fb025ea180afefd7d06e1d",
-    "doi": "10.1109/tvcg.2022.3209480"
-   },
-   "key": "doi:10.1109/tvcg.2022.3209480",
    "verified": true,
    "firstSeen": "2026-09-29T21:07:13Z",
    "lastSeen": "2026-09-29T21:12:24Z"
@@ -1933,50 +2083,6 @@
      "at": "2026-09-29T20:50:20Z",
      "source": "chat",
      "project": null,
-     "context": "ストーリーラインを時刻ごとの順列の列として定式化する根拠",
-     "url": null
-    },
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "Di Giacomo et al. GD 2020。常に登場する人物の扱い",
-     "url": null
-    }
-   ],
-   "title": "Storyline Visualizations with Ubiquitous Actors",
-   "authors": [
-    "E. Di Giacomo",
-    "W. Didimo",
-    "G. Liotta",
-    "F. Montecchiani",
-    "Alessandra Tappini"
-   ],
-   "year": 2020,
-   "venue": "International Symposium Graph Drawing and Network Visualization",
-   "abstract": "Storyline visualizations depict the temporal dynamics of social interactions, as they describe how groups of actors (individuals or organizations) change over time. A common constraint in storyline visualizations is that an actor cannot belong to two different groups at the same time instant. However, this constraint may be too severe in some application scenarios, thus we generalize the model by allowing an actor to simultaneously belong to distinct groups at any point in time. We call this model Storyline with Ubiquitous Actors (SUA). Essential to our model is that an actor is represented as a tree rather than a single line. We describe an algorithmic pipeline to compute storyline visualizations in the SUA model and discuss case studies on publication data.",
-   "tldr": "This work generalizes the model Storyline with Ubiquitous Actors by allowing an actor to simultaneously belong to distinct groups at any point in time, and describes an algorithmic pipeline to compute storyline visualizations in the SUA model.",
-   "citationCount": 20,
-   "pdf": "https://arxiv.org/pdf/2008.04125",
-   "url": "https://www.semanticscholar.org/paper/65472aceaeb5843ab3a135aaef72497931e3eda9",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "65472aceaeb5843ab3a135aaef72497931e3eda9",
-    "arxiv": "2008.04125",
-    "doi": "10.1007/978-3-030-68766-3_25"
-   },
-   "key": "arxiv:2008.04125",
-   "verified": true,
-   "firstSeen": "2026-09-29T20:50:20Z",
-   "lastSeen": "2026-09-29T21:07:13Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T20:50:20Z",
-     "source": "chat",
-     "project": null,
      "context": "ストーリーライン可視化の最新サーベイ（CGF 2026）として紹介",
      "url": null
     },
@@ -2175,56 +2281,6 @@
    "verified": true,
    "firstSeen": "2026-09-29T20:51:22Z",
    "lastSeen": "2026-09-29T20:51:22Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T20:21:38+00:00",
-     "source": "manual",
-     "project": null,
-     "context": "動作確認",
-     "url": "https://doi.org/10.1109/TVCG.2013.196"
-    },
-    {
-     "at": "2026-09-29T20:48:46Z",
-     "source": "chat",
-     "project": null,
-     "context": "卒論（Storyline可視化）の先行研究として記録",
-     "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e"
-    },
-    {
-     "at": "2026-09-29T20:50:20Z",
-     "source": "chat",
-     "project": null,
-     "context": "場所を背景の色帯にするストーリーラインの例として紹介",
-     "url": null
-    }
-   ],
-   "title": "StoryFlow: Tracking the Evolution of Stories",
-   "authors": [
-    "Shixia Liu",
-    "Yingcai Wu",
-    "Enxun Wei",
-    "Mengchen Liu",
-    "Yang Liu"
-   ],
-   "year": 2013,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": null,
-   "tldr": null,
-   "citationCount": 241,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "s2": "1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
-    "doi": "10.1109/tvcg.2013.196"
-   },
-   "key": "doi:10.1109/tvcg.2013.196",
-   "verified": true,
-   "firstSeen": "2026-09-29T20:21:38+00:00",
-   "lastSeen": "2026-09-29T20:50:20Z",
-   "matchedByTitle": true
   },
   {
    "refs": [
