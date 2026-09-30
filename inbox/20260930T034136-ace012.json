@@ -1,0 +1,32 @@
+[
+ {
+  "url": "2408.08992",
+  "title": "SpreadLine: Visualizing Egocentric Dynamic Influence",
+  "context": "storyline×推薦の着想。ユーザー中心のstoryline設計の土台として参照",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:41:28Z"
+ },
+ {
+  "url": "10.1109/TVCG.2015.2392771",
+  "title": "An Efficient Framework for Generating Storyline Visualizations from Streaming Data",
+  "context": "storyline×推薦の着想。毎日更新される推薦でのレイアウトの一貫性の関連研究",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:41:28Z"
+ },
+ {
+  "url": "10.1145/2827872",
+  "title": "The MovieLens Datasets: History and Context",
+  "context": "storyline×推薦の試作に使えるデータセット（時刻とジャンル付き）",
+  "project": "",
+  "tags": [
+   "推薦システム",
+   "データセット"
+  ],
+  "source": "chat",
+  "at": "2026-09-30T03:41:28Z"
+ }
+]
