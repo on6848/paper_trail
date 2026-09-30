@@ -1,0 +1,51 @@
+[
+ {
+  "url": "1710.11214",
+  "title": "How algorithmic confounding in recommendation systems increases homogeneity and decreases utility",
+  "context": "複数人の推薦経路をstorylineでまとめる着想の根拠。推薦が行動を均質化することを示した",
+  "project": "",
+  "tags": [
+   "推薦システム",
+   "シミュレーション"
+  ],
+  "source": "chat",
+  "at": "2026-09-30T03:43:38Z"
+ },
+ {
+  "url": "2107.08959",
+  "title": "T-RECS: A Simulation Tool to Study the Societal Impact of Recommender Systems",
+  "context": "複数人の推薦経路の試行データを生成するシミュレータの候補",
+  "project": "",
+  "tags": [
+   "推薦システム",
+   "シミュレーション",
+   "システム・ツール"
+  ],
+  "source": "chat",
+  "at": "2026-09-30T03:43:38Z"
+ },
+ {
+  "url": "2107.14333",
+  "title": "Simulation as Experiment: An Empirical Critique of Simulation Research on Recommender Systems",
+  "context": "均質化の指標は定義次第で結論が変わる。経路をそのまま見せる意義の根拠",
+  "project": "",
+  "tags": [
+   "推薦システム",
+   "シミュレーション"
+  ],
+  "source": "chat",
+  "at": "2026-09-30T03:43:38Z"
+ },
+ {
+  "url": "",
+  "title": "Exploring Flow, Factors, and Outcomes of Temporal Event Sequences with the Outflow Visualization",
+  "context": "推薦経路の可視化で比較されるであろうイベント系列の流れ図（Sankey型）",
+  "project": "",
+  "tags": [
+   "イベント系列",
+   "システム・ツール"
+  ],
+  "source": "chat",
+  "at": "2026-09-30T03:43:38Z"
+ }
+]
