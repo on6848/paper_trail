@@ -1,6 +1,112 @@
 {
- "updated": "2026-09-30T03:37:48+00:00",
+ "updated": "2026-09-30T03:43:10+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:40:41Z",
+     "source": "chat",
+     "project": null,
+     "context": "storyline×推薦の着想の関連研究。推薦の説明に使われる可視化手法のサーベイ",
+     "url": "https://doi.org/10.1145/3672276"
+    }
+   ],
+   "title": "Visualization for Recommendation Explainability: A Survey and New Perspectives",
+   "authors": [
+    "Mohamed Amine Chatti",
+    "Mouadh Guesmi",
+    "Arham Muslim"
+   ],
+   "year": 2023,
+   "venue": "ACM Trans. Interact. Intell. Syst.",
+   "abstract": "Providing system-generated explanations for recommendations represents an important step toward transparent and trustworthy recommender systems. Explainable recommender systems provide a human-understandable rationale for their outputs. Over the past two decades, explainable recommendation has attracted much attention in the recommender systems research community. This paper aims to provide a comprehensive review of research efforts on visual explanation in recommender systems. More concretely, we systematically review the literature on explanations in recommender systems based on four dimensions, namely explanation aim, explanation scope, explanation method, and explanation format. Recognizing the importance of visualization, we approach the recommender system literature from the angle of explanatory visualizations, that is using visualizations as a display style of explanation. As a result, we derive a set of guidelines that might be constructive for designing explanatory visualizations in recommender systems and identify perspectives for future work in this field. The aim of this review is to help recommendation researchers and practitioners better understand the potential of visually explainable recommendation research and to support them in the systematic design of visual explanations in current and future recommender systems.",
+   "tldr": "A comprehensive review of research efforts on visual explanation in recommender systems based on four dimensions to help recommendation researchers and practitioners better understand the potential of visually explainable recommendation research and to support them in the systematic design of visual explanations in current and future recommender systems.",
+   "citationCount": 39,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/fa941774f7ba693467be92c6129d58721bb2c36e",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "fa941774f7ba693467be92c6129d58721bb2c36e",
+    "arxiv": "2305.11755",
+    "doi": "10.1145/3672276"
+   },
+   "key": "arxiv:2305.11755",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:40:41Z",
+   "lastSeen": "2026-09-30T03:40:41Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:40:41Z",
+     "source": "chat",
+     "project": null,
+     "context": "storyline×推薦の着想。ユーザーの興味が時間で移り変わることを示した推薦手法",
+     "url": "https://arxiv.org/abs/1509.04640"
+    }
+   ],
+   "title": "Dynamic Poisson Factorization",
+   "authors": [
+    "Laurent Charlin",
+    "Rajesh Ranganath",
+    "James McInerney",
+    "D. Blei"
+   ],
+   "year": 2015,
+   "venue": "ACM Conference on Recommender Systems",
+   "abstract": "Models for recommender systems use latent factors to explain the preferences and behaviors of users with respect to a set of items (e.g., movies, books, academic papers). Typically, the latent factors are assumed to be static and, given these factors, the observed pref- erences and behaviors of users are assumed to be generated without order. These assumptions limit the explorative and predictive capabilities of such models, since users' interests and item popularity may evolve over time. To address this, we propose dPF, a dynamic matrix factorization model based on the recent Poisson factorization model for recommendations. dPF models the time evolving latent factors with a Kalman filter and the actions with Poisson distributions. We derive a scalable variational inference algorithm to infer the latent factors. Finally, we demonstrate dPF on 10 years of user click data from arXiv.org, one of the largest repository of scientific papers and a formidable source of information about the behavior of scientists. Empirically we show performance improvement over both static and, more recently proposed, dynamic recommendation models. We also provide a thorough exploration of the inferred posteriors over the latent variables.",
+   "tldr": "dPF, a dynamic matrix factorization model based on the recent Poisson factorizationmodel for recommendations, is proposed, which models the time evolving latent factors with a Kalman filter and the actions with Poisson distributions.",
+   "citationCount": 107,
+   "pdf": "https://arxiv.org/pdf/1509.04640",
+   "url": "https://www.semanticscholar.org/paper/39f249d4095fcb875f0b23655d1e734bd8c71b71",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "39f249d4095fcb875f0b23655d1e734bd8c71b71",
+    "arxiv": "1509.04640",
+    "doi": "10.1145/2792838.2800174"
+   },
+   "key": "arxiv:1509.04640",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:40:41Z",
+   "lastSeen": "2026-09-30T03:40:41Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:40:41Z",
+     "source": "chat",
+     "project": null,
+     "context": "storyline×推薦の着想。好みの変化を地図で見せる推薦の可視化",
+     "url": "https://arxiv.org/abs/0906.5286"
+    }
+   ],
+   "title": "Putting recommendations on the map: visualizing clusters and relations",
+   "authors": [
+    "E. Gansner",
+    "Yifan Hu",
+    "S. Kobourov",
+    "C. Volinsky"
+   ],
+   "year": 2009,
+   "venue": "ACM Conference on Recommender Systems",
+   "abstract": "For users, recommendations can sometimes seem odd or counterintuitive. Visualizing recommendations can remove some of this mystery, showing how a recommendation is grouped with other choices. A drawing can also lead a user's eye to other options. Traditional 2D-embeddings of points can be used to create a basic layout, but these methods, by themselves, do not illustrate clusters and neighborhoods very well. In this paper, we propose the use of geographic maps to enhance the definition of clusters and neighborhoods, and consider the effectiveness of this approach in visualizing similarities and recommendations arising from TV shows.",
+   "tldr": "The use of geographic maps are proposed to enhance the definition of clusters and neighborhoods, and the effectiveness of this approach in visualizing similarities and recommendations arising from TV shows is considered.",
+   "citationCount": 68,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/4076425425126fbdba5e508ef22ca7f124bf2667",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "4076425425126fbdba5e508ef22ca7f124bf2667",
+    "arxiv": "0906.5286",
+    "doi": "10.1145/1639714.1639784"
+   },
+   "key": "arxiv:0906.5286",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:40:41Z",
+   "lastSeen": "2026-09-30T03:40:41Z"
+  },
   {
    "refs": [
     {
