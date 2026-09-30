@@ -1,0 +1,65 @@
+[
+ {
+  "url": "10.1109/TVCG.2013.196",
+  "title": "StoryFlow: Tracking the Evolution of Stories",
+  "context": "たぐり×storyline。場所の階層をレイアウトに反映する先行例として参照",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:52:35Z"
+ },
+ {
+  "url": "10.1109/TVCG.2022.3209480",
+  "title": "Geo-Storylines: Integrating Maps into Storyline Visualizations",
+  "context": "たぐり×storyline。劇場の位置と地域の粒度を扱う案の先行研究",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:52:35Z"
+ },
+ {
+  "url": "2008.04125",
+  "title": "Storyline Visualizations with Ubiquitous Actors",
+  "context": "たぐり×storyline。同時期に複数公演へ出る作り手の描き方の参考",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:52:35Z"
+ },
+ {
+  "url": "10.1177/14738716211045007",
+  "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
+  "context": "たぐり×storyline。多人数の関係（官公演の制作陣）を扱う先行例",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:52:35Z"
+ },
+ {
+  "url": "1710.11214",
+  "title": "How algorithmic confounding in recommendation systems increases homogeneity and decreases utility",
+  "context": "たぐりの推薦を繰り返した経路をstorylineで見る案の根拠（均質化）",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:52:35Z"
+ },
+ {
+  "url": "",
+  "title": "Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama",
+  "context": "たぐり×storyline。既存の演劇可視化は戲曲内の登場人物が中心という対比で参照",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:52:35Z"
+ },
+ {
+  "url": "1509.04640",
+  "title": "Dynamic Poisson Factorization",
+  "context": "たぐりの題材の移り変わりをstorylineで見る案の根拠（興味の時間変化）",
+  "project": "",
+  "tags": [],
+  "source": "chat",
+  "at": "2026-09-30T03:52:35Z"
+ }
+]
