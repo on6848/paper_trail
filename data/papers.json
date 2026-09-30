@@ -1,6 +1,86 @@
 {
- "updated": "2026-09-30T03:43:10+00:00",
+ "updated": "2026-09-30T03:44:17+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T21:07:13Z",
+     "source": "chat",
+     "project": null,
+     "context": "Tanahashi et al. 2015。ストリーミングデータへの対応。時間方向の一貫性に関連",
+     "url": null
+    },
+    {
+     "at": "2026-09-29T21:17:08Z",
+     "source": "chat",
+     "project": null,
+     "context": "要約:逐次届くデータでstorylineを更新。新規性:過去の配置を保ちつつ効率よく再最適化する枠組み",
+     "url": "https://www.semanticscholar.org/paper/67ffdc021fc339f090c450b72fa0e7d610914226"
+    },
+    {
+     "at": "2026-09-30T03:41:28Z",
+     "source": "chat",
+     "project": null,
+     "context": "storyline×推薦の着想。毎日更新される推薦でのレイアウトの一貫性の関連研究",
+     "url": "https://doi.org/10.1109/tvcg.2015.2392771"
+    }
+   ],
+   "title": "An Efficient Framework for Generating Storyline Visualizations from Streaming Data",
+   "authors": [
+    "Y. Tanahashi",
+    "Chien-Hsin Hsueh",
+    "K. Ma"
+   ],
+   "year": 2015,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 82,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/67ffdc021fc339f090c450b72fa0e7d610914226",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "67ffdc021fc339f090c450b72fa0e7d610914226",
+    "doi": "10.1109/tvcg.2015.2392771"
+   },
+   "key": "doi:10.1109/tvcg.2015.2392771",
+   "verified": true,
+   "firstSeen": "2026-09-29T21:07:13Z",
+   "lastSeen": "2026-09-30T03:41:28Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:41:28Z",
+     "source": "chat",
+     "project": null,
+     "context": "storyline×推薦の試作に使えるデータセット（時刻とジャンル付き）",
+     "url": "https://doi.org/10.1145/2827872"
+    }
+   ],
+   "title": "The MovieLens Datasets: History and Context",
+   "authors": [
+    "F. Harper",
+    "J. Konstan"
+   ],
+   "year": 2016,
+   "venue": "TIIS",
+   "abstract": null,
+   "tldr": "The history of MovieLens and the MovieLens datasets is documents, including a discussion of lessons learned from running a long-standing, live research platform from the perspective of a research organization, and best practices and limitations of using the Movie Lens datasets in new research are documented.",
+   "citationCount": 5899,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/276ebc620a8976026bd2d03582b9ecfa3738d43c",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "276ebc620a8976026bd2d03582b9ecfa3738d43c",
+    "doi": "10.1145/2827872"
+   },
+   "key": "doi:10.1145/2827872",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:41:28Z",
+   "lastSeen": "2026-09-30T03:41:28Z"
+  },
   {
    "refs": [
     {
@@ -852,47 +932,6 @@
    "key": "s2:a04acac3eb9ecba18ac0a6ea23acb54f00bbb59b",
    "verified": true,
    "firstSeen": "2026-09-29T21:09:31Z",
-   "lastSeen": "2026-09-29T21:17:08Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T21:07:13Z",
-     "source": "chat",
-     "project": null,
-     "context": "Tanahashi et al. 2015。ストリーミングデータへの対応。時間方向の一貫性に関連",
-     "url": null
-    },
-    {
-     "at": "2026-09-29T21:17:08Z",
-     "source": "chat",
-     "project": null,
-     "context": "要約:逐次届くデータでstorylineを更新。新規性:過去の配置を保ちつつ効率よく再最適化する枠組み",
-     "url": "https://www.semanticscholar.org/paper/67ffdc021fc339f090c450b72fa0e7d610914226"
-    }
-   ],
-   "title": "An Efficient Framework for Generating Storyline Visualizations from Streaming Data",
-   "authors": [
-    "Y. Tanahashi",
-    "Chien-Hsin Hsueh",
-    "K. Ma"
-   ],
-   "year": 2015,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": null,
-   "tldr": null,
-   "citationCount": 82,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/67ffdc021fc339f090c450b72fa0e7d610914226",
-   "metaSource": "semanticscholar",
-   "matchedByTitle": true,
-   "ids": {
-    "s2": "67ffdc021fc339f090c450b72fa0e7d610914226",
-    "doi": "10.1109/tvcg.2015.2392771"
-   },
-   "key": "doi:10.1109/tvcg.2015.2392771",
-   "verified": true,
-   "firstSeen": "2026-09-29T21:07:13Z",
    "lastSeen": "2026-09-29T21:17:08Z"
   },
   {
