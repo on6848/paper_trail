@@ -1,6 +1,140 @@
 {
- "updated": "2026-09-30T03:44:17+00:00",
+ "updated": "2026-09-30T03:46:24+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:43:38Z",
+     "source": "chat",
+     "project": null,
+     "context": "複数人の推薦経路をstorylineでまとめる着想の根拠。推薦が行動を均質化することを示した",
+     "url": "https://arxiv.org/abs/1710.11214"
+    }
+   ],
+   "title": "How algorithmic confounding in recommendation systems increases homogeneity and decreases utility",
+   "authors": [
+    "A. Chaney",
+    "Brandon M Stewart",
+    "B. Engelhardt"
+   ],
+   "year": 2017,
+   "venue": "ACM Conference on Recommender Systems",
+   "abstract": "Recommendation systems are ubiquitous and impact many domains; they have the potential to influence product consumption, individuals' perceptions of the world, and life-altering decisions. These systems are often evaluated or trained with data from users already exposed to algorithmic recommendations; this creates a pernicious feedback loop. Using simulations, we demonstrate how using data confounded in this way homogenizes user behavior without increasing utility.",
+   "tldr": "Using simulations, it is demonstrated how using data confounded in this way homogenizes user behavior without increasing utility.",
+   "citationCount": 431,
+   "pdf": "https://dl.acm.org/doi/pdf/10.1145/3240323.3240370",
+   "url": "https://www.semanticscholar.org/paper/6d573d0e151d5c6d637790bf78fa1607e735133a",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "6d573d0e151d5c6d637790bf78fa1607e735133a",
+    "arxiv": "1710.11214",
+    "doi": "10.1145/3240323.3240370"
+   },
+   "key": "arxiv:1710.11214",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:43:38Z",
+   "lastSeen": "2026-09-30T03:43:38Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:43:38Z",
+     "source": "chat",
+     "project": null,
+     "context": "複数人の推薦経路の試行データを生成するシミュレータの候補",
+     "url": "https://arxiv.org/abs/2107.08959"
+    }
+   ],
+   "title": "T-RECS: A Simulation Tool to Study the Societal Impact of Recommender Systems",
+   "authors": [
+    "Eli Lucherini",
+    "Matthew Sun",
+    "Amy A. Winecoff",
+    "Arvind Narayanan"
+   ],
+   "year": 2021,
+   "venue": "arXiv.org",
+   "abstract": "Simulation has emerged as a popular method to study the long-term societal consequences of recommender systems. This approach allows researchers to specify their theoretical model explicitly and observe the evolution of system-level outcomes over time. However, performing simulation-based studies often requires researchers to build their own simulation environments from the ground up, which creates a high barrier to entry, introduces room for implementation error, and makes it difficult to disentangle whether observed outcomes are due to the model or the implementation. We introduce T-RECS, an open-sourced Python package designed for researchers to simulate recommendation systems and other types of sociotechnical systems in which an algorithm mediates the interactions between multiple stakeholders, such as users and content creators. To demonstrate the flexibility of T-RECS, we perform a replication of two prior simulation-based research on sociotechnical systems. We additionally show how T-RECS can be used to generate novel insights with minimal overhead. Our tool promotes reproducibility in this area of research, provides a unified language for simulating sociotechnical systems, and removes the friction of implementing simulations from scratch.",
+   "tldr": "T-RECS, an open-sourced Python package designed for researchers to simulate recommendation systems and other types of sociotechnical systems in which an algorithm mediates the interactions between multiple stakeholders, such as users and content creators, is introduced.",
+   "citationCount": 31,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/fa723d93b714bfe85258737a06473da6aa7e9239",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "fa723d93b714bfe85258737a06473da6aa7e9239",
+    "arxiv": "2107.08959"
+   },
+   "key": "arxiv:2107.08959",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:43:38Z",
+   "lastSeen": "2026-09-30T03:43:38Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:43:38Z",
+     "source": "chat",
+     "project": null,
+     "context": "均質化の指標は定義次第で結論が変わる。経路をそのまま見せる意義の根拠",
+     "url": "https://arxiv.org/abs/2107.14333"
+    }
+   ],
+   "title": "Simulation as Experiment: An Empirical Critique of Simulation Research on Recommender Systems",
+   "authors": [
+    "Amy A. Winecoff",
+    "Matthew Sun",
+    "Eli Lucherini",
+    "Arvind Narayanan"
+   ],
+   "year": 2021,
+   "venue": "arXiv",
+   "abstract": "Simulation can enable the study of recommender system (RS) evolution while circumventing many of the issues of empirical longitudinal studies; simulations are comparatively easier to implement, are highly controlled, and pose no ethical risk to human participants. How simulation can best contribute to scientific insight about RS alongside qualitative and quantitative empirical approaches is an open question. Philosophers and researchers have long debated the epistemological nature of simulation compared to wholly theoretical or empirical methods. Simulation is often implicitly or explicitly conceptualized as occupying a middle ground between empirical and theoretical approaches, allowing researchers to realize the benefits of both. However, what is often ignored in such arguments is that without firm grounding in any single methodological tradition, simulation studies have no agreed upon scientific norms or standards, resulting in a patchwork of theoretical motivations, approaches, and implementations that are difficult to reconcile. In this position paper, we argue that simulation studies of RS are conceptually similar to empirical experimental approaches and therefore can be evaluated using the standards of empirical research methods. Using this empirical lens, we argue that the combination of high heterogeneity in approaches and low transparency in methods in simulation studies of RS has limited their interpretability, generalizability, and replicability. We contend that by adopting standards and practices common in empirical disciplines, simulation researchers can mitigate many of these weaknesses.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/2107.14333",
+   "url": "https://arxiv.org/abs/2107.14333",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "2107.14333"
+   },
+   "key": "arxiv:2107.14333",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:43:38Z",
+   "lastSeen": "2026-09-30T03:43:38Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-09-30T03:43:38Z",
+     "source": "chat",
+     "project": null,
+     "context": "推薦経路の可視化で比較されるであろうイベント系列の流れ図（Sankey型）",
+     "url": null
+    }
+   ],
+   "title": "Exploring Flow, Factors, and Outcomes of Temporal Event Sequences with the Outflow Visualization",
+   "authors": [
+    "K. Wongsuphasawat",
+    "D. Gotz"
+   ],
+   "year": 2012,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 237,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/63b3b65667a2941f3fadef8949843569cbf44f39",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "63b3b65667a2941f3fadef8949843569cbf44f39",
+    "doi": "10.1109/tvcg.2012.225"
+   },
+   "key": "doi:10.1109/tvcg.2012.225",
+   "verified": true,
+   "firstSeen": "2026-09-30T03:43:38Z",
+   "lastSeen": "2026-09-30T03:43:38Z"
+  },
   {
    "refs": [
     {
