@@ -1,0 +1,39 @@
+[
+ {
+  "url": "10.1145/3672276",
+  "title": "Visualization for Recommendation Explainability: A Survey and New Perspectives",
+  "context": "storyline×推薦の着想の関連研究。推薦の説明に使われる可視化手法のサーベイ",
+  "project": "",
+  "tags": [
+   "サーベイ",
+   "推薦システム",
+   "説明可能性"
+  ],
+  "source": "chat",
+  "at": "2026-09-30T03:40:41Z"
+ },
+ {
+  "url": "1509.04640",
+  "title": "Dynamic Poisson Factorization",
+  "context": "storyline×推薦の着想。ユーザーの興味が時間で移り変わることを示した推薦手法",
+  "project": "",
+  "tags": [
+   "推薦システム",
+   "時系列"
+  ],
+  "source": "chat",
+  "at": "2026-09-30T03:40:41Z"
+ },
+ {
+  "url": "0906.5286",
+  "title": "Putting Recommendations on the Map -- Visualizing Clusters and Relations",
+  "context": "storyline×推薦の着想。好みの変化を地図で見せる推薦の可視化",
+  "project": "",
+  "tags": [
+   "推薦システム",
+   "説明可能性"
+  ],
+  "source": "chat",
+  "at": "2026-09-30T03:40:41Z"
+ }
+]
