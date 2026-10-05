@@ -1,6 +1,173 @@
 {
- "updated": "2026-10-04T21:08:55+00:00",
+ "updated": "2026-10-05T12:18:30+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-10-05T12:17:39Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐりの推薦を「過去に気になった作品との近さ」で計算し直す土台（内容ベース推薦の整理）",
+     "url": "https://www.ise.bgu.ac.il/faculty/liorr/recsyshb/chContent.pdf"
+    }
+   ],
+   "title": "Content-based Recommender Systems: State of the Art and Trends",
+   "authors": [
+    "P. Lops",
+    "M. de Gemmis",
+    "G. Semeraro"
+   ],
+   "year": 2011,
+   "venue": "Recommender Systems Handbook",
+   "abstract": null,
+   "tldr": "The role of User Generated Content is described as a way for taking into account evolving vocabularies, and the challenge of feeding users with serendipitous recommendations, that is to say surprisingly interesting items that they might not have otherwise discovered.",
+   "citationCount": 2061,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/ffdefb57372320d25f7e6a692cc7aee9b9da3354",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "ffdefb57372320d25f7e6a692cc7aee9b9da3354",
+    "doi": "10.1007/978-0-387-85820-3_3"
+   },
+   "key": "doi:10.1007/978-0-387-85820-3_3",
+   "verified": true,
+   "firstSeen": "2026-10-05T12:17:39Z",
+   "lastSeen": "2026-10-05T12:17:39Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-05T12:17:39Z",
+     "source": "chat",
+     "project": null,
+     "context": "演劇を含む公演推薦で、まだ誰も観ていない新作を内容の近さで扱う先行例",
+     "url": "https://arxiv.org/abs/1804.09073"
+    }
+   ],
+   "title": "Propagation of content similarity through a collaborative network for live show recommendation",
+   "authors": [
+    "Jean Creusefond",
+    "Matthieu Latapy"
+   ],
+   "year": 2018,
+   "venue": "arXiv.org",
+   "abstract": "We present a network-based recommender system for live shows (concerts, theater, circus, etc) that finds a set of people probably interested in a given, new show. We combine collaborative and content-based filtering to take benefit of past activity of users and of the features of the new show. Indeed, as this show is new we cannot rely on collaborative filtering only. To solve this cold-start problem, we perform network alignment and insert the new show in a way consistent with collaborative filtering. We refine the obtained similarities using spreading in the network. We illustrate the performances of our system on a large scale real-world dataset.",
+   "tldr": "A network-based recommender system for live shows that finds a set of people probably interested in a given, new show that combines collaborative and content-based filtering to take benefit of past activity of users and of the features of the new show.",
+   "citationCount": 1,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/6c5dbf379227a39bf71eed77ce5377811f4c9f10",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "6c5dbf379227a39bf71eed77ce5377811f4c9f10",
+    "arxiv": "1804.09073"
+   },
+   "key": "arxiv:1804.09073",
+   "verified": true,
+   "firstSeen": "2026-10-05T12:17:39Z",
+   "lastSeen": "2026-10-05T12:17:39Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-05T12:17:39Z",
+     "source": "chat",
+     "project": null,
+     "context": "作・演出・出演など項目ごとに近さを分けて測り、重みで合わせる設計の根拠",
+     "url": null
+    }
+   ],
+   "title": "entity2rec: Property-specific knowledge graph embeddings for item recommendation",
+   "authors": [
+    "Enrico Palumbo",
+    "Diego Monti",
+    "Giuseppe Rizzo",
+    "Raphael Troncy",
+    "Elena Baralis"
+   ],
+   "year": 2020,
+   "venue": "Expert systems with applications",
+   "abstract": "Abstract Knowledge graphs have shown to be highly beneficial to recommender systems, providing an ideal data structure to generate hybrid recommendations using both content-based and collaborative filtering. Most knowledge-aware recommender systems are based on manually engineered features, typically relying on path counting and/or on random walks. Recently, knowledge graph embeddings have proven to be extremely effective at learning features for prediction tasks, reducing the complexity and time required to manually design effective features. In this work, we present entity2rec, which learns user-item relatedness for item recommendation through property-specific knowledge graph embeddings. A key element of entity2rec is the construction of property-specific subgraphs. Through an extensive evaluation on three datasets, we show that: (1) hybrid property-specific subgraphs consistently enhance the quality of recommendations with respect to collaborative and content-based subgraphs; (2) entity2rec generates accurate and non-obvious recommendations, compared to a set of state-of-the-art recommender systems, achieving high accuracy, serendipity and novelty. More in detail, entity2rec is particularly effective when the dataset is sparse and has a low popularity bias; (3) entity2rec is easily interpretable and can thus be configured for a particular recommendation problem.",
+   "tldr": "This work presents entity2rec, which learns user-item relatedness for item recommendation through property-specific knowledge graph embeddings, and is particularly effective when the dataset is sparse and has a low popularity bias.",
+   "citationCount": 80,
+   "pdf": "https://www.sciencedirect.com/science/article/am/pii/S0957417420300610",
+   "url": "https://www.semanticscholar.org/paper/42b76678199ca7688c0f7d2a11dae6cad51f076b",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "42b76678199ca7688c0f7d2a11dae6cad51f076b",
+    "doi": "10.1016/j.eswa.2020.113235"
+   },
+   "key": "doi:10.1016/j.eswa.2020.113235",
+   "verified": true,
+   "firstSeen": "2026-10-05T12:17:39Z",
+   "lastSeen": "2026-10-05T12:17:39Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-05T12:17:39Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐりのあらすじ同士の近さを、単語の一致ではなく意味で測る候補",
+     "url": "https://arxiv.org/abs/1908.10084"
+    }
+   ],
+   "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+   "authors": [
+    "Nils Reimers",
+    "Iryna Gurevych"
+   ],
+   "year": 2019,
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "abstract": "BERT (Devlin et al., 2018) and RoBERTa (Liu et al., 2019) has set a new state-of-the-art performance on sentence-pair regression tasks like semantic textual similarity (STS). However, it requires that both sentences are fed into the network, which causes a massive computational overhead: Finding the most similar pair in a collection of 10,000 sentences requires about 50 million inference computations (~65 hours) with BERT. The construction of BERT makes it unsuitable for semantic similarity search as well as for unsupervised tasks like clustering. In this publication, we present Sentence-BERT (SBERT), a modification of the pretrained BERT network that use siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine-similarity. This reduces the effort for finding the most similar pair from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while maintaining the accuracy from BERT. We evaluate SBERT and SRoBERTa on common STS tasks and transfer learning tasks, where it outperforms other state-of-the-art sentence embeddings methods.",
+   "tldr": "Sentence-BERT (SBERT), a modification of the pretrained BERT network that use siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine-similarity is presented.",
+   "citationCount": 20948,
+   "pdf": "https://www.aclweb.org/anthology/D19-1410.pdf",
+   "url": "https://www.semanticscholar.org/paper/93d63ec754f29fa22572615320afe0521f7ec66d",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "93d63ec754f29fa22572615320afe0521f7ec66d",
+    "arxiv": "1908.10084",
+    "doi": "10.18653/v1/d19-1410",
+    "acl": "D19-1410"
+   },
+   "key": "arxiv:1908.10084",
+   "verified": true,
+   "firstSeen": "2026-10-05T12:17:39Z",
+   "lastSeen": "2026-10-05T12:17:39Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-05T12:17:39Z",
+     "source": "chat",
+     "project": null,
+     "context": "興味あり・興味なしの反応で好みの基準を動かす古典的な方法（Rocchio）",
+     "url": null
+    }
+   ],
+   "title": "Relevance feedback in information retrieval",
+   "authors": [
+    "J. Rocchio"
+   ],
+   "year": 1971,
+   "venue": null,
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 3564,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/4083ad1066cfa2ff0d65866ef4b011399d6873d1",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "4083ad1066cfa2ff0d65866ef4b011399d6873d1"
+   },
+   "key": "s2:4083ad1066cfa2ff0d65866ef4b011399d6873d1",
+   "verified": true,
+   "firstSeen": "2026-10-05T12:17:39Z",
+   "lastSeen": "2026-10-05T12:17:39Z"
+  },
   {
    "refs": [
     {
