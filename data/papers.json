@@ -1,6 +1,173 @@
 {
- "updated": "2026-10-05T23:55:46+00:00",
+ "updated": "2026-10-06T09:10:43+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:09:59Z",
+     "source": "chat",
+     "project": null,
+     "context": "網Dで作品を「人物を次元とするベクトル」として表し、コサインで近さを測る考え方の元",
+     "url": null
+    }
+   ],
+   "title": "A vector space model for automatic indexing",
+   "authors": [
+    "G. Salton",
+    "A. Wong",
+    "Chung-Shu Yang"
+   ],
+   "year": 1975,
+   "venue": "CACM",
+   "abstract": null,
+   "tldr": "An approach based on space density computations is used to choose an optimum indexing vocabulary for a collection of documents, demonstating the usefulness of the model.",
+   "citationCount": 8453,
+   "pdf": "https://dl.acm.org/doi/pdf/10.1145/361219.361220",
+   "url": "https://www.semanticscholar.org/paper/d5f169880e30e1f76827d72f862555d00b01bed9",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "d5f169880e30e1f76827d72f862555d00b01bed9",
+    "doi": "10.1145/361219.361220"
+   },
+   "key": "doi:10.1145/361219.361220",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:09:59Z",
+   "lastSeen": "2026-10-06T09:09:59Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:09:59Z",
+     "source": "chat",
+     "project": null,
+     "context": "網Dの「珍しさ」（IDF）の元。多くの作品に出る人の重なりを軽く数える根拠",
+     "url": null
+    }
+   ],
+   "title": "A statistical interpretation of term specificity and its application in retrieval",
+   "authors": [
+    "Karen Spärck Jones"
+   ],
+   "year": 2021,
+   "venue": "J. Documentation",
+   "abstract": "The exhaustivity of document descriptions and the specificity of index terms are usually regarded as independent. It is suggested that specificity should be interpreted statistically, as a function of term use rather than of term meaning. The effects on retrieval of variations in term specificity are examined, experiments with three test collections showing in particular that frequently‐occurring terms are required for good overall performance. It is argued that terms should be weighted according to collection frequency, so that matches on less frequent, more specific, terms are of greater value than matches on frequent terms. Results for the test collections show that considerable improvements in performance are obtained with this very simple procedure.",
+   "tldr": "It is argued that terms should be weighted according to collection frequency, so that matches on less frequent, more specific, terms are of greater value than matches on frequent terms.",
+   "citationCount": 5507,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/4f09e6ec1b7d4390d23881852fd7240994abeb58",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "4f09e6ec1b7d4390d23881852fd7240994abeb58",
+    "doi": "10.1108/eb026526"
+   },
+   "key": "doi:10.1108/eb026526",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:09:59Z",
+   "lastSeen": "2026-10-06T09:09:59Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:09:59Z",
+     "source": "chat",
+     "project": null,
+     "context": "網Dの「近い上位k件を集めて点にする」アイテム間近傍法の枠組みの元",
+     "url": null
+    }
+   ],
+   "title": "Item-based collaborative filtering recommendation algorithms",
+   "authors": [
+    "B. Sarwar",
+    "G. Karypis",
+    "J. Konstan",
+    "J. Riedl"
+   ],
+   "year": 2001,
+   "venue": "The Web Conference",
+   "abstract": null,
+   "tldr": "This paper analyzes item-based collaborative ltering techniques and suggests that item- based algorithms provide dramatically better performance than user-based algorithms, while at the same time providing better quality than the best available userbased algorithms.",
+   "citationCount": 10265,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/f82c52452c7de8cd6472202c1be2cce9fbcb8dda",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "f82c52452c7de8cd6472202c1be2cce9fbcb8dda",
+    "doi": "10.1145/371920.372071"
+   },
+   "key": "doi:10.1145/371920.372071",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:09:59Z",
+   "lastSeen": "2026-10-06T09:09:59Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:09:59Z",
+     "source": "chat",
+     "project": null,
+     "context": "アイテム間近傍法で上位N件を推薦する方法の整理。網Dの集計方法の比較対象",
+     "url": null
+    }
+   ],
+   "title": "Item-based top-N recommendation algorithms",
+   "authors": [
+    "Mukund Deshpande",
+    "G. Karypis"
+   ],
+   "year": 2004,
+   "venue": "TOIS",
+   "abstract": null,
+   "tldr": "This article presents one class of model-based recommendation algorithms that first determines the similarities between the various items and then uses them to identify the set of items to be recommended, and shows that these item-based algorithms are up to two orders of magnitude faster than the traditional user-neighborhood based recommender systems and provide recommendations with comparable or better quality.",
+   "citationCount": 2485,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/599ebeef9c9d92224bc5969f3e8e8c45bff3b072",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "599ebeef9c9d92224bc5969f3e8e8c45bff3b072",
+    "doi": "10.1145/963770.963776"
+   },
+   "key": "doi:10.1145/963770.963776",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:09:59Z",
+   "lastSeen": "2026-10-06T09:09:59Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:09:59Z",
+     "source": "chat",
+     "project": null,
+     "context": "内容ベース推薦の古典的まとめ。網Dの位置づけ（作品の属性で好みを表す）の根拠",
+     "url": null
+    }
+   ],
+   "title": "Content-Based Recommendation Systems",
+   "authors": [
+    "M. Pazzani",
+    "Daniel Billsus"
+   ],
+   "year": 2007,
+   "venue": "The Adaptive Web",
+   "abstract": null,
+   "tldr": "This chapter discusses content-based recommendation systems, i.e., systems that recommend an item to a user based upon a description of the item and a profile of the user's interests, which are used in a variety of domains ranging from recommending web pages, news articles, restaurants, television programs, and items for sale.",
+   "citationCount": 2906,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/34446adc7d701a2c3a89c2fc5f6d3479eef407b0",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "34446adc7d701a2c3a89c2fc5f6d3479eef407b0",
+    "doi": "10.1007/978-3-540-72079-9_10"
+   },
+   "key": "doi:10.1007/978-3-540-72079-9_10",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:09:59Z",
+   "lastSeen": "2026-10-06T09:09:59Z"
+  },
   {
    "refs": [
     {
