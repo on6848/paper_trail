@@ -1,6 +1,112 @@
 {
- "updated": "2026-10-06T09:10:43+00:00",
+ "updated": "2026-10-06T09:16:02+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:15:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "舞台芸術（公演先）のチケット購入履歴で協調フィルタリングを使った先行例。たぐりとはデータの形が違う",
+     "url": "https://arxiv.org/abs/1611.05788"
+    }
+   ],
+   "title": "Data Science in Service of Performing Arts: Applying Machine Learning to Predicting Audience Preferences",
+   "authors": [
+    "Jacob Abernethy",
+    "Cyrus Anderson",
+    "Alex Chojnacki",
+    "Chengyu Dai",
+    "John Dryden",
+    "Eric Schwartz",
+    "Wenbo Shen",
+    "Jonathan Stroud",
+    "Laura Wendlandt",
+    "Sheng Yang",
+    "Daniel Zhang"
+   ],
+   "year": 2016,
+   "venue": "arXiv",
+   "abstract": "Performing arts organizations aim to enrich their communities through the arts. To do this, they strive to match their performance offerings to the taste of those communities. Success relies on understanding audience preference and predicting their behavior. Similar to most e-commerce or digital entertainment firms, arts presenters need to recommend the right performance to the right customer at the right time. As part of the Michigan Data Science Team (MDST), we partnered with the University Musical Society (UMS), a non-profit performing arts presenter housed in the University of Michigan, Ann Arbor. We are providing UMS with analysis and business intelligence, utilizing historical individual-level sales data. We built a recommendation system based on collaborative filtering, gaining insights into the artistic preferences of customers, along with the similarities between performances. To better understand audience behavior, we used statistical methods from customer-base analysis. We characterized customer heterogeneity via segmentation, and we modeled customer cohorts to understand and predict ticket purchasing patterns. Finally, we combined statistical modeling with natural language processing (NLP) to explore the impact of wording in program descriptions. These ongoing efforts provide a platform to launch targeted marketing campaigns, helping UMS carry out its mission by allocating its resources more efficiently. Celebrating its 138th season, UMS is a 2014 recipient of the National Medal of Arts, and it continues to enrich communities by connecting world-renowned artists with diverse audiences, especially students in their formative years. We aim to contribute to that mission through data science and customer analytics.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/1611.05788",
+   "url": "https://arxiv.org/abs/1611.05788",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "1611.05788"
+   },
+   "key": "arxiv:1611.05788",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:15:12Z",
+   "lastSeen": "2026-10-06T09:15:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:15:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "文化分野（ライブ公演を含む）の推薦研究の文献レビュー。演劇の推薦研究が少ないことの裏づけ",
+     "url": "https://doi.org/10.5220/0009337807150726"
+    }
+   ],
+   "title": "A Literature Review of Recommender Systems for the Cultural Sector",
+   "authors": [
+    "Dam Anh Khoa Nguyen",
+    "Thang Le Dinh"
+   ],
+   "year": 2020,
+   "venue": "International Conference on Enterprise Information Systems",
+   "abstract": "Nowadays, organizations in the cultural sector have faced the problem of improving the discoverability of their products to meet the target objective regardless of the tremendous amount of information. In this respect, recommender systems have been proven to be the solution for enterprises, especially for cultural small and medium-sized organizations and enterprises (SMOs/SMEs), to enhance the discoverability of their products. This study aims at presenting a concept-centric literature review of recommender systems for cultural SMEs/SMOs to identify the current status-quo of the application in six cultural domains, including heritage and libraries, live performance, visual and applied arts, written and published works, audio-visual and interactive media, and sound recording. The finding of this paper reveals the adoption of recommender systems of cultural SMOs/SMEs is still in the early stage of maturity. The specific status-quo of recommender system adoption in each cultural domain is uncovered through the literature review. Other relevant aspects, which relate to data sources, data mining models, and algorithms, are also discussed in detail. Finally, the paper proposes future research directions to promote the application of artificial intelligence in general, and recommender systems, in particular, in the cultural sector.",
+   "tldr": "The finding of this paper reveals the adoption of recommender systems of cultural SMOs/SMEs is still in the early stage of maturity, and the specific status-quo ofRecommender system adoption in each cultural domain is uncovered through the literature review.",
+   "citationCount": 8,
+   "pdf": "https://doi.org/10.5220/0009337807150726",
+   "url": "https://www.semanticscholar.org/paper/88ebe3a9eb49d81ed3f3d195cb4fe14742d3692d",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "88ebe3a9eb49d81ed3f3d195cb4fe14742d3692d",
+    "doi": "10.5220/0009337807150726"
+   },
+   "key": "doi:10.5220/0009337807150726",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:15:12Z",
+   "lastSeen": "2026-10-06T09:15:12Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:15:12Z",
+     "source": "chat",
+     "project": null,
+     "context": "映画の出演者・監督などの属性ごとの好みを測る研究。演劇に最も近い類例",
+     "url": "https://arxiv.org/abs/1908.11055"
+    }
+   ],
+   "title": "Towards Evaluating User Profiling Methods Based on Explicit Ratings on Item Features",
+   "authors": [
+    "Luca Luciano Costanzo",
+    "Yashar Deldjoo",
+    "Maurizio Ferrari Dacrema",
+    "Markus Schedl",
+    "Paolo Cremonesi"
+   ],
+   "year": 2019,
+   "venue": "arXiv",
+   "abstract": "In order to improve the accuracy of recommendations, many recommender systems nowadays use side information beyond the user rating matrix, such as item content. These systems build user profiles as estimates of users' interest on content (e.g., movie genre, director or cast) and then evaluate the performance of the recommender system as a whole e.g., by their ability to recommend relevant and novel items to the target user. The user profile modelling stage, which is a key stage in content-driven RS is barely properly evaluated due to the lack of publicly available datasets that contain user preferences on content features of items. To raise awareness of this fact, we investigate differences between explicit user preferences and implicit user profiles. We create a dataset of explicit preferences towards content features of movies, which we release publicly. We then compare the collected explicit user feature preferences and implicit user profiles built via state-of-the-art user profiling models. Our results show a maximum average pairwise cosine similarity of 58.07\\% between the explicit feature preferences and the implicit user profiles modelled by the best investigated profiling method and considering movies' genres only. For actors and directors, this maximum similarity is only 9.13\\% and 17.24\\%, respectively. This low similarity between explicit and implicit preference models encourages a more in-depth study to investigate and improve this important user profile modelling step, which will eventually translate into better recommendations.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/1908.11055",
+   "url": "https://arxiv.org/abs/1908.11055",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "1908.11055"
+   },
+   "key": "arxiv:1908.11055",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:15:12Z",
+   "lastSeen": "2026-10-06T09:15:12Z"
+  },
   {
    "refs": [
     {
