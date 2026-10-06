@@ -1,6 +1,172 @@
 {
- "updated": "2026-10-06T09:16:02+00:00",
+ "updated": "2026-10-06T09:18:07+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:17:37Z",
+     "source": "chat",
+     "project": null,
+     "context": "好みの記録から性格や敏感な属性まで推定できることを示した研究。たぐりの評価データが敏感だという根拠",
+     "url": "https://doi.org/10.1073/pnas.1218772110"
+    }
+   ],
+   "title": "Private traits and attributes are predictable from digital records of human behavior",
+   "authors": [
+    "Michal Kosinski",
+    "D. Stillwell",
+    "T. Graepel"
+   ],
+   "year": 2013,
+   "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+   "abstract": "We show that easily accessible digital records of behavior, Facebook Likes, can be used to automatically and accurately predict a range of highly sensitive personal attributes including: sexual orientation, ethnicity, religious and political views, personality traits, intelligence, happiness, use of addictive substances, parental separation, age, and gender. The analysis presented is based on a dataset of over 58,000 volunteers who provided their Facebook Likes, detailed demographic profiles, and the results of several psychometric tests. The proposed model uses dimensionality reduction for preprocessing the Likes data, which are then entered into logistic/linear regression to predict individual psychodemographic profiles from Likes. The model correctly discriminates between homosexual and heterosexual men in 88% of cases, African Americans and Caucasian Americans in 95% of cases, and between Democrat and Republican in 85% of cases. For the personality trait “Openness,” prediction accuracy is close to the test–retest accuracy of a standard personality test. We give examples of associations between attributes and Likes and discuss implications for online personalization and privacy.",
+   "tldr": "It is shown that easily accessible digital records of behavior, Facebook Likes, can be used to automatically and accurately predict a range of highly sensitive personal attributes including: sexual orientation, ethnicity, religious and political views, personality traits, intelligence, happiness, use of addictive substances, parental separation, age, and gender.",
+   "citationCount": 2689,
+   "pdf": "https://www.pnas.org/content/pnas/110/15/5802.full.pdf",
+   "url": "https://www.semanticscholar.org/paper/bfc1c08ba71294ce5de5e131561cfa7594d64a0f",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "bfc1c08ba71294ce5de5e131561cfa7594d64a0f",
+    "doi": "10.1073/pnas.1218772110"
+   },
+   "key": "doi:10.1073/pnas.1218772110",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:17:37Z",
+   "lastSeen": "2026-10-06T09:17:37Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:17:37Z",
+     "source": "chat",
+     "project": null,
+     "context": "推薦の公開された出力から個人の購入を逆算できることを示した研究。網Dの理由表示のリスクの根拠",
+     "url": null
+    }
+   ],
+   "title": "2011 IEEE Symposium on Security and Privacy “You Might Also Like:” Privacy Risks of Collaborative Filtering",
+   "authors": [],
+   "year": null,
+   "venue": null,
+   "abstract": null,
+   "tldr": "This paper develops algorithms which take a moderate amount of auxiliary information about a customer and infer this customer's transactions from temporal changes in the public outputs of a recommender system.",
+   "citationCount": 361,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/f3fd7bb2bea8f350c92498748b6894ff5ceb0246",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "f3fd7bb2bea8f350c92498748b6894ff5ceb0246"
+   },
+   "key": "s2:f3fd7bb2bea8f350c92498748b6894ff5ceb0246",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:17:37Z",
+   "lastSeen": "2026-10-06T09:17:37Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:17:37Z",
+     "source": "chat",
+     "project": null,
+     "context": "推薦システムのプライバシーのリスクと対策の整理（教科書の章）",
+     "url": "https://doi.org/10.1007/978-1-4899-7637-6_19"
+    }
+   ],
+   "title": "Privacy Aspects of Recommender Systems",
+   "authors": [
+    "Arik Friedman",
+    "B. Knijnenburg",
+    "K. Vanhecke",
+    "L. Martens",
+    "S. Berkovsky"
+   ],
+   "year": 2015,
+   "venue": "Recommender Systems Handbook",
+   "abstract": null,
+   "tldr": "It is concluded that a considerable effort is still required to develop practical recommendation solutions that provide adequate privacy guarantees, while at the same time facilitating the delivery of high-quality recommendations to their users.",
+   "citationCount": 110,
+   "pdf": "https://biblio.ugent.be/publication/7259811/file/7259817.pdf",
+   "url": "https://www.semanticscholar.org/paper/13d0f69204bc4a78acc9b8fecb91f41ab1a76823",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "13d0f69204bc4a78acc9b8fecb91f41ab1a76823",
+    "doi": "10.1007/978-1-4899-7637-6_19"
+   },
+   "key": "doi:10.1007/978-1-4899-7637-6_19",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:17:37Z",
+   "lastSeen": "2026-10-06T09:17:37Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:17:37Z",
+     "source": "chat",
+     "project": null,
+     "context": "推薦システムの種類ごとに使うデータとプライバシーのリスクを整理した章",
+     "url": "https://doi.org/10.1007/978-1-4471-4555-4_12"
+    }
+   ],
+   "title": "Privacy in Recommender Systems",
+   "authors": [
+    "Arjan Jeckmans",
+    "M. Beye",
+    "Z. Erkin",
+    "P. Hartel",
+    "R. Lagendijk",
+    "Qiang Tang"
+   ],
+   "year": 2013,
+   "venue": "Social Media Retrieval",
+   "abstract": null,
+   "tldr": "This chapter aims to provide insight into privacy in recommender systems with a discussion on applying and combining different privacy- protection techniques in real-world settings, making clear mappings to reflect typical relations between recommender system types, information types, particular privacy risks, and privacy-protection techniques.",
+   "citationCount": 163,
+   "pdf": "https://ris.utwente.nl/ws/files/5352108/Privacy_in_Recommender_Systems.pdf",
+   "url": "https://www.semanticscholar.org/paper/9c703911e094610ff1db063bad4a0f530ab8b181",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "9c703911e094610ff1db063bad4a0f530ab8b181",
+    "doi": "10.1007/978-1-4471-4555-4_12"
+   },
+   "key": "doi:10.1007/978-1-4471-4555-4_12",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:17:37Z",
+   "lastSeen": "2026-10-06T09:17:37Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-06T09:17:37Z",
+     "source": "chat",
+     "project": null,
+     "context": "性格を推定して推薦に使う研究の整理。たぐりが「性格分析」に当たるかを考える材料",
+     "url": null
+    }
+   ],
+   "title": "Personality and Recommender Systems",
+   "authors": [
+    "Marko Tkalčič",
+    "Li Chen"
+   ],
+   "year": 2015,
+   "venue": "Recommender Systems Handbook",
+   "abstract": null,
+   "tldr": "Studies have shown that personality was successful at tackling the cold-start problem, making group recommendations, addressing cross-domain preferences and at generating diverse recommendations, however, a number of challenges still remain.",
+   "citationCount": 123,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/9d8f9cd695a269773c4386c57cb0438e1b1a3d34",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "9d8f9cd695a269773c4386c57cb0438e1b1a3d34",
+    "doi": "10.1007/978-1-4899-7637-6_21"
+   },
+   "key": "doi:10.1007/978-1-4899-7637-6_21",
+   "verified": true,
+   "firstSeen": "2026-10-06T09:17:37Z",
+   "lastSeen": "2026-10-06T09:17:37Z"
+  },
   {
    "refs": [
     {
