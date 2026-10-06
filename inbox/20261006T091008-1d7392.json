@@ -1,0 +1,58 @@
+[
+ {
+  "url": "",
+  "title": "A vector space model for automatic indexing",
+  "context": "網Dで作品を「人物を次元とするベクトル」として表し、コサインで近さを測る考え方の元",
+  "project": "",
+  "tags": [
+   "情報検索"
+  ],
+  "source": "chat",
+  "at": "2026-10-06T09:09:59Z"
+ },
+ {
+  "url": "",
+  "title": "A statistical interpretation of term specificity and its application in retrieval",
+  "context": "網Dの「珍しさ」（IDF）の元。多くの作品に出る人の重なりを軽く数える根拠",
+  "project": "",
+  "tags": [
+   "情報検索"
+  ],
+  "source": "chat",
+  "at": "2026-10-06T09:09:59Z"
+ },
+ {
+  "url": "",
+  "title": "Item-based collaborative filtering recommendation algorithms",
+  "context": "網Dの「近い上位k件を集めて点にする」アイテム間近傍法の枠組みの元",
+  "project": "",
+  "tags": [
+   "推薦システム"
+  ],
+  "source": "chat",
+  "at": "2026-10-06T09:09:59Z"
+ },
+ {
+  "url": "",
+  "title": "Item-based top-N recommendation algorithms",
+  "context": "アイテム間近傍法で上位N件を推薦する方法の整理。網Dの集計方法の比較対象",
+  "project": "",
+  "tags": [
+   "推薦システム"
+  ],
+  "source": "chat",
+  "at": "2026-10-06T09:09:59Z"
+ },
+ {
+  "url": "",
+  "title": "Content-Based Recommendation Systems",
+  "context": "内容ベース推薦の古典的まとめ。網Dの位置づけ（作品の属性で好みを表す）の根拠",
+  "project": "",
+  "tags": [
+   "推薦システム",
+   "サーベイ"
+  ],
+  "source": "chat",
+  "at": "2026-10-06T09:09:59Z"
+ }
+]
