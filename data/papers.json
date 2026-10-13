@@ -1,6 +1,70 @@
 {
- "updated": "2026-10-13T00:26:51+00:00",
+ "updated": "2026-10-13T03:09:31+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-09-29T20:21:38+00:00",
+     "source": "manual",
+     "project": null,
+     "context": "動作確認",
+     "url": "https://doi.org/10.1109/TVCG.2013.196"
+    },
+    {
+     "at": "2026-09-29T20:48:46Z",
+     "source": "chat",
+     "project": null,
+     "context": "卒論（Storyline可視化）の先行研究として記録",
+     "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e"
+    },
+    {
+     "at": "2026-09-29T20:50:20Z",
+     "source": "chat",
+     "project": null,
+     "context": "場所を背景の色帯にするストーリーラインの例として紹介",
+     "url": null
+    },
+    {
+     "at": "2026-09-30T03:52:35Z",
+     "source": "chat",
+     "project": null,
+     "context": "たぐり×storyline。場所の階層をレイアウトに反映する先行例として参照",
+     "url": "https://doi.org/10.1109/tvcg.2013.196"
+    },
+    {
+     "at": "2026-10-13T03:09:11Z",
+     "source": "chat",
+     "project": null,
+     "context": "エクスパンダ講義の感想。線の並び順と隣接行列・固有値を結びつける根拠",
+     "url": "https://doi.org/10.1109/tvcg.2013.196"
+    }
+   ],
+   "title": "StoryFlow: Tracking the Evolution of Stories",
+   "authors": [
+    "Shixia Liu",
+    "Yingcai Wu",
+    "Enxun Wei",
+    "Mengchen Liu",
+    "Yang Liu"
+   ],
+   "year": 2013,
+   "venue": "IEEE Transactions on Visualization and Computer Graphics",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 241,
+   "pdf": "",
+   "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
+   "metaSource": "semanticscholar",
+   "ids": {
+    "s2": "1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
+    "doi": "10.1109/tvcg.2013.196"
+   },
+   "key": "doi:10.1109/tvcg.2013.196",
+   "verified": true,
+   "firstSeen": "2026-09-29T20:21:38+00:00",
+   "lastSeen": "2026-10-13T03:09:11Z",
+   "matchedByTitle": true
+  },
   {
    "refs": [
     {
@@ -883,63 +947,6 @@
    "verified": true,
    "firstSeen": "2026-09-29T20:50:20Z",
    "lastSeen": "2026-09-30T03:52:35Z"
-  },
-  {
-   "refs": [
-    {
-     "at": "2026-09-29T20:21:38+00:00",
-     "source": "manual",
-     "project": null,
-     "context": "動作確認",
-     "url": "https://doi.org/10.1109/TVCG.2013.196"
-    },
-    {
-     "at": "2026-09-29T20:48:46Z",
-     "source": "chat",
-     "project": null,
-     "context": "卒論（Storyline可視化）の先行研究として記録",
-     "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e"
-    },
-    {
-     "at": "2026-09-29T20:50:20Z",
-     "source": "chat",
-     "project": null,
-     "context": "場所を背景の色帯にするストーリーラインの例として紹介",
-     "url": null
-    },
-    {
-     "at": "2026-09-30T03:52:35Z",
-     "source": "chat",
-     "project": null,
-     "context": "たぐり×storyline。場所の階層をレイアウトに反映する先行例として参照",
-     "url": "https://doi.org/10.1109/tvcg.2013.196"
-    }
-   ],
-   "title": "StoryFlow: Tracking the Evolution of Stories",
-   "authors": [
-    "Shixia Liu",
-    "Yingcai Wu",
-    "Enxun Wei",
-    "Mengchen Liu",
-    "Yang Liu"
-   ],
-   "year": 2013,
-   "venue": "IEEE Transactions on Visualization and Computer Graphics",
-   "abstract": null,
-   "tldr": null,
-   "citationCount": 241,
-   "pdf": "",
-   "url": "https://www.semanticscholar.org/paper/1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
-   "metaSource": "semanticscholar",
-   "ids": {
-    "s2": "1fdf9a918b8f549a30db2d191cb4796e6a67c99e",
-    "doi": "10.1109/tvcg.2013.196"
-   },
-   "key": "doi:10.1109/tvcg.2013.196",
-   "verified": true,
-   "firstSeen": "2026-09-29T20:21:38+00:00",
-   "lastSeen": "2026-09-30T03:52:35Z",
-   "matchedByTitle": true
   },
   {
    "refs": [
