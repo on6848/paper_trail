@@ -1,0 +1,47 @@
+[
+ {
+  "url": "",
+  "title": "The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations",
+  "context": "研究紹介画像の素材。インタラクションで見やすくなる例の根拠（Overview→Zoom/Filter→Details）",
+  "project": "",
+  "tags": [
+   "対話的操作"
+  ],
+  "source": "chat",
+  "at": "2026-10-26T15:52:54Z"
+ },
+ {
+  "url": "10.1080/00401706.1987.10488204",
+  "title": "Brushing Scatterplots",
+  "context": "研究紹介画像の素材。散布図行列の重なりをブラッシングで読み解く例",
+  "project": "",
+  "tags": [
+   "対話的操作"
+  ],
+  "source": "chat",
+  "at": "2026-10-26T15:52:54Z"
+ },
+ {
+  "url": "",
+  "title": "Effectiveness of Animation in Trend Visualization",
+  "context": "研究紹介画像の素材。Gapminder型アニメーションと対話操作の効果の検証",
+  "project": "",
+  "tags": [
+   "対話的操作"
+  ],
+  "source": "chat",
+  "at": "2026-10-26T15:52:54Z"
+ },
+ {
+  "url": "2008.07944",
+  "title": "Scalability of Network Visualisation from a Cognitive Load Perspective",
+  "context": "研究紹介画像の素材。ヘアボール化したネットワークはフィルタ等の操作が必要という根拠",
+  "project": "",
+  "tags": [
+   "対話的操作",
+   "動的ネットワーク"
+  ],
+  "source": "chat",
+  "at": "2026-10-26T15:52:54Z"
+ }
+]
