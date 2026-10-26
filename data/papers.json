@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T15:53:57+00:00",
+ "updated": "2026-10-26T22:32:17+00:00",
  "papers": [
   {
    "refs": [
@@ -64,6 +64,38 @@
     "doi": "10.1109/tvcg.2020.3030459"
    },
    "key": "arxiv:2008.07944",
+   "verified": true,
+   "firstSeen": "2026-10-26T15:52:54Z",
+   "lastSeen": "2026-10-26T15:52:54Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-26T15:52:54Z",
+     "source": "chat",
+     "project": null,
+     "context": "研究紹介画像の素材。インタラクションで見やすくなる例の根拠（Overview→Zoom/Filter→Details）",
+     "url": null
+    }
+   ],
+   "title": "The eyes have it: a task by data type taxonomy for information visualizations",
+   "authors": [
+    "B. Shneiderman"
+   ],
+   "year": 1996,
+   "venue": "Proceedings 1996 IEEE Symposium on Visual Languages",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 6320,
+   "pdf": "https://drum.lib.umd.edu/bitstreams/5f7e640d-1669-496a-90a5-85737df97e88/download",
+   "url": "https://www.semanticscholar.org/paper/1ca641a3ec2cb3445fd62a4350a73401485603fb",
+   "metaSource": "semanticscholar",
+   "matchedByTitle": true,
+   "ids": {
+    "s2": "1ca641a3ec2cb3445fd62a4350a73401485603fb",
+    "doi": "10.1109/vl.1996.545307"
+   },
+   "key": "doi:10.1109/vl.1996.545307",
    "verified": true,
    "firstSeen": "2026-10-26T15:52:54Z",
    "lastSeen": "2026-10-26T15:52:54Z"
