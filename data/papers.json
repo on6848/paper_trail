@@ -1,6 +1,73 @@
 {
- "updated": "2026-10-25T20:40:03+00:00",
+ "updated": "2026-10-26T15:53:57+00:00",
  "papers": [
+  {
+   "refs": [
+    {
+     "at": "2026-10-26T15:52:54Z",
+     "source": "chat",
+     "project": null,
+     "context": "研究紹介画像の素材。散布図行列の重なりをブラッシングで読み解く例",
+     "url": "https://doi.org/10.1080/00401706.1987.10488204"
+    }
+   ],
+   "title": "Brushing Scatterplots",
+   "authors": [
+    "Richard A. Becker",
+    "William S. Cleveland"
+   ],
+   "year": 1987,
+   "venue": "Technometrics",
+   "abstract": null,
+   "tldr": null,
+   "citationCount": 586,
+   "pdf": null,
+   "url": "https://doi.org/10.1080/00401706.1987.10488204",
+   "metaSource": "crossref",
+   "ids": {
+    "doi": "10.1080/00401706.1987.10488204"
+   },
+   "key": "doi:10.1080/00401706.1987.10488204",
+   "verified": true,
+   "firstSeen": "2026-10-26T15:52:54Z",
+   "lastSeen": "2026-10-26T15:52:54Z"
+  },
+  {
+   "refs": [
+    {
+     "at": "2026-10-26T15:52:54Z",
+     "source": "chat",
+     "project": null,
+     "context": "研究紹介画像の素材。ヘアボール化したネットワークはフィルタ等の操作が必要という根拠",
+     "url": "https://arxiv.org/abs/2008.07944"
+    }
+   ],
+   "title": "Scalability of Network Visualisation from a Cognitive Load Perspective",
+   "authors": [
+    "Vahan Yoghourdjian",
+    "Yalong Yang",
+    "Tim Dwyer",
+    "Lee Lawrence",
+    "Michael Wybrow",
+    "Kim Marriott"
+   ],
+   "year": 2020,
+   "venue": "arXiv",
+   "abstract": "Node-link diagrams are widely used to visualise networks. However, even the best network layout algorithms ultimately result in 'hairball' visualisations when the graph reaches a certain degree of complexity, requiring simplification through aggregation or interaction (such as filtering) to remain usable. Until now, there has been little data to indicate at what level of complexity node-link diagrams become ineffective or how visual complexity affects cognitive load. To this end, we conducted a controlled study to understand workload limits for a task that requires a detailed understanding of the network topology---finding the shortest path between two nodes. We tested performance on graphs with 25 to 175 nodes with varying density. We collected performance measures (accuracy and response time), subjective feedback, and physiological measures (EEG, pupil dilation, and heart rate variability). To the best of our knowledge, this is the first network visualisation study to include physiological measures. Our results show that people have significant difficulty finding the shortest path in high-density node-link diagrams with more than 50 nodes and even low-density graphs with more than 100 nodes. From our collected EEG data we observe functional differences in brain activity between hard and easy tasks. We found that cognitive load increased up to a certain level of difficulty after which it decreased, likely because participants had given up. We also explored the effects of global network layout features such as size or number of crossings, and features of the shortest path such as length or straightness on task difficulty. We found that global features generally had a greater impact than those of the shortest path.",
+   "tldr": null,
+   "citationCount": null,
+   "pdf": "https://arxiv.org/pdf/2008.07944",
+   "url": "https://arxiv.org/abs/2008.07944",
+   "metaSource": "arxiv",
+   "ids": {
+    "arxiv": "2008.07944",
+    "doi": "10.1109/tvcg.2020.3030459"
+   },
+   "key": "arxiv:2008.07944",
+   "verified": true,
+   "firstSeen": "2026-10-26T15:52:54Z",
+   "lastSeen": "2026-10-26T15:52:54Z"
+  },
   {
    "refs": [
     {
